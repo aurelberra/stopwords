@@ -22,6 +22,7 @@ lat_stop_cltk_ent <- c("et", "in", "est", "non", "ad", "ut", "cum", "quod", "qui
 ## 100-word aggregate stoplist by Borda sort
 lat_stop_cltk_borda <- c("et", "in", "est", "non", "ad", "ut", "quod", "cum", "qui", "si", "sed", "de", "quae", "quam", "per", "ex", "nec", "esse", "sunt", "se", "hoc", "enim", "autem", "ab", "aut", "te", "quid", "uel", "etiam", "atque", "me", "eius", "quo", "sit", "quia", "iam", "ne", "ac", "mihi", "haec", "tamen", "tibi", "pro", "nam", "id", "ita", "sic", "eo", "neque", "uero", "eum", "nunc", "inter", "ergo", "erat", "quem", "ipse", "ego", "quibus", "nihil", "ille", "quoque", "quidem", "sibi", "dig", "nisi", "qua", "post", "ea", "tu", "hic", "fuit", "omnia", "his", "esset", "nos", "sicut", "illa", "omnes", "sine", "secundum", "bibit", "modo", "dum", "quis", "quaestio", "ubi", "deus", "od", "ante", "dei", "potest", "tam", "sub", "ei", "uos", "nouus", "quos", "nobis", "bellum")
 
+
 # Compare CLTK lists
 
 cm <- sort(lat_stop_cltk_mean)
@@ -29,42 +30,27 @@ cv <- sort(lat_stop_cltk_var)
 ce <- sort(lat_stop_cltk_ent)
 cb <- sort(lat_stop_cltk_borda)
 
-t.cltk <- matrix(c(cm,cv,ce,cb), ncol = 4)
-colnames(t.cltk) <- c("CLTK_mean","CLTK_var","CLTK_ent","CLTK_borda")
-View(t.cltk)
+m.cltk <- matrix(c(cm,cv,ce,cb), ncol = 4)
+colnames(m.cltk) <- c("CLTK_mean","CLTK_var","CLTK_ent","CLTK_borda")
+View(m.cltk)
 
 all <- c(lat_stop_cltk_mean,lat_stop_cltk_var,lat_stop_cltk_ent,lat_stop_cltk_borda)
-sort(table(all))
-
-# Words only in one list
-data.frame(table(cm,cv))
-setdiff(cm, setdiff(cv, setdiff(ce, cb)))
-
-l.all <- list(cm,cv,ce,cb)
-lapply(1:length(l.all), function(n) setdiff(l.all[[n]], unlist(l.all[-n])))
-
-setdiff(cm,cv)
-
-myl <- list(A = dat1,
-            B = dat2,
-            C = dat3)
-lapply(1:length(myl), function(n) setdiff(myl[[n]], unlist(myl[-n])))
-
 t.all <- as.data.frame(table(all))
-t.1 <- t.all[t.all$Freq == 1,]$all
-t.2 <- t.all[t.all$Freq == 2,]$all
-t.3 <- t.all[t.all$Freq == 3,]$all
-t.4 <- t.all[t.all$Freq == 4,]$all
-
 t.all.sorted <- as.data.frame(sort(table(all)))
-plot(t.all.sorted)
 
-all_cltk <- cbind.data.frame(t.1, t.2, t.3, t.4)
-View(all_cltk)
+## Words in 1 to 4 lists
+t.4 <- t.all[t.all$Freq == 4,]$all
+t.3 <- t.all[t.all$Freq == 3,]$all
+t.2 <- t.all[t.all$Freq == 2,]$all
+t.1 <- t.all[t.all$Freq == 1,]$all
+t.1
+length(t.1)
+
 
 # Compare CLTK lists with Digiclass list
 
 cltk_not_in_digiclass <- setdiff(all,lat_stop_digiclass)
 sort(cltk_not_in_digiclass)
+
 digiclass_not_in_cltk <- setdiff(lat_stop_digiclass,all)
 sort(digiclass_not_in_cltk)
