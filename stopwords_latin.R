@@ -38,11 +38,11 @@ all <- c(lat_stop_cltk_mean,lat_stop_cltk_var,lat_stop_cltk_ent,lat_stop_cltk_bo
 t.all <- as.data.frame(table(all))
 t.all.sorted <- as.data.frame(sort(table(all)))
 
-## Words in 1 to 4 lists
-t.4 <- t.all[t.all$Freq == 4,]$all
-t.3 <- t.all[t.all$Freq == 3,]$all
-t.2 <- t.all[t.all$Freq == 2,]$all
+## Words in 1, 2, 3, 4 lists
 t.1 <- t.all[t.all$Freq == 1,]$all
+t.2 <- t.all[t.all$Freq == 2,]$all
+t.3 <- t.all[t.all$Freq == 3,]$all
+t.4 <- t.all[t.all$Freq == 4,]$all
 t.1
 length(t.1)
 
