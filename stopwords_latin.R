@@ -1,14 +1,20 @@
 # Stopwords : Latin
 
+# Perseus Digital Library list
+## http://www.perseus.tufts.edu/hopper/stopwords 2017-10-09
+
+lat_stop_perseus <- c("ab", "ac", "ad", "adhic", "aliqui", "aliquis", "an", "ante", "apud", "at", "atque", "aut", "autem", "cum", "cur", "de", "deinde", "dum", "ego", "enim", "ergo", "es", "est", "et", "etiam", "etsi", "ex", "fio", "haud", "hic", "iam", "idem", "igitur", "ille", "in", "infra", "inter", "interim", "ipse", "is", "ita", "magis", "modo", "mox", "nam", "ne", "nec", "necque", "neque", "nisi", "non", "nos", "o", "ob", "per", "possum", "post", "pro", "quae", "quam", "quare", "qui", "quia", "quicumque", "quidem", "quilibet", "quis", "quisnam", "quisquam", "quisque", "quisquis", "quo", "quoniam", "sed", "si", "sic", "sive", "sub", "sui", "sum", "super", "suus", "tam", "tamen", "trans", "tu", "tum", "ubi", "uel", "uero", "unus", "ut")
+
 # Digital Classicist list
 ## http://wiki.digitalclassicist.org/Stopwords_for_Greek_and_Latin
-## originally from Perseus list – but origin of Perseus list unclear and it differs from the version quoted in CLTK material below
+## originally from Perseus list, but differs from the online Perseus list ("unus" and "ut" were removed or lost)
 
 ## 95-word stoplist augmented AB 2017-10-07
 lat_stop_digiclass <- c("a", "ab", "ac", "ad", "adhic", "aliqui", "aliquis", "an", "ante", "apud", "at", "atque", "aut", "autem", "cum", "cur", "de", "deinde", "dum", "ego", "enim", "ergo", "es", "est", "et", "etiam", "etsi", "ex", "fio", "haud", "hic", "iam", "jam", "idem", "igitur", "ille", "in", "infra", "inter", "interim", "ipse", "is", "ita", "magis", "modo", "mox", "nam", "ne", "nec", "necque", "neque", "nisi", "non", "nos", "o", "ob", "per", "possum", "post", "pro", "quae", "quam", "quare", "qui", "quia", "quicumque", "quidem", "quilibet", "quis", "quisnam", "quisquam", "quisque", "quisquis", "quo", "quoniam", "sed", "si", "sic", "sive", "siue", "sub", "sui", "sum", "super", "suus", "tam", "tamen", "trans", "tu", "tum", "ubi", "uel", "vel", "uero", "vero")
 
-# CLTK Latin
-## as quoted in https://github.com/diyclassics/stopwords (slides) 2017-10-07
+# Classical Language Toolkit Latin
+## CLTK: https://github.com/cltk/cltk
+## lists as quoted in https://github.com/diyclassics/stopwords (slides) 2017-10-07
 
 ## 100-word stoplist by mean probability
 lat_stop_cltk_mean <- c("et", "in", "est", "non", "ad", "ut", "cum", "quod", "qui", "sed", "si", "de", "quae", "quam", "per", "ex", "nec", "sunt", "esse", "se", "hoc", "enim", "ab", "aut", "autem", "etiam", "quid", "te", "atque", "uel", "eius", "me", "quo", "sit", "iam", "quia", "ne", "haec", "mihi", "tamen", "ac", "tibi", "nam", "sic", "ita", "id", "pro", "eo", "nunc", "uero", "neque", "inter", "quem", "erat", "ille", "ergo", "ipse", "eum", "quibus", "quoque", "sibi", "ego", "quidem", "nisi", "qua", "omnia", "hic", "post", "fuit", "tu", "nihil", "ea", "illa", "his", "omnes", "nos", "esset", "modo", "dum", "sine", "quis", "ubi", "sicut", "ante", "sub", "tam", "secundum", "deus", "potest", "dei", "nobis", "quos", "igitur", "ei", "omnibus", "res", "cui", "sua", "apud", "eorum")
@@ -61,17 +67,29 @@ length(lat_stop_digiclass) <- length(cm)
 length(cltk_not_in_digiclass) <- length(cm)
 length(digiclass_not_in_cltk) <- length(cm)
 
-m.all <- cbind(lat_stop_digiclass,cm,cv,ce,cb,cltk_not_in_digiclass,digiclass_not_in_cltk)
-colnames(m.all) <- c("DigiClass","CLTK mean","CLTK var","CLTK ent","CLTK borda","CLTK not DigiClass","DigiClass not CLTK")
+m.digiclass_cltk <- cbind(lat_stop_digiclass,cm,cv,ce,cb,cltk_not_in_digiclass,digiclass_not_in_cltk)
+colnames(m.digiclass_cltk) <- c("DigiClass","CLTK mean","CLTK var","CLTK ent","CLTK borda","CLTK not DigiClass","DigiClass not CLTK")
 
 # Add comparison with so-called ISO list
 
-digiclass_plus_cltk <- c(lat_stop_digiclass,cltk_all)
-iso_only <- setdiff(lat_stop_iso,digiclass_plus_cltk)
+digiclass_cltk <- c(lat_stop_digiclass,cltk_all)
+iso_only <- setdiff(lat_stop_iso,digiclass_cltk)
 
 length(lat_stop_iso) <- length(cm)
 length(iso_only) <- length(cm)
 
-m.all_with_iso <- cbind(lat_stop_digiclass,cm,cv,ce,cb,lat_stop_iso,cltk_not_in_digiclass,digiclass_not_in_cltk,iso_only)
+m.digiclass_cltk_iso <- cbind(lat_stop_digiclass,cm,cv,ce,cb,lat_stop_iso,cltk_not_in_digiclass,digiclass_not_in_cltk,iso_only)
 colnames(m.all_with_iso) <- c("DigiClass","CLTK mean","CLTK var","CLTK ent","CLTK borda","ISO","CLTK not DigiClass","DigiClass not CLTK","ISO only")
-View(m.all_with_iso)
+
+# Add original Perseus list
+
+digiclass_cltk_iso <- c(lat_stop_digiclass,cltk_all,lat_stop_iso)
+perseus_only <- setdiff(lat_stop_perseus,digiclass_cltk_iso)
+
+length(lat_stop_perseus) <- length(cm)
+length(perseus_only) <- length(cm)
+
+m.all <- cbind(lat_stop_perseus,lat_stop_digiclass,cm,cv,ce,cb,lat_stop_iso,cltk_not_in_digiclass,digiclass_not_in_cltk,iso_only,perseus_only)
+colnames(m.all) <- c("Perseus","DigiClass","CLTK mean","CLTK var","CLTK ent","CLTK borda","ISO","CLTK not DigiClass","DigiClass not CLTK","ISO only","Perseus only")
+
+View(m.all)

@@ -10,6 +10,10 @@ anno, bellum, bibit, contra, cui, cuius, dei, deo, deus, dicitur, dig, dixit, do
 
 a, adhic, aliqui, aliquis, an, at, cur, deinde, es, etsi, fio, haud, idem, infra, interim, is, jam, mox, necque, o, ob, possum, quare, quicumque, quilibet, quisnam, quisquam, quisque, quisquis, quoniam, siue, sive, sui, sum, suus, trans, tum, vel, vero
 
+## Word only in [Perseus Digital Library](http://www.perseus.tufts.edu/hopper/stopwords) list (1 word)
+
+unus
+
 ## Words only in ["Stopwords ISO" Latin](https://github.com/stopwords-iso/stopwords-la) list (6 words)
 
 e, erant, re, rebus, rem, tandem
@@ -18,9 +22,9 @@ e, erant, re, rebus, rem, tandem
 
 * Detail rationale on DigiClass wiki
 * Correct erroneous "adhic" to "adhuc" in DigiClass list
-* Discard artefacts in CLTK: "dig", "ed", "od"
+* Ignore artefacts in CLTK: "dig", "ed", "od"
 * Add systematically u/v and i/j variants, as corpora cannot be assumed to be normalized
-* Add words from the following categories – only those frequent forms or the whole paradigms?
+* Add words from the following categories – only most frequent forms or whole paradigms?
     * Prepositions/adverbs
         * contra, e (ex), secundum, sine, tandem
     * Conjunctions
