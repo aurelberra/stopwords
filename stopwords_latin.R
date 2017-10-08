@@ -22,6 +22,10 @@ lat_stop_cltk_ent <- c("et", "in", "est", "non", "ad", "ut", "cum", "quod", "qui
 ## 100-word aggregate stoplist by Borda sort
 lat_stop_cltk_borda <- c("et", "in", "est", "non", "ad", "ut", "quod", "cum", "qui", "si", "sed", "de", "quae", "quam", "per", "ex", "nec", "esse", "sunt", "se", "hoc", "enim", "autem", "ab", "aut", "te", "quid", "uel", "etiam", "atque", "me", "eius", "quo", "sit", "quia", "iam", "ne", "ac", "mihi", "haec", "tamen", "tibi", "pro", "nam", "id", "ita", "sic", "eo", "neque", "uero", "eum", "nunc", "inter", "ergo", "erat", "quem", "ipse", "ego", "quibus", "nihil", "ille", "quoque", "quidem", "sibi", "dig", "nisi", "qua", "post", "ea", "tu", "hic", "fuit", "omnia", "his", "esset", "nos", "sicut", "illa", "omnes", "sine", "secundum", "bibit", "modo", "dum", "quis", "quaestio", "ubi", "deus", "od", "ante", "dei", "potest", "tam", "sub", "ei", "uos", "nouus", "quos", "nobis", "bellum")
 
+# List from "Stopwords ISO" Latin
+## https://github.com/stopwords-iso/stopwords-la
+lat_stop_iso <- c("a","ab","ac","ad","at","atque","aut","autem","cum","de","dum","e","erant","erat","est","et","etiam","ex","haec","hic","hoc","in","ita","me","nec","neque","non","per","qua","quae","quam","qui","quibus","quidem","quo","quod","re","rebus","rem","res","sed","si","sic","sunt","tamen","tandem","te","ut","vel")
+
 # Compare CLTK lists
 
 cm <- sort(lat_stop_cltk_mean)
@@ -29,25 +33,25 @@ cv <- sort(lat_stop_cltk_var)
 ce <- sort(lat_stop_cltk_ent)
 cb <- sort(lat_stop_cltk_borda)
 
-all <- c(lat_stop_cltk_mean,lat_stop_cltk_var,lat_stop_cltk_ent,lat_stop_cltk_borda)
-t.all <- as.data.frame(table(all))
-t.all.sorted <- as.data.frame(sort(table(all)))
+cltk_all <- c(lat_stop_cltk_mean,lat_stop_cltk_var,lat_stop_cltk_ent,lat_stop_cltk_borda)
+t.cltk_all <- as.data.frame(table(cltk_all))
+t.cltk_all.sorted <- as.data.frame(sort(table(cltk_all)))
 
 ## Words in 1, 2, 3, 4 lists
-t.1 <- t.all[t.all$Freq == 1,]$all
-t.2 <- t.all[t.all$Freq == 2,]$all
-t.3 <- t.all[t.all$Freq == 3,]$all
-t.4 <- t.all[t.all$Freq == 4,]$all
+t.1 <- t.cltk_all[t.cltk_all$Freq == 1,]$cltk_all
+t.2 <- t.cltk_all[t.cltk_all$Freq == 2,]$cltk_all
+t.3 <- t.cltk_all[t.cltk_all$Freq == 3,]$cltk_all
+t.4 <- t.cltk_all[t.cltk_all$Freq == 4,]$cltk_all
 t.1
 length(t.1)
 
 # Compare CLTK lists with Digiclass list
 
-cltk_not_in_digiclass <- setdiff(all,lat_stop_digiclass)
+cltk_not_in_digiclass <- setdiff(cltk_all,lat_stop_digiclass)
 length(cltk_not_in_digiclass)
 sort(cltk_not_in_digiclass)
 
-digiclass_not_in_cltk <- setdiff(lat_stop_digiclass,all)
+digiclass_not_in_cltk <- setdiff(lat_stop_digiclass,cltk_all)
 length(digiclass_not_in_cltk)
 sort(digiclass_not_in_cltk)
 
@@ -57,7 +61,17 @@ length(lat_stop_digiclass) <- length(cm)
 length(cltk_not_in_digiclass) <- length(cm)
 length(digiclass_not_in_cltk) <- length(cm)
 
-m.all <- m.cltk
-m.all <- cbind(lat_stop_digiclass,m.all,cltk_not_in_digiclass,digiclass_not_in_cltk)
+m.all <- cbind(lat_stop_digiclass,cm,cv,ce,cb,cltk_not_in_digiclass,digiclass_not_in_cltk)
 colnames(m.all) <- c("DigiClass","CLTK mean","CLTK var","CLTK ent","CLTK borda","CLTK not DigiClass","DigiClass not CLTK")
-View(m.all)
+
+# Add comparison with so-called ISO list
+
+digiclass_plus_cltk <- c(lat_stop_digiclass,cltk_all)
+iso_only <- setdiff(lat_stop_iso,digiclass_plus_cltk)
+
+length(lat_stop_iso) <- length(cm)
+length(iso_only) <- length(cm)
+
+m.all_with_iso <- cbind(lat_stop_digiclass,cm,cv,ce,cb,lat_stop_iso,cltk_not_in_digiclass,digiclass_not_in_cltk,iso_only)
+colnames(m.all_with_iso) <- c("DigiClass","CLTK mean","CLTK var","CLTK ent","CLTK borda","ISO","CLTK not DigiClass","DigiClass not CLTK","ISO only")
+View(m.all_with_iso)
