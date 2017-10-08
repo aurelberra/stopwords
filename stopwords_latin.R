@@ -79,7 +79,7 @@ length(lat_stop_iso) <- length(cm)
 length(iso_only) <- length(cm)
 
 m.digiclass_cltk_iso <- cbind(lat_stop_digiclass,cm,cv,ce,cb,lat_stop_iso,cltk_not_in_digiclass,digiclass_not_in_cltk,iso_only)
-colnames(m.all_with_iso) <- c("DigiClass","CLTK mean","CLTK var","CLTK ent","CLTK borda","ISO","CLTK not DigiClass","DigiClass not CLTK","ISO only")
+colnames(m.digiclass_cltk_iso) <- c("DigiClass","CLTK mean","CLTK var","CLTK ent","CLTK borda","ISO","CLTK not DigiClass","DigiClass not CLTK","ISO only")
 
 # Add original Perseus list
 
