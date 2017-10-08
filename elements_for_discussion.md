@@ -1,3 +1,7 @@
+# Latin stopwords
+
+This is about the Latin list, but the same rationale will obviously be used in revising the Ancient Greek list (in which accents and breathings will additionally be taken into account).
+
 ## Words currently in [DigiClass](http://wiki.digitalclassicist.org/Stopwords_for_Greek_and_Latin) list (95 words)
 
 a, ab, ac, ad, adhic, aliqui, aliquis, an, ante, apud, at, atque, aut, autem, cum, cur, de, deinde, dum, ego, enim, ergo, es, est, et, etiam, etsi, ex, fio, haud, hic, iam, jam, idem, igitur, ille, in, infra, inter, interim, ipse, is, ita, magis, modo, mox, nam, ne, nec, necque, neque, nisi, non, nos, o, ob, per, possum, post, pro, quae, quam, quare, qui, quia, quicumque, quidem, quilibet, quis, quisnam, quisquam, quisque, quisquis, quo, quoniam, sed, si, sic, sive, siue, sub, sui, sum, super, suus, tam, tamen, trans, tu, tum, ubi, uel, vel, uero, vero
