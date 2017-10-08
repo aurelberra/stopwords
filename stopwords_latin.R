@@ -29,10 +29,6 @@ cv <- sort(lat_stop_cltk_var)
 ce <- sort(lat_stop_cltk_ent)
 cb <- sort(lat_stop_cltk_borda)
 
-m.cltk <- matrix(c(cm,cv,ce,cb), ncol = 4)
-colnames(m.cltk) <- c("CLTK_mean","CLTK_var","CLTK_ent","CLTK_borda")
-View(m.cltk)
-
 all <- c(lat_stop_cltk_mean,lat_stop_cltk_var,lat_stop_cltk_ent,lat_stop_cltk_borda)
 t.all <- as.data.frame(table(all))
 t.all.sorted <- as.data.frame(sort(table(all)))
@@ -48,7 +44,20 @@ length(t.1)
 # Compare CLTK lists with Digiclass list
 
 cltk_not_in_digiclass <- setdiff(all,lat_stop_digiclass)
+length(cltk_not_in_digiclass)
 sort(cltk_not_in_digiclass)
 
 digiclass_not_in_cltk <- setdiff(lat_stop_digiclass,all)
+length(digiclass_not_in_cltk)
 sort(digiclass_not_in_cltk)
+
+# View all lists
+
+length(lat_stop_digiclass) <- length(cm)
+length(cltk_not_in_digiclass) <- length(cm)
+length(digiclass_not_in_cltk) <- length(cm)
+
+m.all <- m.cltk
+m.all <- cbind(lat_stop_digiclass,m.all,cltk_not_in_digiclass,digiclass_not_in_cltk)
+colnames(m.all) <- c("DigiClass","CLTK mean","CLTK var","CLTK ent","CLTK borda","CLTK not DigiClass","DigiClass not CLTK")
+View(m.all)
