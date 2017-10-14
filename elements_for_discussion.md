@@ -6,7 +6,7 @@ Details about the sources and full lists can be found in the [R code used to com
 
 See https://github.com/aurelberra/stopwords/blob/master/stopwords_latin.txt.
 
-## Words currently in [DigiClass](http://wiki.digitalclassicist.org/Stopwords_for_Greek_and_Latin) list (95 words)
+## Words currently in [DigiClass list](http://wiki.digitalclassicist.org/Stopwords_for_Greek_and_Latin) (95 words)
 
 a, ab, ac, ad, adhic, aliqui, aliquis, an, ante, apud, at, atque, aut, autem, cum, cur, de, deinde, dum, ego, enim, ergo, es, est, et, etiam, etsi, ex, fio, haud, hic, iam, jam, idem, igitur, ille, in, infra, inter, interim, ipse, is, ita, magis, modo, mox, nam, ne, nec, necque, neque, nisi, non, nos, o, ob, per, possum, post, pro, quae, quam, quare, qui, quia, quicumque, quidem, quilibet, quis, quisnam, quisquam, quisque, quisquis, quo, quoniam, sed, si, sic, sive, siue, sub, sui, sum, super, suus, tam, tamen, trans, tu, tum, ubi, uel, vel, uero, vero
 
@@ -18,11 +18,11 @@ anno, bellum, bibit, contra, cui, cuius, dei, deo, deus, dicitur, dig, dixit, do
 
 a, adhic, aliqui, aliquis, an, at, cur, deinde, es, etsi, fio, haud, idem, infra, interim, is, jam, mox, necque, o, ob, possum, quare, quicumque, quilibet, quisnam, quisquam, quisque, quisquis, quoniam, siue, sive, sui, sum, suus, trans, tum, vel, vero
 
-## Word only in [Perseus Digital Library](http://www.perseus.tufts.edu/hopper/stopwords) list (1 word)
+## Word only in [Perseus Digital Library list](http://www.perseus.tufts.edu/hopper/stopwords) (1 word)
 
 unus
 
-## Words only in ["Stopwords ISO" Latin](https://github.com/stopwords-iso/stopwords-la) list (6 words)
+## Words only in ["Stopwords ISO" Latin list](https://github.com/stopwords-iso/stopwords-la) (6 words)
 
 e, erant, re, rebus, rem, tandem
 
@@ -70,11 +70,11 @@ Details about the sources and full lists can be found in the [R code used to com
 
 See https://github.com/aurelberra/stopwords/blob/master/stopwords_greek.txt.
 
-## Words currently in [DigiClass](http://wiki.digitalclassicist.org/Stopwords_for_Greek_and_Latin) list (159 words)
+## Words currently in [DigiClass list](http://wiki.digitalclassicist.org/Stopwords_for_Greek_and_Latin) (159 words)
 
 ἄλλος, ἄλλοσ, ἄν, ἂν, ἄρα, ἀλλ, ἀλλ', ἀλλ’, ἀλλά, ἀλλὰ, ἀπό, ἀπὸ, αὐτός, αὐτόσ, αὐτὸς, αὐτὸσ, δ, δ', δ’, δαί, δαὶ, δαίς, δαίσ, δαὶς, δαὶσ, δέ, δὲ, δή, δὴ, διά, διὰ, ἑαυτοῦ, ἔτι, ἐάν, ἐὰν, ἐγώ, ἐγὼ, ἐκ, ἐμός, ἐμόσ, ἐμὸς, ἐμὸσ, ἐν, ἐπί, ἐπὶ, εἰ, εἴμι, εἰμί, εἰς, εἰσ, γάρ, γὰρ, γᾶ, γε, ἡ, ἤ, ἢ, καί, καὶ, κατά, κατὰ, μέν, μὲν, μετά, μετὰ, μή, μὴ, ὁ, ὅδε, ὅς, ὅσ, ὃς, ὃσ, ὅστις, ὅστισ, ὅτι, οἱ, οὕτως, οὕτωσ, οὗτος, οὗτοσ, οὐ, οὔτε, οὖν, οὐδέ, οὐδὲ, οὐδείς, οὐδείσ, οὐδεὶς, οὐδεὶσ, οὐκ, οὔκ, οὐχ, παρά, παρὰ, περί, περὶ, πρός, πρόσ, πρὸς, πρὸσ, σός, σόσ, σὸς, σὸσ, σύ, σὺ, σύν, σὺν, τά, τὰ, τάσ, τάς, τὰσ, τὰς, ταῖς, ταῖσ, τε, τήν, τὴν, τῆς, τῆσ, τῇ, τι, τί, τὶ, τίς, τίσ, τις, τισ, τό, τὸ, τόν, τὸν, τοί, τοὶ, τοιοῦτος, τοιοῦτοσ, τοῖς, τοῖσ, τούς, τούσ, τοὺς, τοὺσ, τοῦ, τῶν, τῷ, ὑμός, ὑμὸς, ὑμόσ, ὑμὸσ, ὑπέρ, ὑπό, ὑπὸ, ὥσ, ὥστε, ὡς, ὡσ, ὦ
 
-## Words in [Perseus Digital Library](http://www.perseus.tufts.edu/hopper/stopwords) list (79 words)
+## Words in [Perseus Digital Library list](http://www.perseus.tufts.edu/hopper/stopwords) (79 words)
 
 ἄλλος, ἄν, ἄρα, ἀλλ', ἀλλά, ἀπό, αὐτός, δ', δαί, δαίς, δέ, δή, διά, ἑαυτοῦ, ἔτι, ἐάν, ἐγώ, ἐκ, ἐμός, ἐν, ἐπί, εἰ, εἴμι, εἰμί, εἰς, γάρ, γα , γε, ἡ, ἤ, καί, κατά, μέν, μετά, μή, ὁ, ὅδε, ὅς, ὅστις, ὅτι, οἱ, οὕτως, οὗτος, οὐ, οὔτε, οὖν, οὐδέ, οὐδείς, οὐκ, παρά, περί, πρός, σός, σύ, σύν, τά, τε, τήν, τῆς, τῇ, τι, τί, τίς, τις, τό, τόν, τοί, τοιοῦτος, τούς, τοῦ, τῶν, τῷ, ὑμός, ὑπέρ, ὑπό, ὥστε, ὡς, ὦ
 
@@ -82,7 +82,7 @@ See https://github.com/aurelberra/stopwords/blob/master/stopwords_greek.txt.
 
 ἀλλ, ἀλλὰ, ἀλλά, ἀπὸ, ἀπό, ἂν, ἄλλος, ἄν, ἄρα, αὐτὸς, αὐτός, γε, γὰρ, γάρ, δ, δαὶ, δαὶς, δαί, δαίς, διὰ, διά, δὲ, δέ, δὴ, δή, ἐὰν, ἐάν, ἑαυτοῦ, ἐγὼ, ἐγώ, εἰ, εἰμὶ, εἰμί, εἴμι, εἰς, ἐκ, ἐμὸς, ἐμός, ἐν, ἐξ, ἐπὶ, ἐπί, ἔτι, ἡ, ἢ, ἤ, κατὰ, κατά, καὶ, καί, μετὰ, μετά, μὲν, μέν, μὴ, μή, ξύν, ξὺν, ὁ, ὃδε, ὅδε, οἱ, ὅς, ὃς, ὅστις, ὅτι, οὐ, οὐδεὶς, οὐδείς, οὐδὲ, οὐδέ, οὐκ, οὖν, οὔτε, οὗτος, οὕτως, παρὰ, παρά, περὶ, περί, πρὸς, πρός, σύν, σὸς, σός, σὺ, σὺν, σὺν, σύ, σύν, τε, τι, τις, τοιοῦτος, τοὶ, τοί, τοὺς, τούς, τοῖς, τοῦ, τὰ, τά, τᾶς, τῇ, τὴν, τήν, τῆς, τὶ, τί, τὶς, τίς, τὸ, τό, τὸν, τόν, τῶν, τῷ, ὑμὸς, ὑμός, ὑπὲρ, ὑπέρ, ὑπὸ, ὑπό, ὦ, ὡς, ὥστε
 
-## Words in [Annette von Stockhausen’s list](https://github.com/pharos-alexandria/grk-stoplist/blob/master/stoplist-greek.txt) (148 words)
+## Words in [Annette von Stockhausen’s Pharos list](https://github.com/pharos-alexandria/grk-stoplist/blob/master/stoplist-greek.txt) (148 words)
 
 ἃ, αἱ, αἵ, αἳ, ἄν, ἀλλ', ἀλλὰ, ἄλλος, ἅμα, ἂν, ἀπ, ἀπὸ, ἄρα, αὖ, αὐτὸς, ἀφ, δ', δι', δὲ, δέ, δή, δὴ, διά, διὰ, δαὶ, δαὶς, ἐὰν, ἑαυτοῦ, ἔτι, ἐγὼ, ἐκ, ἐμὸς, ἐν, ἐξ, επ, ἐπὶ, εἰ, εἴ, εἰμὶ, εἴμι, εἰς, εἴτε, ἐπεὶ, ἐστι, ἐφ, γάρ, γὰρ, γε, γα^, γοῦν, ἡ, ἢ, ἥ, ἣ, ἧς, ἵνα, καί, καὶ, καίτοι, κἀν, κἂν, καθ, κατ, κατὰ, κατά, μεθ, μἐν, μὲν, μετ, μετὰ, μή, μὴ, μὴν, μήτε, ὁ, ὃ, ὅ, ὅδε, ὅθεν, οἷς, ὃν, ὅπερ, ὅς, ὃς, ὅστις, ὅτε, ὅτι, οὓς, οὕτω, οὕτως, οὗτος, οὔτε, οὖν, οὐδ, οὐδεὶς, οὐδὲν, οἱ, οἳ, οὗ, οὐ, οὐδὲ, οὐκ, οὐχ, οὐχὶ, παρ, παρὰ, περὶ, ποτε, που, ποῦ, πρὸ, προ, πρὸς, πως, σὸς, σὺ, σὺν, τά, τὰ, ταῖς, τὰς, τε, τὴν, τῆς, τῇ, τι, τί, τινα, τις, τίς, τὸ, τοι, τοῖς, τοιοῦτος, τὸν, τότε, τοὺς, τοῦ, τῶν, τῷ, ὑπ, ὑπὲρ, ὑπὸ, ὡς, ὥς, ὦ, ᾧ, ὥστε
 
@@ -98,7 +98,7 @@ See https://github.com/aurelberra/stopwords/blob/master/stopwords_greek.txt.
 
 ἀλλ', ἀλλ’, ἄλλοσ, αὐτόσ, αὐτὸσ, γᾶ, δ', δ’, δαίσ, δαὶσ, εἰσ, ἐμόσ, ἐμὸσ, ὅσ, ὃσ, ὅστισ, οὐδείσ, οὐδεὶσ, οὔκ, οὗτοσ, οὕτωσ, οὐχ, πρόσ, πρὸσ, σόσ, σὸσ, ταῖσ, ταῖς, τάσ, τάς, τὰσ, τὰς, τῆσ, τισ, τίσ, τοιοῦτοσ, τοῖσ, τούσ, τοὺσ, ὑμόσ, ὑμὸσ, ὡσ, ὥσ
 
-## Word only in [Perseus Digital Library](http://www.perseus.tufts.edu/hopper/stopwords) list (1 word)
+## Word only in [Perseus Digital Library list](http://www.perseus.tufts.edu/hopper/stopwords) (1 word)
 
 γα 
 
