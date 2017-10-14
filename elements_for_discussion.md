@@ -1,6 +1,4 @@
-#----------------
 # Latin stopwords
-#----------------
 
 Details about the sources and full lists can be found in the [R code used to compare the lists](https://github.com/aurelberra/stopwords/blob/master/stopwords_latin.R).
 
@@ -60,9 +58,7 @@ anno, bellum, bibit, contra, cui, cuius, dei, deo, deus, dicitur, dig, dixit, do
         * re, rebus, rem, res
 
 
-#----------------
 # Greek stopwords
-#----------------
 
 Details about the sources and full lists can be found in the [R code used to compare the lists](https://github.com/aurelberra/stopwords/blob/master/stopwords_greek.R).
 
@@ -136,6 +132,4 @@ Details about the sources and full lists can be found in the [R code used to com
         * …
 
 
-#----------------------------------------------------------
 # TODO: Explain rationale and update list on DigiClass wiki
-#----------------------------------------------------------
