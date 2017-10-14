@@ -53,7 +53,7 @@ t.4 <- t.cltk_all[t.cltk_all$Freq == 4,]$cltk_all
 t.1
 length(t.1)
 
-# Compare CLTK lists with Digiclass list
+# Compare lists
 
 cltk_not_in_digiclass <- setdiff(cltk_all,lat_stop_digiclass)
 length(cltk_not_in_digiclass)
@@ -63,35 +63,35 @@ digiclass_not_in_cltk <- setdiff(lat_stop_digiclass,cltk_all)
 length(digiclass_not_in_cltk)
 sort(digiclass_not_in_cltk)
 
-# View all lists
-
-length(lat_stop_digiclass) <- length(cm)
-length(cltk_not_in_digiclass) <- length(cm)
-length(digiclass_not_in_cltk) <- length(cm)
-
-m.digiclass_cltk <- cbind(lat_stop_digiclass,cm,cv,ce,cb,cltk_not_in_digiclass,digiclass_not_in_cltk)
-colnames(m.digiclass_cltk) <- c("DigiClass","CLTK mean","CLTK var","CLTK ent","CLTK borda","CLTK not DigiClass","DigiClass not CLTK")
-
-# Add comparison with so-called ISO list
-
 digiclass_cltk <- c(lat_stop_digiclass,cltk_all)
 iso_only <- setdiff(lat_stop_iso,digiclass_cltk)
-
-length(lat_stop_iso) <- length(cm)
-length(iso_only) <- length(cm)
-
-m.digiclass_cltk_iso <- cbind(lat_stop_digiclass,cm,cv,ce,cb,lat_stop_iso,cltk_not_in_digiclass,digiclass_not_in_cltk,iso_only)
-colnames(m.digiclass_cltk_iso) <- c("DigiClass","CLTK mean","CLTK var","CLTK ent","CLTK borda","ISO","CLTK not DigiClass","DigiClass not CLTK","ISO only")
-
-# Add original Perseus list
 
 digiclass_cltk_iso <- c(lat_stop_digiclass,cltk_all,lat_stop_iso)
 perseus_only <- setdiff(lat_stop_perseus,digiclass_cltk_iso)
 
-length(lat_stop_perseus) <- length(cm)
-length(perseus_only) <- length(cm)
+# View all lists
+
+lat_max <- max(length(lat_stop_perseus),length(lat_stop_digiclass),length(lat_stop_cltk_mean),length(lat_stop_cltk_var),length(lat_stop_cltk_ent),length(lat_stop_cltk_borda),length(lat_stop_iso),length(cltk_not_in_digiclass),length(digiclass_not_in_cltk),length(iso_only),length(perseus_only))
+length(lat_stop_perseus) <- lat_max
+length(lat_stop_digiclass) <- lat_max
+length(lat_stop_cltk_mean) <- lat_max
+length(lat_stop_cltk_var) <- lat_max
+length(lat_stop_cltk_ent) <- lat_max
+length(lat_stop_cltk_borda) <- lat_max
+length(lat_stop_iso) <- lat_max
+length(cltk_not_in_digiclass) <- lat_max
+length(digiclass_not_in_cltk) <- lat_max
+length(iso_only) <- lat_max
+length(perseus_only) <- lat_max
 
 m.all <- cbind(lat_stop_perseus,lat_stop_digiclass,cm,cv,ce,cb,lat_stop_iso,cltk_not_in_digiclass,digiclass_not_in_cltk,iso_only,perseus_only)
 colnames(m.all) <- c("Perseus","DigiClass","CLTK mean","CLTK var","CLTK ent","CLTK borda","ISO","CLTK not DigiClass","DigiClass not CLTK","ISO only","Perseus only")
 
 View(m.all)
+
+# Potential addenda to DigiClass list
+
+perseus_cm_ce_cv_cb_iso <- c(lat_stop_perseus,lat_stop_cltk_mean,lat_stop_cltk_var,lat_stop_cltk_ent,lat_stop_cltk_borda,lat_stop_iso)
+lat_not_in_digiclass <- setdiff(perseus_cm_ce_cv_cb_iso,lat_stop_digiclass)
+length(lat_not_in_digiclass)
+lat_not_in_digiclass <- sort(lat_not_in_digiclass)
