@@ -2,6 +2,10 @@
 
 Details about the sources and full lists can be found in the [R code used to compare the lists](https://github.com/aurelberra/stopwords/blob/master/stopwords_latin.R).
 
+## Current proposal
+
+See https://github.com/aurelberra/stopwords/blob/master/stopwords_latin.txt.
+
 ## Words currently in [DigiClass](http://wiki.digitalclassicist.org/Stopwords_for_Greek_and_Latin) list (95 words)
 
 a, ab, ac, ad, adhic, aliqui, aliquis, an, ante, apud, at, atque, aut, autem, cum, cur, de, deinde, dum, ego, enim, ergo, es, est, et, etiam, etsi, ex, fio, haud, hic, iam, jam, idem, igitur, ille, in, infra, inter, interim, ipse, is, ita, magis, modo, mox, nam, ne, nec, necque, neque, nisi, non, nos, o, ob, per, possum, post, pro, quae, quam, quare, qui, quia, quicumque, quidem, quilibet, quis, quisnam, quisquam, quisque, quisquis, quo, quoniam, sed, si, sic, sive, siue, sub, sui, sum, super, suus, tam, tamen, trans, tu, tum, ubi, uel, vel, uero, vero
@@ -61,6 +65,10 @@ anno, bellum, bibit, contra, cui, cuius, dei, deo, deus, dicitur, dig, dixit, do
 # Greek stopwords
 
 Details about the sources and full lists can be found in the [R code used to compare the lists](https://github.com/aurelberra/stopwords/blob/master/stopwords_greek.R).
+
+## Current proposal
+
+See https://github.com/aurelberra/stopwords/blob/master/stopwords_greek.txt.
 
 ## Words currently in [DigiClass](http://wiki.digitalclassicist.org/Stopwords_for_Greek_and_Latin) list (159 words)
 
