@@ -64,6 +64,9 @@ anno, bellum, bibit, contra, cui, cuius, dei, deo, deus, dicitur, dig, dixit, do
         * erat, erant, esse, esset, fuit, sit, sunt
     * Noun "res"
         * re, rebus, rem, res
+* Additions suggested by Peter Heslin on Digital Classicist listserv (2017-10-16, [source](https://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=DIGITALCLASSICIST;a0f93c9c.1710))
+    * caveat: "I generated that list when looking at frequencies in a small subset of Latin epic"
+    * sum, possum, facio, do, dico, video, fero, facio, meus, tuus, suus, res, ille, hic, ipse, qui, quis, venio, habeo, omnis, voco, inquam
 
 
 # Greek stopwords
