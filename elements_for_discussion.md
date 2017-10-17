@@ -1,3 +1,7 @@
+# Project status
+
+Lists have been implemented in Voyant Tools on 2017-10-16. They have to be refined and documented: this is still an ongoing discussion.
+
 # Latin stopwords
 
 Details about the sources and full lists can be found in the [R code used to compare the lists](https://github.com/aurelberra/stopwords/blob/master/stopwords_latin.R).
@@ -60,6 +64,14 @@ anno, bellum, bibit, contra, cui, cuius, dei, deo, deus, dicitur, dig, dixit, do
         * erat, erant, esse, esset, fuit, sit, sunt
     * Noun "res"
         * re, rebus, rem, res
+* Additions suggested by Peter Heslin on Digital Classicist listserv (2017-10-16, [source](https://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=DIGITALCLASSICIST;a0f93c9c.1710))
+    * caveat: "I generated that list when looking at frequencies in a small subset of Latin epic"
+    * sum, possum, facio, do, dico, video, fero, facio, venio, habeo, voco, inquam
+    * meus, tuus, suus
+    * ille, hic, ipse
+    * omnis
+    * qui, quis
+    * res [already listed]
 
 
 # Greek stopwords
