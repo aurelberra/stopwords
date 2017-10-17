@@ -1,6 +1,12 @@
 # Project status
 
-Lists have been implemented in Voyant Tools on 2017-10-16. They have to be refined and documented: this is still an ongoing discussion.
+* 2017-10-16 Both lists have been implemented in Voyant Tools. They now have to be refined and better documented: this is still an ongoing discussion.
+
+# TODO
+
+* Decide what categories have to be extended and what paradigms should be completed (for lack of clear statistical motivation based on explicit corpora)
+* Integrate [DCC core lists](http://dcc.dickinson.edu/vocab/core-vocabulary) – or explicitly base both lists on them?
+* Explain rationale and update lists on [DigiClass wiki](http://wiki.digitalclassicist.org/Stopwords_for_Greek_and_Latin)
 
 # Latin stopwords
 
@@ -152,6 +158,3 @@ See https://github.com/aurelberra/stopwords/blob/master/stopwords_greek.txt.
         * …
     * Verb "εἰμί"
         * …
-
-
-# TODO: Explain rationale and update list on DigiClass wiki
