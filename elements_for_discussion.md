@@ -1,3 +1,7 @@
+# Project status
+
+Lists have been implemented in Voyant Tools on 2017-10-16. They have to be refined and documented: this is still an ongoing discussion.
+
 # Latin stopwords
 
 Details about the sources and full lists can be found in the [R code used to compare the lists](https://github.com/aurelberra/stopwords/blob/master/stopwords_latin.R).
