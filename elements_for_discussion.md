@@ -115,11 +115,13 @@ See https://github.com/aurelberra/stopwords/blob/master/stopwords_greek.txt.
 * Suggested additions, with lunate sigma variants: αἱ, αἳ, αἵ, αὖ, γα, γοῦν, εἰμὶ, εἴ, εἴτε, καίτοι, καθ, κατ, κἀν, κἂν, μήτε, μεθ, μετ, μἐν, μὴν, ξύν, ξὺν, οἳ, οἷς, οἷϲ, οὐδ, οὐδὲν, οὐχὶ, οὓς, οὓϲ, οὕτω, οὗ, παρ, ποτε, που, ποῦ, προ, πρὸ, πως, πωϲ, τινα, τοι, τότε, τὶς, τὶϲ, τᾶς, τᾶϲ, ἀπ, ἀφ, ἃ, ἅμα, ἐξ, ἐπεὶ, ἐστι, ἐϲτι, ἐφ, ἣ, ἥ, ἧς, ἧϲ, ἵνα, ὃ, ὃδε, ὃν, ὅ, ὅθεν, ὅπερ, ὅτε, ὑπ, ὑπὲρ, ὥς, ὥϲ, ᾧ
 * Remove "δαίς", strange choice from Perseus?
     * with orthographic variants: δαίς, δαίσ, δαίϲ, δαὶς, δαὶσ, δαὶϲ
+* Why include ὑμός, rare Epic form, and not ὑμέτερος? Why not ὑμεῖς and ἡμεῖς?
 * Add systematically variants with
     * acute/grave accent on last syllable
     * usual/lunate/final sigma
     * iota subscript/adscript
 * Add relevant dialectal forms, e.g. of the articles?
+* Add *all* possible elisions
 * Add abbreviated forms with apostrophe?
     * in which case, add both straight and curly quote (i.e. \' and ’)?
     * only δι, or also δι' and δι’?, etc.
