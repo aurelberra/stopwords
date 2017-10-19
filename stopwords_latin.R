@@ -95,3 +95,29 @@ perseus_cm_ce_cv_cb_iso <- c(lat_stop_perseus,lat_stop_cltk_mean,lat_stop_cltk_v
 lat_not_in_digiclass <- setdiff(perseus_cm_ce_cv_cb_iso,lat_stop_digiclass)
 length(lat_not_in_digiclass)
 lat_not_in_digiclass <- sort(lat_not_in_digiclass)
+
+# Compare with DCC latin list
+
+dcc_latin <- scan("data/data_dcc/dcc_latin_lemmas.txt", what = "character", sep = "\n")
+dcc_latin <- gsub("ā", "a", dcc_latin)
+dcc_latin <- gsub("ā", "a", dcc_latin)
+dcc_latin <- gsub("ē", "e", dcc_latin)
+dcc_latin <- gsub("ī", "i", dcc_latin)
+dcc_latin <- gsub("ī", "i", dcc_latin)
+dcc_latin <- gsub("ō", "o", dcc_latin)
+dcc_latin <- gsub("ō", "o", dcc_latin)
+dcc_latin <- gsub("ū", "u", dcc_latin)
+dcc_latin <- gsub("ū", "u", dcc_latin)
+
+current_latin <- scan("stopwords_latin.txt", what = "character", sep = "\n")
+
+v.dcc_latin_100 <- as.vector(dcc_latin[1:100])
+addenda_dcc_latin_100 <- setdiff(v.dcc_latin_100,current_latin)
+v.dcc_latin_200 <- as.vector(dcc_latin[1:200])
+addenda_dcc_latin_200 <- setdiff(v.dcc_latin_200,current_latin)
+v.dcc_latin_all <- as.vector(dcc_latin)
+addenda_dcc_latin <- setdiff(v.dcc_latin_all,current_latin)
+
+View(addenda_dcc_latin)
+
+not_in_dcc_latin_100 <- setdiff(current_latin,v.dcc_latin_100)
