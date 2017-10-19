@@ -5,6 +5,8 @@
 
 # TODO
 
-* Decide what categories have to be extended and what paradigms should be completed (for lack of clear statistical motivation based on explicit corpora)
+* Clean up the lists: remove legacy oddities and harmonise paradigms currently included.
+* Decide what categories have to be extended and what paradigms should be completed (for lack of clear statistical motivation based on explicit corpora).
 * Integrate [DCC core lists](http://dcc.dickinson.edu/vocab/core-vocabulary) – or explicitly base both lists on them?
-* Explain rationale and update lists on [DigiClass wiki](http://wiki.digitalclassicist.org/Stopwords_for_Greek_and_Latin)
+* Submit improved versions to Voyant Tools.
+* Explain rationale and update lists on [DigiClass wiki](http://wiki.digitalclassicist.org/Stopwords_for_Greek_and_Latin).
