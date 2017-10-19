@@ -85,5 +85,8 @@ v.dcc_greek_all <- as.vector(dcc_greek)
 addenda_dcc_greek <- setdiff(v.dcc_greek_all,current_greek)
 
 View(addenda_dcc_greek)
+<<<<<<< HEAD
 
 not_in_dcc_greek_100 <- setdiff(current_greek,v.dcc_greek_100)
+=======
+>>>>>>> 02340e4d25d2d30fb55941acc6222ecd1a3ee4c0
