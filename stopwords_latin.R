@@ -121,4 +121,3 @@ addenda_dcc_latin <- setdiff(v.dcc_latin_all,current_latin)
 View(addenda_dcc_latin)
 
 not_in_dcc_latin_100 <- setdiff(current_latin,v.dcc_latin_100)
->>>>>>> 02340e4d25d2d30fb55941acc6222ecd1a3ee4c0
