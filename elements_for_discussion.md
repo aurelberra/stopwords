@@ -1,6 +1,6 @@
 # Project status and TODOs
 
-See the [README file](https://github.com/aurelberra/stopwords/edit/master/README.md).
+See the [README file](https://github.com/aurelberra/stopwords/blob/master/README.md).
 
 # Latin stopwords
 
