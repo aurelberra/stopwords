@@ -99,7 +99,7 @@ Details about the sources and full lists can be found in the [R code used to com
 * [x] Add, with lunate sigma variants: αἱ, αἳ, αἵ, αὖ, γα, γοῦν, εἰμὶ, εἴ, εἴτε, καίτοι, καθ, κατ, κἀν, κἂν, μήτε, μεθ, μετ, μἐν, μὴν, ξύν, ξὺν, οἳ, οἷς, οἷϲ, οὐδ, οὐδὲν, οὐχὶ, οὓς, οὓϲ, οὕτω, οὗ, παρ, ποτε, που, ποῦ, προ, πρὸ, πως, πωϲ, τινα, τοι, τότε, τὶς, τὶϲ, τᾶς, τᾶϲ, ἀπ, ἀφ, ἃ, ἅμα, ἐξ, ἐπεὶ, ἐστι, ἐϲτι, ἐφ, ἣ, ἥ, ἧς, ἧϲ, ἵνα, ὃ, ὃδε, ὃν, ὅ, ὅθεν, ὅπερ, ὅτε, ὑπ, ὑπὲρ, ὥς, ὥϲ, ᾧ
 * [x] Remove "δαίς", strange choice from Perseus?
     * [x] with orthographic variants: δαίς, δαίσ, δαίϲ, δαὶς, δαὶσ, δαὶϲ
-* [ ] Remove ὑμός, rare Epic form – include ὑμέτερος, ὑμεῖς, ἡμεῖς?
+* [x] Remove ὑμός, rare Epic form (rather include ὑμέτερος, ὑμεῖς, ἡμεῖς?)
 * [ ] Add systematically variants with
     * [x] acute/grave accent on last syllable
     * [x] usual/lunate/final sigma
