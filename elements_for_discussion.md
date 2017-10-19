@@ -103,7 +103,7 @@ Details about the sources and full lists can be found in the [R code used to com
 * [ ] Add systematically variants with
     * [x] acute/grave accent on last syllable
     * [x] usual/lunate/final sigma
-    * iota subscript/adscript
+    * [ ] iota subscript/adscript
 * [ ] Add relevant dialectal forms, e.g. of the articles?
 * [ ] Add *all* possible elisions
 * [ ] Add abbreviated forms with apostrophe?
