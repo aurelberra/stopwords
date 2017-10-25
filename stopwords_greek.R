@@ -12,7 +12,8 @@ grk_stop_perseus <- c("ἄλλος", "ἄν", "ἄρα", "ἀλλ'", "ἀλλά"
 grk_stop_digiclass <- c("ἄλλος", "ἄλλοσ", "ἄν", "ἂν", "ἄρα", "ἀλλ", "ἀλλ'", "ἀλλ’", "ἀλλά", "ἀλλὰ", "ἀπό", "ἀπὸ", "αὐτός", "αὐτόσ", "αὐτὸς", "αὐτὸσ", "δ", "δ'", "δ’", "δαί", "δαὶ", "δαίς", "δαίσ", "δαὶς", "δαὶσ", "δέ", "δὲ", "δή", "δὴ", "διά", "διὰ", "ἑαυτοῦ", "ἔτι", "ἐάν", "ἐὰν", "ἐγώ", "ἐγὼ", "ἐκ", "ἐμός", "ἐμόσ", "ἐμὸς", "ἐμὸσ", "ἐν", "ἐπί", "ἐπὶ", "εἰ", "εἴμι", "εἰμί", "εἰς", "εἰσ", "γάρ", "γὰρ", "γᾶ", "γε", "ἡ", "ἤ", "ἢ", "καί", "καὶ", "κατά", "κατὰ", "μέν", "μὲν", "μετά", "μετὰ", "μή", "μὴ", "ὁ", "ὅδε", "ὅς", "ὅσ", "ὃς", "ὃσ", "ὅστις", "ὅστισ", "ὅτι", "οἱ", "οὕτως", "οὕτωσ", "οὗτος", "οὗτοσ", "οὐ", "οὔτε", "οὖν", "οὐδέ", "οὐδὲ", "οὐδείς", "οὐδείσ", "οὐδεὶς", "οὐδεὶσ", "οὐκ", "οὔκ", "οὐχ", "παρά", "παρὰ", "περί", "περὶ", "πρός", "πρόσ", "πρὸς", "πρὸσ", "σός", "σόσ", "σὸς", "σὸσ", "σύ", "σὺ", "σύν", "σὺν", "τά", "τὰ", "τάσ", "τάς", "τὰσ", "τὰς", "ταῖς", "ταῖσ", "τε", "τήν", "τὴν", "τῆς", "τῆσ", "τῇ", "τι", "τί", "τὶ", "τίς", "τίσ", "τις", "τισ", "τό", "τὸ", "τόν", "τὸν", "τοί", "τοὶ", "τοιοῦτος", "τοιοῦτοσ", "τοῖς", "τοῖσ", "τούς", "τούσ", "τοὺς", "τοὺσ", "τοῦ", "τῶν", "τῷ", "ὑμός", "ὑμὸς", "ὑμόσ", "ὑμὸσ", "ὑπέρ", "ὑπό", "ὑπὸ", "ὥσ", "ὥστε", "ὡς", "ὡσ", "ὦ")
 
 # Classical Language Toolkit Latin
-## CLTK currently uses the Perseus list with grave accent variants added as stated here: https://github.com/cltk/cltk/blob/master/cltk/stop/greek/stops.py
+## CLTK currently uses the Perseus list with grave accent variants added
+## https://github.com/cltk/cltk/blob/master/cltk/stop/greek/stops.py
 
 grk_stop_cltk <- c("ἀλλ", "ἀλλὰ", "ἀλλά", "ἀπὸ", "ἀπό", "ἂν", "ἄλλος", "ἄν", "ἄρα", "αὐτὸς", "αὐτός", "γε", "γὰρ", "γάρ", "δ", "δαὶ", "δαὶς", "δαί", "δαίς", "διὰ", "διά", "δὲ", "δέ", "δὴ", "δή", "ἐὰν", "ἐάν", "ἑαυτοῦ", "ἐγὼ", "ἐγώ", "εἰ", "εἰμὶ", "εἰμί", "εἴμι", "εἰς", "ἐκ", "ἐμὸς", "ἐμός", "ἐν", "ἐξ", "ἐπὶ", "ἐπί", "ἔτι", "ἡ", "ἢ", "ἤ", "κατὰ", "κατά", "καὶ", "καί", "μετὰ", "μετά", "μὲν", "μέν", "μὴ", "μή", "ξύν", "ξὺν", "ὁ", "ὃδε", "ὅδε", "οἱ", "ὅς", "ὃς", "ὅστις", "ὅτι", "οὐ", "οὐδεὶς", "οὐδείς", "οὐδὲ", "οὐδέ", "οὐκ", "οὖν", "οὔτε", "οὗτος", "οὕτως", "παρὰ", "παρά", "περὶ", "περί", "πρὸς", "πρός", "σύν", "σὸς", "σός", "σὺ", "σὺν", "σὺν", "σύ", "σύν", "τε", "τι", "τις", "τοιοῦτος", "τοὶ", "τοί", "τοὺς", "τούς", "τοῖς", "τοῦ", "τὰ", "τά", "τᾶς", "τῇ", "τὴν", "τήν", "τῆς", "τὶ", "τί", "τὶς", "τίς", "τὸ", "τό", "τὸν", "τόν", "τῶν", "τῷ", "ὑμὸς", "ὑμός", "ὑπὲρ", "ὑπέρ", "ὑπὸ", "ὑπό", "ὦ", "ὡς", "ὥστε")
 
@@ -24,33 +25,42 @@ grk_stop_pharos <- c("ἃ", "αἱ", "αἵ", "αἳ", "ἄν", "ἀλλ'", "ἀ
 
 # Compare lists
 
-cltk_not_in_perseus <- setdiff(grk_stop_cltk,grk_stop_perseus)
+cltk_not_in_perseus <- setdiff(grk_stop_cltk, grk_stop_perseus)
 length(cltk_not_in_perseus)
 cltk_not_in_perseus <- sort(cltk_not_in_perseus)
 
-cltk_not_in_digiclass <- setdiff(grk_stop_cltk,grk_stop_digiclass)
+cltk_not_in_digiclass <- setdiff(grk_stop_cltk, grk_stop_digiclass)
 length(cltk_not_in_digiclass)
 cltk_not_in_digiclass <- sort(cltk_not_in_digiclass)
 
-digiclass_not_in_cltk <- setdiff(grk_stop_digiclass,grk_stop_cltk)
+digiclass_not_in_cltk <- setdiff(grk_stop_digiclass, grk_stop_cltk)
 length(digiclass_not_in_cltk)
 digiclass_not_in_cltk <- sort(digiclass_not_in_cltk)
 
-digiclass_cltk <- c(grk_stop_digiclass,grk_stop_cltk)
+digiclass_cltk <- c(grk_stop_digiclass, grk_stop_cltk)
 
-perseus_only <- setdiff(grk_stop_perseus,digiclass_cltk)
+perseus_only <- setdiff(grk_stop_perseus, digiclass_cltk)
 length(perseus_only)
 perseus_only <- sort(perseus_only)
 
-perseus_digiclass_cltk <- c(grk_stop_perseus,grk_stop_digiclass,grk_stop_cltk)
+perseus_digiclass_cltk <-
+    c(grk_stop_perseus, grk_stop_digiclass, grk_stop_cltk)
 
-pharos_only <- setdiff(grk_stop_pharos,perseus_digiclass_cltk)
+pharos_only <- setdiff(grk_stop_pharos, perseus_digiclass_cltk)
 length(pharos_only)
 pharos_only <- sort(pharos_only)
 
 # View all lists
 
-grk_max <- max(length(grk_stop_perseus),length(grk_stop_digiclass),length(grk_stop_cltk),length(grk_stop_pharos),length(cltk_not_in_perseus),length(cltk_not_in_digiclass))
+grk_max <-
+    max(
+        length(grk_stop_perseus),
+        length(grk_stop_digiclass),
+        length(grk_stop_cltk),
+        length(grk_stop_pharos),
+        length(cltk_not_in_perseus),
+        length(cltk_not_in_digiclass)
+    )
 length(grk_stop_perseus) <- grk_max
 length(grk_stop_digiclass) <- grk_max
 length(grk_stop_cltk) <- grk_max
@@ -61,47 +71,80 @@ length(digiclass_not_in_cltk) <- grk_max
 length(pharos_only) <- grk_max
 length(perseus_only) <- grk_max
 
-m.all <- cbind(grk_stop_perseus,grk_stop_digiclass,grk_stop_cltk,grk_stop_pharos,cltk_not_in_perseus,cltk_not_in_digiclass,digiclass_not_in_cltk,pharos_only,perseus_only)
-colnames(m.all) <- c("Perseus","DigiClass","CLTK","Pharos","CLTK not Perseus","CLTK not DigiClass","DigiClass not CLTK","Pharos only","Perseus only")
+m.all <-
+    cbind(
+        grk_stop_perseus,
+        grk_stop_digiclass,
+        grk_stop_cltk,
+        grk_stop_pharos,
+        cltk_not_in_perseus,
+        cltk_not_in_digiclass,
+        digiclass_not_in_cltk,
+        pharos_only,
+        perseus_only
+    )
+colnames(m.all) <-
+    c(
+        "Perseus",
+        "DigiClass",
+        "CLTK",
+        "Pharos",
+        "CLTK not Perseus",
+        "CLTK not DigiClass",
+        "DigiClass not CLTK",
+        "Pharos only",
+        "Perseus only"
+    )
 
 View(m.all)
 
 # Potential addenda to DigiClass list
 
-perseus_cltk_pharos <- c(grk_stop_perseus,grk_stop_cltk,grk_stop_pharos)
-grk_not_in_digiclass <- setdiff(perseus_cltk_pharos,grk_stop_digiclass)
+perseus_cltk_pharos <-
+    c(grk_stop_perseus, grk_stop_cltk, grk_stop_pharos)
+grk_not_in_digiclass <-
+    setdiff(perseus_cltk_pharos, grk_stop_digiclass)
 length(grk_not_in_digiclass)
 grk_not_in_digiclass <- sort(grk_not_in_digiclass)
 
 # Compare with DCC greek list
 
-dcc_greek <- scan("data/data_dcc/dcc_greek_lemmas.txt", what = "character", sep = "\n")
-current_greek <- scan("stopwords_greek.txt", what = "character", sep = "\n")
+dcc_greek <-
+    scan("data/data_dcc/dcc_greek_lemmas.txt",
+         what = "character",
+         sep = "\n")
+current_greek <-
+    scan("stopwords_greek.txt", what = "character", sep = "\n")
 
 v.dcc_greek_100 <- as.vector(dcc_greek[1:100])
-addenda_dcc_greek_100 <- setdiff(v.dcc_greek_100,current_greek)
+addenda_dcc_greek_100 <- setdiff(v.dcc_greek_100, current_greek)
 v.dcc_greek_200 <- as.vector(dcc_greek[1:200])
-addenda_dcc_greek_200 <- setdiff(v.dcc_greek_200,current_greek)
+addenda_dcc_greek_200 <- setdiff(v.dcc_greek_200, current_greek)
 v.dcc_greek_all <- as.vector(dcc_greek)
-addenda_dcc_greek <- setdiff(v.dcc_greek_all,current_greek)
+addenda_dcc_greek <- setdiff(v.dcc_greek_all, current_greek)
 
 # View(addenda_dcc_greek)
 
-not_in_dcc_greek_100 <- setdiff(current_greek,v.dcc_greek_100)
+not_in_dcc_greek_100 <- setdiff(current_greek, v.dcc_greek_100)
 
 # Demosthenes most frequent words (no lemmatisation)
 
 dem_top_100 <- c("καὶ", "τῶν", "μὲν", "τὴν", "δὲ", "δ", "τὸν", "τοῦ", "τοὺς", "ἂν", "γὰρ", "τὰ", "τὸ", "τῆς", "ὡς", "τοῖς", "ἐν", "τῷ", "ὁ", "ἢ", "μὴ", "πρὸς", "οὐ", "εἰ", "οὐκ", "εἰς", "ὅτι", "ὦ", "περὶ", "ἄνδρες", "ὑμῖν", "ἀλλ", "τούτων", "εἶναι", "ὑμᾶς", "ταῦτα", "ἀλλὰ", "τῇ", "οἱ", "τὰς", "ὧν", "ἐκ", "τις", "τοίνυν", "τι", "ἐπὶ", "ἐγὼ", "ὑμῶν", "νῦν", "οὖν", "ἀθηναῖοι", "ἦν", "μοι", "ὑπὲρ", "οὐδ", "ἡ", "τοῦτο", "τί", "ταῦτ", "παρ", "ἃ", "διὰ", "παρὰ", "οὗτος", "οὐδὲν", "οὐδὲ", "αὐτῷ", "τούτου", "αὐτὸν", "κατὰ", "τε", "τοῦτον", "ὑμεῖς", "δικασταί", "οὔτε", "αὐτῶν", "λέγειν", "δεῖ", "ἄν", "ἐστιν", "μετὰ", "αὐτὸς", "ἐξ", "οὐχ", "τούτοις", "ἐὰν", "δὴ", "αὐτοῦ", "τούτῳ", "αὐτοῖς", "ὑπὸ", "δίκην", "οἷς", "δι", "τοῦτ", "πάντα", "νόμον", "ἐπειδὴ", "πρῶτον", "δέ")
 
-dem_top_500 <- scan("/Users/aurel/Documents/github/stopwords/data/dem_top_500.txt", what = "character", sep = "\n")
+dem_top_500 <-
+    scan(
+        "/Users/aurel/Documents/github/stopwords/data/dem_top_500.txt",
+        what = "character",
+        sep = "\n"
+    )
 
 # bug: length? encoding?
 # dem_top_500 <- c("καὶ", "τῶν", "μὲν", "τὴν", "δὲ", "δ", "τὸν", "τοῦ", "τοὺς", "ἂν", "γὰρ", "τὰ", "τὸ", "τῆς", "ὡς", "τοῖς", "ἐν", "τῷ", "ὁ", "ἢ", "μὴ", "πρὸς", "οὐ", "εἰ", "οὐκ", "εἰς", "ὅτι", "ὦ", "περὶ", "ἄνδρες", "ὑμῖν", "ἀλλ", "τούτων", "εἶναι", "ὑμᾶς", "ταῦτα", "ἀλλὰ", "τῇ", "οἱ", "τὰς", "ὧν", "ἐκ", "τις", "τοίνυν", "τι", "ἐπὶ", "ἐγὼ", "ὑμῶν", "νῦν", "οὖν", "ἀθηναῖοι", "ἦν", "μοι", "ὑπὲρ", "οὐδ", "ἡ", "τοῦτο", "τί", "ταῦτ", "παρ", "ἃ", "διὰ", "παρὰ", "οὗτος", "οὐδὲν", "οὐδὲ", "αὐτῷ", "τούτου", "αὐτὸν", "κατὰ", "τε", "τοῦτον", "ὑμεῖς", "δικασταί", "οὔτε", "αὐτῶν", "λέγειν", "δεῖ", "ἄν", "ἐστιν", "μετὰ", "αὐτὸς", "ἐξ", "οὐχ", "τούτοις", "ἐὰν", "δὴ", "αὐτοῦ", "τούτῳ", "αὐτοῖς", "ὑπὸ", "δίκην", "οἷς", "δι", "τοῦτ", "πάντα", "νόμον", "ἐπειδὴ", "πρῶτον", "δέ", "γάρ", "μόνον", "ὥστε", "ποιεῖν", "ἔχειν", "ἐφ", "εἰπεῖν", "γε", "πόλει", "οὕτως", "οὕτω", "ἡμῖν", "ὥσπερ", "οὗτοι", "γ", "τούτους", "οὔτ", "πάντων", "μᾶλλον", "ἐμοῦ", "εἴ", "καθ", "αὐτοὺς", "μηδὲν", "πῶς", "ἵνα", "ἄλλων", "ἡμῶν", "τότε", "ἔτι", "ὃ", "ταῖς", "δεῖν", "νόμους", "ὅπως", "ἡμᾶς", "πόλιν", "οἶμαι", "πόλεως", "μὴν", "ἐμοὶ", "ὅ", "ἤδη", "ταύτην", "ἣν", "καίτοι", "ὃν", "ἁπάντων", "λέγω", "ὅταν", "τίς", "πάλιν", "ταῦθ", "πολλὰ", "δικαίως", "ἐστι", "ἔχει", "αὑτοῦ", "μηδ", "οὓς", "μέν", "ἀληθῆ", "πρότερον", "ἔστιν", "γενέσθαι", "τρόπον", "χρήματα", "πάντες", "ἀπὸ", "δίκαιον", "ἔχων", "οὐδεὶς", "εὖ", "ὃς", "ἡμεῖς", "με", "νόμων", "λαβεῖν", "τ", "ἐκείνου", "λέγε", "μηδὲ", "ἔστι", "ἐστὶν", "καλῶς", "μήτε", "πάντας", "δήπου", "ἐπ", "ἵν", "οὗ", "ὢν", "μή", "χρόνον", "πολλῶν", "ἀνθρώπων", "αὐτοὶ", "ἑαυτοῦ", "ἴσως", "δίκαια", "ἐκεῖνος", "ὄντων", "σὺ", "ἀργύριον", "τοῦθ", "αὐτὴν", "μάρτυρας", "κἂν", "οὐχὶ", "μου", "οὐδέν", "χρημάτων", "ἀρχῆς", "πραγμάτων", "λόγον", "νόμος", "ὥστ", "αὑτῷ", "προσήκει", "τοιαῦτα", "ἔσται", "πατὴρ", "πράττειν", "ἕκαστος", "ᾖ", "κατ", "ὅτε", "αἱ", "ἐμὲ", "πᾶσιν", "ποτ", "ᾧ", "ἄλλοις", "ὅσα", "εἰκότως", "λόγους", "ὄντα", "φίλιππος", "μαρτυρίας", "ὁτιοῦν", "ὑπ", "φίλιππον", "ὑφ", "δοκεῖ", "ἅπαντα", "νυνὶ", "αὑτὸν", "καί", "οὔθ", "ἃς", "ναῦν", "ἀθηναίων", "μάλιστα", "πατρὸς", "χρὴ", "μαρτυρίαν", "εἶτα", "ἧς", "ὀρθῶς", "τότ", "εἴη", "αὐτόν", "ἐστίν", "μνᾶς", "ἁγνίου", "ἄλλους", "εὐθὺς", "νόμοι", "κακῶς", "ποιῆσαι", "νὴ", "ὅς", "οὐκοῦν", "ἄλλο", "εἰρήνην", "ἐκεῖνον", "πάνθ", "βούλομαι", "νομίζω", "πάντ", "ταύτης", "ὕστερον", "πόλις", "δοῦναι", "ἔφη", "αὑτῶν", "ἐστὶ", "ὅμως", "σοι", "ἅπαντας", "λαβὼν", "γέγονεν", "ἑλλήνων", "μήτ", "νόμου", "οὑτοσὶ", "ἐάν", "μέντοι", "ψήφισμα", "ἐκείνων", "ἦσαν", "τοιοῦτον", "ἀντὶ", "αὐτῆς", "λέγων", "πράγματα", "εἴπερ", "πολλάκις", "φιλίππου", "ψευδῆ", "ἐγώ", "ἐκείνῳ", "τινες", "χάριν", "ὅστις", "φιλίππῳ", "οἳ", "ὅτ", "ἀκούειν", "ἕκαστον", "ἐπειδὰν", "ἡγοῦμαι", "πλὴν", "ἄξιον", "ἅπαντες", "ἔδει", "μετ", "πόλεμον", "δήμῳ", "πολλοὺς", "λέγει", "λόγῳ", "μαρτυρια", "πρὶν", "ἀεὶ", "αὐτὸ", "νόμοις", "χρήματ", "εἷς", "μαρτυριαι", "πᾶσι", "ἀφ", "δύο", "οὐδενὸς", "αὐτῇ", "οἶδ", "ὄντας", "των", "πρᾶγμα", "αὑτοῖς", "δῆμος", "ἕως", "ἅμα", "ἓν", "ἰδίᾳ", "οὖσαν", "πολὺ", "σαφῶς", "δῆλον", "ὁμοίως", "τοιούτων", "δήμου", "ἐγένετο", "νομοσ", "πάνυ", "τιν", "δῆμον", "δί", "κοινῇ", "οὐδένα", "πράγματ", "εἰσιν", "ᾗ", "εἰρήνης", "ὅλως", "πατρὶ", "τουτονὶ", "δεινὸν", "θεῶν", "μέρος", "πρέσβεις", "ἄλλος", "ἀποδοῦναι", "λόγος", "μεθ", "οὑτοσί", "ἀκοῦσαι", "ἀκριβῶς", "ἀνάγκη", "ἀνθρώπους", "δίκας", "λόγου", "λόγων", "ὄντες", "παρα", "τίνος", "εἶτ", "πρὸ", "πολλῷ", "σκοπεῖν", "τοὐναντίον", "φανερῶς", "ἄνθρωπον", "δή", "εἰδέναι", "ἐκείνους", "μηδεὶς", "οὐσίαν", "πρᾶγμ", "ἔπειτα", "λαβὲ", "παθεῖν", "πλέον", "δία", "ἐμέ", "κύριος", "ὄντος", "ταὐτὰ", "ἄλλον", "ἔγωγ", "μάλιστ", "πεπραγμένων", "τἄλλα", "τοσοῦτον", "αὐτούς", "γένοιτο", "ἴστε", "οἰκίαν", "ἀργυρίου", "δέκα", "δίκαι", "ἕνεκα", "θηβαίους", "μ", "μὰ", "οἴομαι", "πολιτῶν", "προῖκα", "προσῆκεν", "φησιν", "ἄλλ", "δικαστήριον", "δυοῖν", "ἔχοντες", "ποιεῖ", "συνθήκας", "ἄρ", "γίγνεται", "δεινὰ", "ἑαυτῷ", "ἐκείνοις", "ἐναντίον", "παῖδας", "πολλοὶ", "πώποτε", "τριάκοντα", "ἀδικεῖν", "ἄνευ", "πολέμου", "σοῦ", "ἀπο", "ἄρα", "ἐπεὶ", "ἐπι", "κελεύει", "ὅπερ", "πόλλ", "δεῖξαι", "εἰσὶν", "εἶχεν", "πατέρα", "χιλίας", "χρόνῳ", "χωρὶς", "λαμβάνειν", "ταύτας", "ἄλλως", "ἔσεσθαι", "θεοὺς", "νοῦν", "ποιήσασθαι", "χρῆσθαι", "βοηθεῖν", "δόξαν", "πόλεις", "πολιτείας", "τἀληθῆ", "ὑμετέρων", "ἄλλοι", "ἅπασι", "ἁπλῶς", "ἐξεῖναι", "ὁρῶ", "σκεύη", "τάλαντα", "ἀδίκως", "ἅπασιν", "δημοσθένης", "οἷον", "προσ")
 
-addenda_dem_top_100 <- setdiff(dem_top_100,current_greek)
+addenda_dem_top_100 <- setdiff(dem_top_100, current_greek)
 addenda_dem_top_100
-addenda_dem_top_500 <- setdiff(dem_top_500,current_greek)
+addenda_dem_top_500 <- setdiff(dem_top_500, current_greek)
 addenda_dem_top_500
 
-not_in_dem_top_100 <- setdiff(current_greek,dem_top_100)
+not_in_dem_top_100 <- setdiff(current_greek, dem_top_100)
 not_in_dem_top_100
