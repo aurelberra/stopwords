@@ -200,3 +200,16 @@ addenda_cic_top_500
 
 not_in_cic_top_100 <- setdiff(current_latin, cic_top_100)
 not_in_cic_top_100
+
+# PHI most frequent words (no lemmatisation)
+
+phi_top_100 <- c("et", "in", "est", "non", "ut", "cum", "si", "ad", "quod", "qui", "sed", "quae", "ex", "a", "quam", "de", "esse", "aut", "hoc", "nec", "se", "sunt", "etiam", "enim", "quid", "per", "ab", "sit", "atque", "id", "autem", "quo", "me", "ne", "te", "ac", "nam", "tamen", "eius", "haec", "mihi", "ita", "iam", "neque", "eo", "quidem", "pro", "ea", "quoque", "tibi", "uel", "e", "quia", "ego", "nihil", "eum", "modo", "an", "libro", "sic", "nunc", "qua", "quem", "inter", "quibus", "esset", "erat", "causa", "m", "nisi", "hic", "potest", "tu", "tum", "ipse", "quis", "fuit", "ille", "ante", "sine", "res", "omnia", "his", "i", "idem", "sibi", "ubi", "illa", "post", "rem", "ei", "tam", "re", "c", "s", "apud", "is", "vel", "magis", "tantum")
+
+addenda_phi_top_100 <- setdiff(phi_top_100, current_latin)
+addenda_phi_top_100
+
+not_in_phi_top_100 <- setdiff(current_latin, phi_top_100)
+not_in_phi_top_100
+
+setdiff(phi_top_100, cic_top_100)
+setdiff(addenda_phi_top_100, addenda_cic_top_100)
