@@ -11,7 +11,7 @@ grk_stop_perseus <- c("ἄλλος", "ἄν", "ἄρα", "ἀλλ'", "ἀλλά"
 
 grk_stop_digiclass <- c("ἄλλος", "ἄλλοσ", "ἄν", "ἂν", "ἄρα", "ἀλλ", "ἀλλ'", "ἀλλ’", "ἀλλά", "ἀλλὰ", "ἀπό", "ἀπὸ", "αὐτός", "αὐτόσ", "αὐτὸς", "αὐτὸσ", "δ", "δ'", "δ’", "δαί", "δαὶ", "δαίς", "δαίσ", "δαὶς", "δαὶσ", "δέ", "δὲ", "δή", "δὴ", "διά", "διὰ", "ἑαυτοῦ", "ἔτι", "ἐάν", "ἐὰν", "ἐγώ", "ἐγὼ", "ἐκ", "ἐμός", "ἐμόσ", "ἐμὸς", "ἐμὸσ", "ἐν", "ἐπί", "ἐπὶ", "εἰ", "εἴμι", "εἰμί", "εἰς", "εἰσ", "γάρ", "γὰρ", "γᾶ", "γε", "ἡ", "ἤ", "ἢ", "καί", "καὶ", "κατά", "κατὰ", "μέν", "μὲν", "μετά", "μετὰ", "μή", "μὴ", "ὁ", "ὅδε", "ὅς", "ὅσ", "ὃς", "ὃσ", "ὅστις", "ὅστισ", "ὅτι", "οἱ", "οὕτως", "οὕτωσ", "οὗτος", "οὗτοσ", "οὐ", "οὔτε", "οὖν", "οὐδέ", "οὐδὲ", "οὐδείς", "οὐδείσ", "οὐδεὶς", "οὐδεὶσ", "οὐκ", "οὔκ", "οὐχ", "παρά", "παρὰ", "περί", "περὶ", "πρός", "πρόσ", "πρὸς", "πρὸσ", "σός", "σόσ", "σὸς", "σὸσ", "σύ", "σὺ", "σύν", "σὺν", "τά", "τὰ", "τάσ", "τάς", "τὰσ", "τὰς", "ταῖς", "ταῖσ", "τε", "τήν", "τὴν", "τῆς", "τῆσ", "τῇ", "τι", "τί", "τὶ", "τίς", "τίσ", "τις", "τισ", "τό", "τὸ", "τόν", "τὸν", "τοί", "τοὶ", "τοιοῦτος", "τοιοῦτοσ", "τοῖς", "τοῖσ", "τούς", "τούσ", "τοὺς", "τοὺσ", "τοῦ", "τῶν", "τῷ", "ὑμός", "ὑμὸς", "ὑμόσ", "ὑμὸσ", "ὑπέρ", "ὑπό", "ὑπὸ", "ὥσ", "ὥστε", "ὡς", "ὡσ", "ὦ")
 
-# Classical Language Toolkit Latin
+# Classical Language Toolkit Greek
 ## CLTK currently uses the Perseus list with grave accent variants added
 ## https://github.com/cltk/cltk/blob/master/cltk/stop/greek/stops.py
 
@@ -107,7 +107,7 @@ grk_not_in_digiclass <-
 length(grk_not_in_digiclass)
 grk_not_in_digiclass <- sort(grk_not_in_digiclass)
 
-# Compare with DCC greek list
+# Compare with DCC Greek list
 
 dcc_greek <-
     scan("data/data_dcc/dcc_greek_lemmas.txt",
@@ -159,3 +159,12 @@ not_in_tlg_e_top_100
 
 setdiff(tlg_e_top_100, dem_top_100)
 setdiff(addenda_tlg_e_top_100, addenda_dem_top_100)
+
+tlg_top_1000 <-
+    scan(
+        "/Users/aurel/Documents/github/stopwords/data/tlg_top_1000.txt",
+        what = "character",
+        sep = "\n"
+    )
+
+addenda_tlg_top_1000 <- setdiff(tlg_top_1000, current_greek)
