@@ -151,7 +151,8 @@ lat_not_in_digiclass <-
     setdiff(perseus_cm_ce_cv_cb_iso, lat_stop_digiclass)
 length(lat_not_in_digiclass)
 lat_not_in_digiclass <- sort(lat_not_in_digiclass)
-# Compare with DCC latin list
+
+# Compare with DCC Latin list
 
 dcc_latin <-
     scan("data/data_dcc/dcc_latin_lemmas.txt",
@@ -201,7 +202,7 @@ addenda_cic_top_500
 not_in_cic_top_100 <- setdiff(current_latin, cic_top_100)
 not_in_cic_top_100
 
-# PHI most frequent words (no lemmatisation)
+# PHI 5 most frequent words (no lemmatisation)
 
 phi_top_100 <- c("et", "in", "est", "non", "ut", "cum", "si", "ad", "quod", "qui", "sed", "quae", "ex", "a", "quam", "de", "esse", "aut", "hoc", "nec", "se", "sunt", "etiam", "enim", "quid", "per", "ab", "sit", "atque", "id", "autem", "quo", "me", "ne", "te", "ac", "nam", "tamen", "eius", "haec", "mihi", "ita", "iam", "neque", "eo", "quidem", "pro", "ea", "quoque", "tibi", "uel", "e", "quia", "ego", "nihil", "eum", "modo", "an", "libro", "sic", "nunc", "qua", "quem", "inter", "quibus", "esset", "erat", "causa", "m", "nisi", "hic", "potest", "tu", "tum", "ipse", "quis", "fuit", "ille", "ante", "sine", "res", "omnia", "his", "i", "idem", "sibi", "ubi", "illa", "post", "rem", "ei", "tam", "re", "c", "s", "apud", "is", "vel", "magis", "tantum")
 
