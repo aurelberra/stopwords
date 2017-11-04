@@ -1,5 +1,10 @@
 # Stopwords: Latin
 
+# Current list
+
+current_latin <-
+    scan("stopwords_latin.txt", what = "character", sep = "\n")
+
 # Perseus Digital Library list
 ## http://www.perseus.tufts.edu/hopper/stopwords 2017-10-09
 
@@ -168,9 +173,6 @@ dcc_latin <- gsub("ō", "o", dcc_latin)
 dcc_latin <- gsub("ū", "u", dcc_latin)
 dcc_latin <- gsub("ū", "u", dcc_latin)
 
-current_latin <-
-    scan("stopwords_latin.txt", what = "character", sep = "\n")
-
 v.dcc_latin_100 <- as.vector(dcc_latin[1:100])
 addenda_dcc_latin_100 <- setdiff(v.dcc_latin_100, current_latin)
 v.dcc_latin_200 <- as.vector(dcc_latin[1:200])
@@ -214,3 +216,22 @@ not_in_phi_top_100
 
 setdiff(phi_top_100, cic_top_100)
 setdiff(addenda_phi_top_100, addenda_cic_top_100)
+
+phi_top_1000 <-
+    scan("data/phi_top_1000_lemmatised_corrected.txt",
+         what = "character",
+         sep = "\n")
+
+addenda_phi_top_1000 <- setdiff(phi_top_1000, current_latin)
+View(addenda_phi_top_1000)
+
+write_lines(addenda_phi_top_1000, "addenda_phi_top_1000.txt")
+
+phi_top_1000_selection <-
+    read_lines("data/phi_top_1000_selection.txt")
+View(phi_top_1000_selection)
+
+addenda_phi_top_1000_selection <- setdiff(phi_top_1000_selection, current_latin)
+View(addenda_phi_top_1000_selection)
+
+write_lines(addenda_phi_top_1000_selection, "addenda_phi_top_1000_selection.txt")

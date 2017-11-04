@@ -1,5 +1,10 @@
 # Stopwords: Greek
 
+# Current list
+
+current_greek <-
+    scan("stopwords_greek.txt", what = "character", sep = "\n")
+
 # Perseus Digital Library list
 ## http://www.perseus.tufts.edu/hopper/stopwords 2017-10-14
 
@@ -113,8 +118,6 @@ dcc_greek <-
     scan("data/data_dcc/dcc_greek_lemmas.txt",
          what = "character",
          sep = "\n")
-current_greek <-
-    scan("stopwords_greek.txt", what = "character", sep = "\n")
 
 v.dcc_greek_100 <- as.vector(dcc_greek[1:100])
 addenda_dcc_greek_100 <- setdiff(v.dcc_greek_100, current_greek)
@@ -161,10 +164,18 @@ setdiff(tlg_e_top_100, dem_top_100)
 setdiff(addenda_tlg_e_top_100, addenda_dem_top_100)
 
 tlg_top_1000 <-
-    scan(
-        "/Users/aurel/Documents/github/stopwords/data/tlg_top_1000.txt",
-        what = "character",
-        sep = "\n"
-    )
+    scan("data/tlg_top_1000_lemmatised_corrected.txt",
+         what = "character",
+         sep = "\n")
 
 addenda_tlg_top_1000 <- setdiff(tlg_top_1000, current_greek)
+View(addenda_tlg_top_1000)
+
+tlg_top_1000_selection <-
+    read_lines("data/tlg_top_1000_selection.txt")
+View(tlg_top_1000_selection)
+
+addenda_tlg_top_1000_selection <- setdiff(tlg_top_1000_selection, current_greek)
+View(addenda_tlg_top_1000_selection)
+
+write_lines(addenda_tlg_top_1000_selection, "addenda_tlg_top_1000_selection.txt")
