@@ -62,6 +62,11 @@ anno, bellum, bibit, contra, cui, cuius, dei, deo, deus, dicitur, dig, dixit, do
     * omnis
     * qui, quis
     * res [already listed]
+* [ ] Add from PHI 1000 MFW
+    * 84 from `addenda_phi_top_1000_selection_invariable.txt`
+        * quoque, nihil, nil, nunc, quasi, itaque, item, satis, semper, propter, inde, unde, saepe, simul, postea, tunc, ideo, numquam, ibi, supra, hinc, quin, usque, circa, praeter, tamquam, denique, tot, diu, praeterea, postquam, statim, adeo, intra, fere, scilicet, umquam, quando, prope, nondum, procul, rursus, huc, omnino, donec, quemadmodum, quippe, aliquando, velut, interdum, utique, paene, extra, quotiens, num, iterum, vix, semel, immo, ni, illic, quamvis, protinus, hodie, undique, quondam, equidem, pariter, olim, fortasse, profecto, demum, quodam, ecce, antea, nimis, etiamsi, juxta, antequam, repente, etenim, frustra, sponte, praesertim
+    * 18 to be declined from `addenda_phi_top_1000_selection_variable.txt`
+        * omnis, quidam, tantus, quantus, multus, solus, nullus, nemo, iste, uter, quivis, ullus, talis, qualis, meus, tuus, noster, voster
 
 
 # Greek stopwords
@@ -173,3 +178,8 @@ Details about the sources and full lists can be found in the [R code used to com
         * ὑπάρχω
     * Substantives?
         * λόγος
+* [ ] Add from TLG 1000 MFW
+    * 90+ from `addenda_tlg_top_1000_selection_invariable.txt`
+        * 
+    * 9 to be declined from `addenda_tlg_top_1000_selection_variable.txt`
+        * ὁ, εἷς, τοῦτο, αὐτός, οἷος, οὐδείς, ὅσπερ, ἑαυτοῦ, ὅσος, μηδείς, τοιοῦτος, ἐκεῖνος, τοσοῦτος
