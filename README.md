@@ -1,7 +1,6 @@
 # Project status
 
-* Materials originally used to propose default Ancient Greek and Latin stopwords in [Voyant Tools](http://voyant-tools.org/). Both lists have been implemented in Voyant Tools on 2017-10-16. They now have to be refined and better documented: this is still an ongoing discussion.
-* See the [elements for discussion](https://github.com/aurelberra/stopwords/blob/master/elements_for_discussion.md).
+Materials originally used to propose default Ancient Greek and Latin stopwords in [Voyant Tools](http://voyant-tools.org/). Both lists have been implemented in Voyant Tools on 2017-10-16. They now have to be refined and better documented. This is still an ongoing discussion: see the [elements for discussion](https://github.com/aurelberra/stopwords/blob/master/elements_for_discussion.md).
 
 # TODO
 
