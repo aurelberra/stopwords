@@ -1,6 +1,6 @@
 # Project status and TODOs
 
-See the [README file](https://github.com/aurelberra/stopwords/blob/master/README.md).
+See the [README file](https://github.com/aurelberra/stopwords/blob/master/README.md) and the more elaborate [rationale](https://github.com/aurelberra/stopwords/blob/master/rationale.md).
 
 # Latin stopwords
 
@@ -28,31 +28,34 @@ anno, bellum, bibit, contra, cui, cuius, dei, deo, deus, dicitur, dig, dixit, do
 
 * [x] Add: contra, cui, cuius, e, ea, ei, eius, eo, eorum, erant, erat, esse, esset, eum, fuit, haec, his, hoc, id, illa, me, mihi, nobis, qua, quem, quibus, quid, quod, quos, re, rebus, rem, res, se, secundum, sibi, sicut, sine, sit, sua, sunt, tandem, te, tibi, uos, ut
 * [x] Correct erroneous "adhic" to "adhuc" in DigiClass list
-* [x] Ignore artefacts in CLTK: "dig", "ed", "od"
+* [x] Ignore editorial artefacts in CLTK list: "dig", "ed", "od"
 * [x] Add systematically u/v and i/j variants, as corpora cannot be assumed to be normalized
     * In all positions (e.g. both APUD and APVD) to take into account words written in capitals?
-* [ ] Good reasons not to include one-letter words, e.g. "a" for "ab" and "e" for "ex"?
+* [x] Include one-letter words, e.g. "a" for "ab" and "e" for "ex"
+    * Add all single letters, whose interpretation is always ambiguous (cognomina, editorial divisions, etc.)
+    * Both the letters used in Roman numerals: i, v, x, l, c, d, m, ɔ (adding the latter symbol)
+    * and the others: a, b, e, f, g, h, j, k, n, o, p, q, r, s, t, u, w, y, z
 * [ ] Add words from the following categories – only most frequent forms or whole paradigms?
     * Prepositions/adverbs
         * a (ab), contra, e (ex), secundum, sine, tandem
     * Conjunctions
         * sicut, ut
-    * Personal pronouns
+    * [x] Personal pronouns
         * me, mihi
         * te, tibi
         * nobis
         * uos
-    * Demonstratives pronouns
+    * [x] Demonstratives pronouns
         * ea, ei, eius, eo, eorum, eum, id
         * haec, his, hoc
         * illa
-    * Relative pronouns
+    * [x] Relative pronouns
         * qua, quem, quibus, quid, quod, quos, cui, cuius
-    * Possessive pronouns
+    * [x] Possessive pronouns
         * sua
-    * Verb "esse"
+    * [x] Verb "esse"
         * erat, erant, esse, esset, fuit, sit, sunt
-    * Noun "res"
+    * [x] Noun "res"
         * re, rebus, rem, res
 * [ ] Additions suggested by Peter Heslin on Digital Classicist listserv (2017-10-16, [source](https://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=DIGITALCLASSICIST;a0f93c9c.1710))
     * caveat: "I generated that list when looking at frequencies in a small subset of Latin epic"
@@ -62,11 +65,30 @@ anno, bellum, bibit, contra, cui, cuius, dei, deo, deus, dicitur, dig, dixit, do
     * omnis
     * qui, quis
     * res [already listed]
+* [x] Add from PHI 100 MFW and Cicero 100 MFW
+    * nihil
+    * quoque
+    * itaque
+    * possum (potest)
+    * omnis (omnia, omnibus, omnium, omnis)
+    * res (rei, rerum)
+    * ille (illud)
+    * [causa: used in prepositional phrase, but mixed with noun]
+    * [libro: mostly in meaningful references, not only editorial indication]
+    * [primum: very common, but still meaningful]
+    * [nunc: very common, but still meaningful]
+    * [tantum: adverb meaning "only" mixed with form of tantus]
+    * [publicae: used in forms of "res publica"]
 * [ ] Add from PHI 1000 MFW
     * 84 from `addenda_phi_top_1000_selection_invariable.txt`
         * quoque, nihil, nil, nunc, quasi, itaque, item, satis, semper, propter, inde, unde, saepe, simul, postea, tunc, ideo, numquam, ibi, supra, hinc, quin, usque, circa, praeter, tamquam, denique, tot, diu, praeterea, postquam, statim, adeo, intra, fere, scilicet, umquam, quando, prope, nondum, procul, rursus, huc, omnino, donec, quemadmodum, quippe, aliquando, velut, interdum, utique, paene, extra, quotiens, num, iterum, vix, semel, immo, ni, illic, quamvis, protinus, hodie, undique, quondam, equidem, pariter, olim, fortasse, profecto, demum, quodam, ecce, antea, nimis, etiamsi, juxta, antequam, repente, etenim, frustra, sponte, praesertim
     * 18 to be declined from `addenda_phi_top_1000_selection_variable.txt`
         * omnis, quidam, tantus, quantus, multus, solus, nullus, nemo, iste, uter, quivis, ullus, talis, qualis, meus, tuus, noster, voster
+* [ ] Add paradigms (from Diogenes) of words actually frequent in PHI and Cicero MFW
+    * res
+        * re, rebus, rebusque, rei, reique, reist, rem, remque, remst, remve, reque, rerum, rerumne, rerumque, res, resne, resque, rest, resve
+    * sum
+        * eram, eramque, eramus, erant, erantque, eras, erat, eratis, eratne, eratque, erimus, erimusque, erin, eris, erisque, erit, eritis, eritisque, eritne, eritque, eritue, ero, eroque, erunt, eruntque, eruntue, eruntve, es, esne, esque, esse, essem, essemque, essemus, essemusne, essemusque, essemusve, essene, essent, essentne, essentque, essentve, esseque, esses, essesne, essesque, essesve, esset, essetis, essetisne, essetisque, essetisve, essetne, essetque, essetve, esseve, est, este, estene, esteque, esteve, estis, estisne, estisque, estisve, estne, esto, eston, estote, estque, estve, esve, fore, forem, forent, fores, foresque, foret, fuam, fuant, fuas, fuat, fueram, fueramque, fueramus, fuerant, fueras, fuerat, fueratis, fueratque, fuere, fuerim, fuerimque, fuerimus, fuerint, fuerintne, fuerintque, fueris, fuerisne, fuerit, fueritis, fueritne, fueritque, fueritue, fueritve, fuero, fuerunt, fueruntne, fueruntque, fui, fuimus, fuimusque, fuimusve, fuisse, fuissem, fuissemus, fuissent, fuisseque, fuisses, fuisset, fuissetis, fuissetque, fuisti, fuistin, fuistique, fuistis, fuistisne, fuit, fuitne, fuitque, futura, futurae, futuraeque, futuram, futuramque, futuraque, futurarum, futuras, futurast, futurave, future, futuri, futurique, futuris, futurisque, futuro, futurorum, futurorumque, futuros, futurosque, futurove, futurum, futurumque, futurumst, futurumve, futurus, futurusne, futurusque, futurusve, siem, sient, sies, siet, sim, simne, simque, simus, sint, sintne, sintque, sis, sisne, sisque, sist, sit, sitis, sitisque, sitne, sitque, sitve, sum, sumne, sumque, sumus, sumusque, sumusve, sunt, suntne, sunto, suntoque, suntque
 
 
 # Greek stopwords
@@ -105,6 +127,8 @@ Details about the sources and full lists can be found in the [R code used to com
 * [x] Remove "δαίς", strange choice from Perseus?
     * [x] with orthographic variants: δαίς, δαίσ, δαίϲ, δαὶς, δαὶσ, δαὶϲ
 * [x] Remove ὑμός, rare Epic form (rather include ὑμέτερος, ὑμεῖς, ἡμεῖς?)
+* [x] Include one-letter (abbreviated) words, e.g. γ’, ’γ’, δ’, θ’, κ’, μ’, ’μ’, ’π’, ρ’, σ’, τ’, χ’
+    * Add all single letters without diacritics, whose interpretation is always ambiguous (abbreviated forms, numerals, editorial divisions, etc.), including *stigma* and variant forms of *beta* and *sigma*: α, β, ϐ, γ, δ, ε, ϵ, ζ, η, θ, ι, κ, λ, μ, ν, ξ, ο, π, ρ, σ, ς, ϲ, ϛ, τ, υ, φ, χ, ψ, ω
 * [ ] Add systematically variants with
     * [x] acute/grave accent on last syllable
     * [x] usual/lunate/final sigma
