@@ -243,7 +243,7 @@ phi_100 <- read_lines("data/phi_top_100.txt")
 phi_500 <- read_lines("data/phi_top_500.txt")
 phi_1000 <- read_lines("data/phi_top_1000.txt")
 
-test <- read_lines("data/latin_paradigms/sum.txt")
+test <- read_lines("data/latin_paradigms/omnis.txt")
 intersect(phi_100, test) %>% length
 intersect(phi_500, test) %>% length
 intersect(phi_1000, test) %>% length
@@ -256,11 +256,12 @@ setdiff(phi_1000, current_latin)
 setdiff(cic_top_100, current_latin)
 setdiff(cic_top_500, current_latin)
 
-intersect(lat_stop_perseus, test)
-
 setdiff(union(phi_100, cic_top_100), current_latin)
 setdiff(current_latin, union(phi_100, cic_top_100))
 
+test <- read_lines("test.txt")
+setdiff(test, current_latin)
+setdiff(test, phi_1000) %>% length
 
 # Test on Cicero corpus
 
