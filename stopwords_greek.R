@@ -239,3 +239,8 @@ setdiff(X_stopped_100, tlg_1000)
 
 test <- read_lines("test.txt")
 setdiff(test, tlg_1000)
+
+tlg_lem_corr <- read_lines("data/tlg_top_1000_lemmatised_corrected.txt")
+table(tlg_lem_corr) %>% sort(decreasing = T)
+
+tlg_1000[1:200]
