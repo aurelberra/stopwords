@@ -23,3 +23,6 @@ omnia
 omnian
 omniane
 omniaque
+omnes
+omnesne
+omnesque

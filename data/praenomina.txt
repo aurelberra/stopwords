@@ -1,0 +1,43 @@
+# Most common [Praenomina](https://en.wikipedia.org/wiki/Praenomen#Latin_praenomina)
+
+Agrippa (Agr.)
+Appius (Ap.)
+Aulus (A.)
+Caeso (K.)
+Decimus (D.)
+Faustus (F.)
+Gaius (C.)
+Gnaeus (Cn.)
+Hostus
+Lucius (L.)
+Mamercus (Mam.)
+Manius (M'.)
+Marcus (M.)
+Mettius
+Nonus
+Numerius (N.)
+Octavius (Oct.)
+Opiter (Opet.)
+Paullus
+Postumus (Post.)
+Proculus (Pro.)
+Publius (P.)
+Quintus (Q.)
+Septimus
+Sertor (Sert.)
+Servius (Ser.)
+Sextus (Sex.)
+Spurius (S.)
+Statius (St.)
+Tiberius (Ti.)
+Titus (T.)
+Tullus
+Vibius (V.)
+Volesus (Vol.)
+Vopiscus (Vop.)
+
+# Abbreviations
+
+* single letters: A., K., D., F., C., L., M., M'., N., P., Q., S., T., V.
+* more than one letter: Agr., Ap., Cn., Mam., Oct., Opet., Pro., Sert., Ser., Sex., St., Ti., Vol., Vop.
+* relevant forms for stopwords: agr, ap, cn, mam, oct, opet, pro, sert, ser, sex, st, ti, vol, vop
