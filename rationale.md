@@ -33,10 +33,18 @@ In extending paradigms I mostly relied on the lists provided with the [Diogenes]
 
 I compared my results with the lists of the [Dickinson College Commentaries Core Vocabulary](http://dcc.dickinson.edu/vocab/core-vocabulary), a project led by Christopher Francese providing "the thousand most common words in Latin and the 500 most common words in ancient Greek".
 
-As a result, my list includes the 100 MFW in PHI 5 except for "liber" ("libro" being a common form in intratextual or intertextual references) and the 100 MFW in Cicero except for "publica" ("publicae" being used in forms of "res publica").
+The **Latin list** includes the 100 MFW in PHI 5 except for "liber" ("libro" being a common form in intratextual or intertextual references) and the 100 MFW in Cicero except for "publica" ("publicae" being used in forms of "res publica").
 
 I closely examined the 500 MFW in PHI 5 texts and in Cicero, and included the conjunctions and some typically less informative adverbs. I also went through the 1000 MFW in PHI 5 texts, and added several adverbs.
 
 Finally, I tested the resulting list of stopwords on the corpus of Cicero's works in Voyant Tools.
+
+--- WORK IN PROGRESS ---
+The **Greek list** includes the 100 MFW in TLG E except for "…" (…) and the 100 MFW in Demosthenes except for "…" (…).
+
+I closely examined the 500 MFW in TLG E texts and in Demosthenes, and included the conjunctions and some typically less informative adverbs. I also went through the 1000 MFW in TLG E texts, and added several adverbs.
+
+Finally, I tested the resulting list of stopwords on the corpus of Demosthenes' works in Voyant Tools.
+------------------------
 
 I maintain the full list here in a plain text file comprising headings to distinguish the parts of speech. These titles are comments prefixed with an [octothorpe](https://en.wiktionary.org/wiki/octothorpe). They are suppressed by Voyant Tools when the software updates the user-defined list and creates a single alphabetically-sorted list.
