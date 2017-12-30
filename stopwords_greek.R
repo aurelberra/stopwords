@@ -179,3 +179,63 @@ addenda_tlg_top_1000_selection <- setdiff(tlg_top_1000_selection, current_greek)
 View(addenda_tlg_top_1000_selection)
 
 write_lines(addenda_tlg_top_1000_selection, "addenda_tlg_top_1000_selection.txt")
+
+# Test from data files
+
+tlg_100 <- read_lines("data/tlg_top_100.txt")
+tlg_500 <- read_lines("data/tlg_top_500.txt")
+tlg_1000 <- read_lines("data/tlg_top_1000.txt")
+
+test <- read_lines("data/greek_paradigms/ho_articles.txt")
+intersect(tlg_100, test) %>% length
+intersect(tlg_500, test) %>% length
+intersect(tlg_1000, test) %>% length
+intersect(dem_top_100, test) %>% length
+intersect(dem_top_500, test) %>% length
+
+setdiff(tlg_100, current_greek)
+setdiff(tlg_500, current_greek)
+setdiff(tlg_1000, current_greek)
+setdiff(dem_top_100, current_greek)
+setdiff(dem_top_500, current_greek)
+setdiff(union(tlg_100, dem_top_100), current_greek)
+setdiff(union(tlg_500, dem_top_500), current_greek)
+
+test <- read_lines("test.txt")
+setdiff(test, current_greek)
+intersect(test, tlg_100)
+intersect(test, tlg_500)
+intersect(test, tlg_1000)
+intersect(test, dem_top_100)
+intersect(test, dem_top_500)
+
+# Test from resulting lists in Voyant Tools
+
+X_stopped_100 <- c()
+
+X_stopped_100 <- c()
+
+X_stopped_100 <- c()
+
+X_stopped_100 <- c()
+
+X_stopped_100 <- c()
+
+X_stopped_100 <- c()
+
+setdiff(X_stopped_100, current_greek)
+setdiff(X_stopped_100, current_greek)
+setdiff(X_stopped_100, current_greek)
+setdiff(X_stopped_100, current_greek)
+setdiff(X_stopped_100, current_greek)
+setdiff(X_stopped_100, current_greek)
+
+setdiff(X_stopped_100, tlg_1000)
+setdiff(X_stopped_100, tlg_1000)
+setdiff(X_stopped_100, tlg_1000)
+setdiff(X_stopped_100, tlg_1000)
+setdiff(X_stopped_100, tlg_1000)
+setdiff(X_stopped_100, tlg_1000)
+
+test <- read_lines("test.txt")
+setdiff(test, tlg_1000)
