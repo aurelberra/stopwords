@@ -1,6 +1,6 @@
 # Stopwords: project rationale and history
 
-*Stopwords are a fundamentally relative concept: the decision that a given lexical element carries no information depends on a specific corpus and on a specific aim. However, their use is typically invisible, as it is the case in most search engines. The lists provided here are designed for use in [Voyant Tools](http://voyant-tools.org/), a text analysis platform which allows users to access and disable or modify the default list enabled by automatic language detection, in a heuristic and pedagogical perspective. Therefore we need to design default, fixed, "general-use" Ancient Greek and Latin lists, which users can iteratively adapt to their purposes. Additional advice and materials can be provided elsewhere.*
+*Stopwords are a fundamentally relative concept: the decision that a given lexical element carries no information and should be filtered out depends on a specific corpus and on a specific aim. However, their use is typically invisible, as it is the case in most search engines. The lists provided here are designed for use in [Voyant Tools](http://voyant-tools.org/), a text analysis platform which allows users to access and disable or modify the default list enabled by automatic language detection, in a heuristic and pedagogical perspective. Therefore we need to design default, fixed, "general-use" Ancient Greek and Latin lists, which users can iteratively adapt to their purposes. Additional advice and materials can be provided elsewhere.*
 
 Since 2014 I have been using Voyant Tools in my Digital Humanities courses, most often as an introduction to textual analysis, showing the principles and the limits of word clouds for Ancient Greek and Latin, first without and then with stopwords. This is why I needed stopwords lists as those implemented in the platform for many modern languages. I then used and shared the lists suggested on the [Digital Classicist wiki page](http://wiki.digitalclassicist.org/Stopwords_for_Greek_and_greek), which seemed good enough as a first approach.
 
@@ -27,9 +27,16 @@ I went on to compile lists of the 1000 MFW *after lemmatisation* with the CLTK t
 * for Latin: all texts in PHI 5
 * for Greek: all texts in TLG E
 
-I manually filtered the results to discard the (still numerous) lemmatisation bugs, selected the relevant invariable words and extended the relevant words to their whole paradigms, including forms not listed in the MFW.
+I manually filtered the results to discard the (still numerous) lemmatisation bugs, selected the relevant invariable words and extended the relevant words to their whole paradigms for the sake of consistency (as far as it is possible, one should find all forms of "sum" or none, not all forms except "est", "sum" and "es").
 
-<!-- tentative -->
-I examined the 100 MFW in PHI 5 texts and in Cicero, excluded ambiguous forms ("causa", "libro") or words I considered too meaningful ("nunc", "publicae" used in forms of "res publica") and included the others, extending them to their whole paradigms for the sake of consistency (as far as it is possible, one should find all forms of "sum" or none, not all forms except "est", "sum" and "es").
+In extending paradigms I mostly relied on the lists provided with the [Diogenes](http://community.dur.ac.uk/p.j.heslin/Software/Diogenes/) software by Peter Heslin, occasionally augmenting or correcting them (e.g. for the forms of "sum").
 
-In extending paradigms I used as a basis the lists provided with the [Diogenes](http://community.dur.ac.uk/p.j.heslin/Software/Diogenes/) software by Peter Heslin, sometimes augmenting them (as for the forms of "sum").
+I compared my results with the lists of the [Dickinson College Commentaries Core Vocabulary](http://dcc.dickinson.edu/vocab/core-vocabulary), a project led by Christopher Francese providing "the thousand most common words in Latin and the 500 most common words in ancient Greek".
+
+As a result, my list includes the 100 MFW in PHI 5 except for "liber" ("libro" being a common form in intratextual or intertextual references) and the 100 MFW in Cicero except for "publica" ("publicae" being used in forms of "res publica").
+
+I closely examined the 500 MFW in PHI 5 texts and in Cicero, and included the conjunctions and some typically less informative adverbs. I also went through the 1000 MFW in PHI 5 texts, and added several adverbs.
+
+Finally, I tested the resulting list of stopwords on the corpus of Cicero's works in Voyant Tools.
+
+I maintain the full list here in a plain text file comprising headings to distinguish the parts of speech. These titles are comments prefixed with an [octothorpe](https://en.wiktionary.org/wiki/octothorpe). They are suppressed by Voyant Tools when the software updates the user-defined list and creates a single alphabetically-sorted list.

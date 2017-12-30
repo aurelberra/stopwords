@@ -25,6 +25,7 @@ Details about the sources and full lists can be found in the [R code used to com
 anno, bellum, bibit, contra, cui, cuius, dei, deo, deus, dicitur, dig, dixit, dominus, e, ea, ed, ei, eius, eo, eorum, erant, erat, esse, esset, eum, fuit, haec, his, hoc, id, illa, me, mihi, nihil, nobis, nouus, nummus, nunc, od, omnes, omnia, omnibus, potest, qua, quaestio, quem, quibus, quid, quod, quoque, quos, re, rebus, rem, res, rex, se, secundum, sibi, sicut, sine, sit, sua, sunt, tandem, tantum, te, tibi, totus, unus, uos, ut
 
 ## Additions suggested by Peter Heslin
+
 * On Digital Classicist listserv (2017-10-16, [source](https://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=DIGITALCLASSICIST;a0f93c9c.1710))
 * caveat: "I generated that list when looking at frequencies in a small subset of Latin epic"
 * sum, possum, facio, do, dico, video, fero, facio, venio, habeo, voco, inquam
@@ -34,38 +35,31 @@ anno, bellum, bibit, contra, cui, cuius, dei, deo, deus, dicitur, dig, dixit, do
 * qui, quis
 * res [already listed]
 
-## Towards a revised list to be used in Voyant Tools
+## Revision notes
+
 * [x] Correct erroneous "adhic" to "adhuc" in Perseus/DigiClass list
-* [x] Ignore editorial artefacts (e.g. in CLTK list: "dig", "ed", "od")
-* [ ] Add systematically u/v and i/j variants, as corpora cannot be assumed to be normalized
-    * In all positions (e.g. both APUD and APVD) to take into account words written in capitals?
-* [x] Include one-letter words, e.g. "a" for "ab" and "e" for "ex"
+* [x] Ignore editorial artefacts (e.g. "dig", "ed", "od") and pseudo-words due to a wrong treatment of hyphenation (e.g. "con", "tur")
+* [x] Add u/v and i/j variants systematically, as corpora cannot be assumed to be normalized
+    * In all positions to take into account words written in capitals (e.g. both PRIMUS and PRIMVS, ATTICUS and ATTICVS)? – No, this should be fixed in the data or taken into account in the software.
+* [x] Include one-letter words ("a" for "ab" and "e" for "ex")
     * Add all single letters, whose interpretation is always ambiguous (cognomina, editorial divisions, etc.), including both the letters used in Roman numerals (i, v, x, l, c, d, m, ɔ, adding the latter symbol) and the other letters (a, b, e, f, g, h, j, k, n, o, p, q, r, s, t, u, w, y, z)
-* [x] Add words from the following categories – only most frequent forms or whole paradigms?
-    * Prepositions/adverbs
-    * Conjunctions
-    * Pronouns (personal, demonstrative, relative, possessive)
-    * Nouns
-    * Verbs
-* [x] Keep some words from PHI 100 MFW and Cicero 100 MFW
-    * [causa: used in prepositional phrase, but mixed with noun]
-    * [libro: mostly in meaningful references, not only editorial indication]
-    * [primum: very common, but still meaningful]
-    * [nunc: very common, but still meaningful]
-    * [publicae: used in forms of "res publica"]
-* [x] Add missing prepositions
-    * circum, extra, propter
+* [x] Add abbreviations of common praenomina
+* [x] Add most frequent Roman numerals
+    * 1-100 except for ambiguous "vi" (6 or form of "vis")
 * [x] Sort most frequent verbs
     * Based on PHI 1000 MFW and DCC vocabulary: sum, possum, do, video, facio, dico, habeo, fero, venio, volo, ago, peto, iubeo, eo, vinco, pono, teneo, sequor, credo, accipio, quaero, mitto, capio, duco, relinquo, fio, timeo, debeo, vivo, voco, paro, inquam
-    * Add to stopwords: sum, possum, habeo, fero, fio
-    * Keep the other verbs, although some are often included in stopwords, like the following: do, video, facio, dico, venio, voco, inquam
-* [ ] Add whole paradigms of words actually frequent in PHI and Cicero MFW
-    * 
-* [ ] Add from PHI 1000 MFW
-    * 84 from `addenda_phi_top_1000_selection_invariable.txt`
-        * quoque, nihil, nil, nunc, quasi, itaque, item, satis, semper, propter, inde, unde, saepe, simul, postea, tunc, ideo, numquam, ibi, supra, hinc, quin, usque, circa, praeter, tamquam, denique, tot, diu, praeterea, postquam, statim, adeo, intra, fere, scilicet, umquam, quando, prope, nondum, procul, rursus, huc, omnino, donec, quemadmodum, quippe, aliquando, velut, interdum, utique, paene, extra, quotiens, num, iterum, vix, semel, immo, ni, illic, quamvis, protinus, hodie, undique, quondam, equidem, pariter, olim, fortasse, profecto, demum, quodam, ecce, antea, nimis, etiamsi, juxta, antequam, repente, etenim, frustra, sponte, praesertim
-    * 18 to be declined from `addenda_phi_top_1000_selection_variable.txt`
-        * omnis, quidam, tantus, quantus, multus, solus, nullus, nemo, iste, uter, quivis, ullus, talis, qualis, meus, tuus, noster, voster
+    * Add to stopwords: sum, possum, do, video, facio, dico, habeo, fero, fio, inquam, aio
+    * Keep the other verbs, less frequent and too meaningful
+* [x] Add words from the following categories – extended to their whole paradigms when relevant
+    * Conjunctions
+    * Prepositions
+    * Adverbs
+    * Nouns
+    * Verbs
+    * Pronouns (personal, demonstrative, relative, possessive)
+* [x] Decide if some extremely frequent words from PHI 100 MFW and Cicero 100 MFW are to be excluded
+    * "libro": mostly in meaningful intratextual or intertextual references, not in editorial indications
+    * "publicae", "publica", "publicam": used in forms of "res publica"
 
 
 # Greek stopwords
@@ -98,7 +92,7 @@ Details about the sources and full lists can be found in the [R code used to com
 
 αἱ, αἳ, αἵ, αὖ, γα , γα^, γοῦν, δι', επ, εἰμὶ, εἴ, εἴτε, καίτοι, καθ, κατ, κἀν, κἂν, μήτε, μεθ, μετ, μἐν, μὴν, ξύν, ξὺν, οἳ, οἷς, οὐδ, οὐδὲν, οὐχὶ, οὓς, οὕτω, οὗ, παρ, ποτε, που, ποῦ, προ, πρὸ, πως, τινα, τοι, τότε, τὶς, τᾶς, ἀπ, ἀφ, ἃ, ἅμα, ἐξ, ἐπεὶ, ἐστι, ἐφ, ἣ, ἥ, ἧς, ἵνα, ὃ, ὃδε, ὃν, ὅ, ὅθεν, ὅπερ, ὅτε, ὑπ, ὑπὲρ, ὥς, ᾧ
 
-## Towards a revised list to be used in Voyant Tools
+## Revision notes
 
 * [x] Add, with lunate sigma variants: αἱ, αἳ, αἵ, αὖ, γα, γοῦν, εἰμὶ, εἴ, εἴτε, καίτοι, καθ, κατ, κἀν, κἂν, μήτε, μεθ, μετ, μἐν, μὴν, ξύν, ξὺν, οἳ, οἷς, οἷϲ, οὐδ, οὐδὲν, οὐχὶ, οὓς, οὓϲ, οὕτω, οὗ, παρ, ποτε, που, ποῦ, προ, πρὸ, πως, πωϲ, τινα, τοι, τότε, τὶς, τὶϲ, τᾶς, τᾶϲ, ἀπ, ἀφ, ἃ, ἅμα, ἐξ, ἐπεὶ, ἐστι, ἐϲτι, ἐφ, ἣ, ἥ, ἧς, ἧϲ, ἵνα, ὃ, ὃδε, ὃν, ὅ, ὅθεν, ὅπερ, ὅτε, ὑπ, ὑπὲρ, ὥς, ὥϲ, ᾧ
 * [x] Remove "δαίς", strange choice from Perseus?

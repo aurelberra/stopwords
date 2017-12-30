@@ -237,7 +237,7 @@ View(addenda_phi_top_1000_selection)
 write_lines(addenda_phi_top_1000_selection, "addenda_phi_top_1000_selection.txt")
 
 
-# Test from word paradigms files
+# Test from data files
 
 phi_100 <- read_lines("data/phi_top_100.txt")
 phi_500 <- read_lines("data/phi_top_500.txt")
@@ -255,24 +255,13 @@ setdiff(phi_500, current_latin)
 setdiff(phi_1000, current_latin)
 setdiff(cic_top_100, current_latin)
 setdiff(cic_top_500, current_latin)
-
 setdiff(union(phi_100, cic_top_100), current_latin)
-setdiff(current_latin, union(phi_100, cic_top_100))
+setdiff(union(phi_500, cic_top_500), current_latin)
 
 test <- read_lines("test.txt")
 setdiff(test, current_latin)
-setdiff(test, phi_1000) %>% length
-
-# Test on Cicero corpus
-
-cic <- read_lines("../hn3-dev/corpus/cic_onefile/cicero.txt")
-cic <- tolower(cic)
-cic <- strsplit(cic, "\\W")
-cic <- unlist(cic)
-cic <- cic[cic != ""]
-test <- "et"
-length(cic)
-length(unique(cic))
-intersect(cic, test) %>% length
-cic[which(cic %in% test)] %>% length
-(cic[which(cic %in% test)] %>% length) / 1181801 * 100
+intersect(test, phi_100)
+intersect(test, phi_500)
+intersect(test, phi_1000)
+intersect(test, cic_top_100)
+intersect(test, cic_top_500)
