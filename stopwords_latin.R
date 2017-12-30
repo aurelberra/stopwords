@@ -265,3 +265,34 @@ intersect(test, phi_500)
 intersect(test, phi_1000)
 intersect(test, cic_top_100)
 intersect(test, cic_top_500)
+
+# Test from resulting lists in Voyant Tools
+
+cicero_stopped_100 <- c("publicae", "publica", "hominum", "homines", "natura", "maxime", "causam", "iudices", "verum", "senatus", "genere", "cicero", "populi", "tempore", "animi", "animo", "loco", "litteras", "necesse", "publicam", "litteris", "romani", "hominem", "unum", "iure", "vita", "iudicium", "summa", "ratio", "genus", "ratione", "una", "vim", "verbis", "velim", "modi", "iudicio", "vis", "oratio", "lege", "modum", "facile", "nomen", "consilio", "populo", "magna", "tempus", "bene", "rationem", "bellum", "hominis", "sententia", "die", "uno", "nomine", "vi", "homo", "vitae", "attico", "sal", "virtute", "senatu", "tota", "consilium", "ius", "dies", "bonis", "locum", "oportere", "viri", "partem", "puto", "opus", "recte", "deorum", "vir", "auctoritate", "pecuniam", "magno", "studio", "valde", "parte", "paulo", "senatum", "hominibus", "scribis", "venit", "animum", "scire", "kal", "civium", "nescio", "civitatis", "pecunia", "bonum", "romae", "vitam", "romano", "bona", "vehementer")
+
+apulee_stopped_100 <- c("prorsus", "deae", "modum", "cuncta", "manibus", "psyche", "rursum", "domus", "manu", "domum", "capite", "longe", "manus", "mariti", "alioquin", "faciem", "saltem", "uerum", "die", "latrones", "commodum", "nomine", "animo", "asinum", "corporis", "exitium", "ilico", "maritum", "nocte", "quanquam", "mora", "oculis", "sermone", "summo", "veneris", "deum", "maritus", "mortis", "mulier", "noctis", "passim", "sermonis", "uiam", "unus", "cubiculum", "en", "nomen", "partim", "uoce", "cunctis", "hercules", "quoad", "totum", "uxor", "animi", "diem", "dies", "fortunae", "iuuenis", "puer", "studio", "anus", "asino", "domo", "facie", "fidem", "oculos", "pedibus", "salutis", "totis", "confestim", "corpus", "facile", "puellae", "animum", "dei", "dominus", "fortuna", "marito", "modi", "mulieris", "puella", "solis", "venus", "caput", "ciuitatem", "dehinc", "identidem", "numero", "probe", "totius", "admodum", "dominae", "dudum", "insuper", "iuuenem", "mortem", "populi", "precibus", "religionis")
+
+cesar_stopped_100 <- c("caesar", "castris", "castra", "hostes", "loco", "hostium", "caesarem", "parte", "milia", "bellum", "locum", "partem", "die", "fines", "romani", "galliae", "militum", "exercitum", "milites", "proelio", "numero", "circiter", "tempore", "celeriter", "una", "copias", "gallia", "passuum", "hostibus", "iubet", "legiones", "magna", "magno", "consilio", "equites", "copiis", "equitatu", "rhenum", "flumen", "belli", "finibus", "locis", "legatos", "oppidum", "populi", "naves", "oppido", "bello", "legionibus", "caesaris", "hominum", "pars", "iter", "obsides", "longius", "armis", "multitudine", "equitum", "reliquis", "unum", "itinere", "mittit", "tempus", "virtute", "civitates", "fuga", "galliam", "haeduorum", "navibus", "praesidio", "adventu", "arma", "munitiones", "periculo", "consilium", "exercitus", "gallorum", "paulo", "totius", "coeperunt", "diem", "iussit", "loci", "numerum", "proelium", "animo", "dies", "germani", "haeduis", "partes", "subito", "summa", "civitatibus", "impetum", "constituit", "contendit", "galli", "haeduos", "maxime", "romanis")
+
+petrone_stopped_100 <- c("trimalchio", "manus", "coepit", "puer", "eumolpus", "giton", "manu", "ascyltos", "homo", "die", "nocte", "coepi", "corpus", "iussit", "homines", "rogo", "totum", "bene", "caput", "male", "gitona", "numquid", "pedes", "fidem", "manibus", "oculos", "servus", "ancilla", "mehercules", "nescio", "parte", "puerum", "puto", "triclinium", "voce", "diutius", "longe", "partem", "arma", "mulier", "venit", "familia", "manum", "summam", "tryphaena", "fortuna", "fortunata", "lichas", "mensam", "unum", "verba", "hominem", "ingenti", "medio", "miles", "puero", "sanguine", "vinum", "vultum", "amici", "domum", "frater", "iniuriam", "locum", "mille", "pater", "placet", "pueri", "quartilla", "subinde", "terram", "dii", "duo", "invenit", "lectum", "mare", "melius", "oculis", "paulo", "pectus", "populus", "subito", "tellus", "totam", "tres", "una", "unus", "valde", "verum", "aliquot", "lacrimas", "loco", "mentem", "meos", "navis", "oportet", "pectore", "putes", "sestertium", "trimalchionis")
+
+tacite_stopped_100 <- c("caesar", "principis", "senatus", "tiberius", "nero", "cuncta", "bellum", "tiberio", "nomen", "patres", "legiones", "urbem", "caesaris", "germanici", "exercitus", "militum", "principem", "senatum", "annos", "modum", "dies", "tempus", "arma", "fama", "metu", "vim", "consulibus", "romani", "senatu", "postremo", "bello", "augusti", "tiberium", "agrippina", "manu", "mortem", "publica", "augustus", "magna", "pars", "publicae", "agrippinae", "ius", "armis", "caesarem", "populi", "die", "miles", "imperium", "nomine", "publicam", "anno", "legionum", "maxime", "urbe", "vi", "animum", "augusto", "cura", "neronis", "patrum", "romanum", "castra", "domum", "neronem", "urbis", "vitae", "diem", "iubet", "fortuna", "loco", "piso", "filio", "hostem", "manus", "metum", "morte", "patris", "perinde", "primo", "provincias", "romanis", "dehinc", "italia", "legionibus", "preces", "princeps", "rursum", "tempore", "tiberii", "domus", "exim", "ira", "romanus", "specie", "eques", "germanico", "germanicum", "imperii", "neroni")
+
+virgile_stopped_100 <- c("aeneas", "arma", "armis", "pater", "urbem", "manu", "moenia", "sanguine", "ora", "ingens", "prima", "fata", "tela", "ferro", "pectore", "alta", "manus", "bello", "litora", "auras", "genus", "fortuna", "magna", "ore", "alto", "interea", "turnus", "caelo", "caput", "dextra", "uirum", "muros", "fama", "sidera", "corpore", "corpora", "una", "auro", "diuum", "magno", "acies", "litore", "pars", "rex", "agmina", "caelum", "deum", "aequora", "nomen", "oculos", "regna", "domus", "infelix", "longe", "proelia", "bella", "terra", "aenean", "uiri", "coniunx", "dea", "limina", "belli", "equos", "fatur", "uertice", "undis", "medio", "nequiquam", "nomine", "terras", "teucri", "troiae", "animis", "dona", "genitor", "hostis", "iter", "iuno", "iuppiter", "pectora", "saxa", "tecta", "tellus", "tempora", "toto", "troia", "uictor", "cursu", "dido", "dies", "fatis", "heu", "ingentem", "nate", "pugnae", "ter", "teucros", "uiam", "aras")
+
+setdiff(cicero_stopped_100, current_latin)
+setdiff(apulee_stopped_100, current_latin)
+setdiff(cesar_stopped_100, current_latin)
+setdiff(tacite_stopped_100, current_latin)
+setdiff(virgile_stopped_100, current_latin)
+setdiff(petrone_stopped_100, current_latin)
+
+setdiff(cicero_stopped_100, phi_1000)
+setdiff(apulee_stopped_100, phi_1000)
+setdiff(cesar_stopped_100, phi_1000)
+setdiff(tacite_stopped_100, phi_1000)
+setdiff(virgile_stopped_100, phi_1000)
+setdiff(petrone_stopped_100, phi_1000)
+
+test <- read_lines("test.txt")
+setdiff(test, phi_1000)

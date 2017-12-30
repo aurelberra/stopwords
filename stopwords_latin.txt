@@ -300,6 +300,7 @@ ni
 nisi
 postquam
 quamquam
+quanquam
 que
 quia
 quomodo
@@ -464,6 +465,7 @@ quondam
 quot
 quotiens
 repente
+rursum
 rursus
 saepe
 sane

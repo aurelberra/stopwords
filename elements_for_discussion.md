@@ -54,8 +54,11 @@ anno, bellum, bibit, contra, cui, cuius, dei, deo, deus, dicitur, dig, dixit, do
     * Keep the other verbs, less frequent and too meaningful
 * [x] Add words from the following categories – extended to their whole paradigms when relevant
     * Conjunctions
+        * Added not in PHI 1000: necque, quanquam, quomodo, ue, utcunque, utlibet, utne, utque, utue, utve, uterque, ve, tametsi
     * Prepositions
+        * Added not in PHI 1000: abs, aduersum, adversum, circum, infra, trans
     * Adverbs
+        * Added not in PHI 1000: jam, jamque, juxta, minusne, minusque, minusue, minusve, nonne, plusne, plusque, plusue, plusve, priusquam, qualibet, quodammodo, quolibet, quot, rursum, sat, sicuti, tantummodo, totiens
     * Nouns
     * Verbs
     * Pronouns (personal, demonstrative, relative, possessive)
@@ -103,7 +106,7 @@ Details about the sources and full lists can be found in the [R code used to com
     * 1-100 (including "vi", ambiguous only in Latin)
 * [x] Add most frequent Arabic numerals
 * [x] Add most frequent typographical symbols (as in other lists in Voyant Tools)
-* [x] Remove "δαίς", strange choice from Perseus?
+* [x] Remove δαίς, strange element from Perseus list
     * [x] with orthographic variants: δαίς, δαίσ, δαίϲ, δαὶς, δαὶσ, δαὶϲ
 * [x] Remove ὑμός, rare Epic form (rather include ὑμέτερος, ὑμεῖς, ἡμεῖς?)
 * [ ] Add some variants systematically, as corpora cannot be assumed to be normalized
@@ -135,11 +138,14 @@ Details about the sources and full lists can be found in the [R code used to com
     * Interjections @check/regroup
         * ὦ, ὤ
     * Conjunctions
+        * Added not in TLG 1000: …
         * δηλονότι, διό, διότι, εἰ, εἴπερ, εἴτε, καί, μέντοι, μήτε, μηδέ, οὔτε, οὐδέ, τε, τουτέστι, τουτέστιν, ἀλλά, ἐπεί, ἐπειδάν, ἐπειδή, ἕως, ἢ, ἤ, ἤτοι, ἵνα, ὅθεν, ὅπως, ὅταν, ὅτε, ὅτι, ὡς, ὥστε
     * Prepositions/postpositions/adverbs
+        * Added not in TLG 1000: …
         * διά, εἰς, κάτω, κατά, μέχρι, μετά, μεταξύ, παρά, περί, πλήν, πρίν, πρό, πρός, σύν, χωρίς, ἀμφί, ἀνά, ἀντί, ἀπό, ἄνευ, ἄνω, ἄχρι, ἅμα, ἐκ, ἐκτός, ἐν, ἐντός, ἐξ, ἐπί, ἐς, ἔνθα, ἔξω, ἕνεκα, ἡνίκα, ὑπέρ, ὑπό, ὥς, ὥσπερ
         * αὖ, αὖθις, αὐτίκα, εὖ, εὐθύς, εἶτα, καίτοι, καθά, καθόλου, καθώς, λίαν, μάλα, μάλιστα, μηκέτι, μᾶλλον, νῦν, νυν, οὔπω, οὐδέποτε, οὐκέτι, οὕτως, πάλαι, πάλιν, πάνυ, πανταχοῦ, πολλάκις, ποτέ, ποτε, ποῦ, πως, πόθεν, σφόδρα, σχεδόν, τότε, ἀεί, ἄνωθεν, ἄρτι, ἅπαξ, ἐκεῖ, ἐκεῖθεν, ἐκεῖσε, ἐνταῦθα, ἐντεῦθεν, ἐφεξῆς, ἑξῆς, ἔμπροσθεν, ἔνδον, ἔνθα, ἔξωθεν, ἔπειτα, ἔτι, ἤδη, ἴσως, ὁμοῦ, ὅμως, ὅπου, ὡσαύτως, ὧδε
     * Adverbs @separate?
+        * Added not in TLG 1000: …
     * Nouns
         * λόγος
     * Verbs
