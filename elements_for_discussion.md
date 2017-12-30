@@ -99,8 +99,7 @@ Details about the sources and full lists can be found in the [R code used to com
 
 ## Revision notes
 
-* [ ] Ignore editorial artefacts in Latin script (e.g. "dig", "ed", "od") and pseudo-words due to a wrong treatment of hyphenation (e.g. "…")
-* [ ] Check UTF-8 encoding: precombined diacritics
+* [x] Ignore editorial artefacts in Latin script (e.g. "dig", "ed", "od") and pseudo-words due to a wrong treatment of hyphenation (e.g. "…")
 * [x] Include one-letter (abbreviated) words (e.g. γ’, ’γ’, δ’, θ’, κ’, μ’, ’μ’, ’π’, ρ’, σ’, τ’, χ’)
     * Add all single letters without diacritics, whose interpretation is always ambiguous (abbreviated forms, numerals, editorial divisions, etc.), including *stigma* and variant forms of *beta* and *sigma*: α, β, ϐ, γ, δ, ε, ϵ, ζ, η, θ, ι, κ, λ, μ, ν, ξ, ο, π, ρ, σ, ς, ϲ, ϛ, τ, υ, φ, χ, ψ, ω
 * [x] Add most frequent Roman numerals
@@ -131,10 +130,9 @@ Details about the sources and full lists can be found in the [R code used to com
     * Add to stopwords: …
     * Keep the other verbs, less frequent and too meaningful
 * [ ] Add words from the following categories – extended to their whole paradigms when relevant
-    * NB. Below: words from TLG 1000 MFW list > paradigms then extended
     * [x] Articles
     * [x] Particles
-    * [x] Interjections @check/regroup
+    * [x] Interjections
         * Interjections other than ὦ, ὤ are rare and too meaningful (e.g. φεῦ)
     * [x] Conjunctions
         * Added not in TLG 1000: …
@@ -144,13 +142,12 @@ Details about the sources and full lists can be found in the [R code used to com
     * [x] Adverbs
         * Added not in TLG 1000: …
     * [ ] Nouns
-        * λόγος @test
+        * @test λόγος
         * Keep: θεός, ἄνθρωπος, ἀνήρ
     * [x] Verbs
         * Add: εἰμί, λέγω, ἔχω, γίγνομαι, φημί, ποιέω
-            * @test bug with λέγειν?
         * @test also: δέω, οἶδα, δύναμαι, χρή, ἵστημι, ὑπάρχω
-    * [ ] Pronouns (personal, demonstrative, relative, possessive)
+    * [x] Pronouns (personal, demonstrative, relative, possessive)
         * [x] Indefinite pronouns
             * τις
             * τίς
@@ -174,12 +171,17 @@ Details about the sources and full lists can be found in the [R code used to com
             * ὅστις
         * [x] Possessive pronouns
             * ἑαυτοῦ
-        * [ ] Other @sort
-            * οἷος
-            * μηδείς, οὐδείς
-            * μή, οὐ
-            * πολύς
-            * ὅσος
-            * τοιοῦτος
-            * τοσοῦτος
+    * [x] Adjectives
+        * οὐδείς
+        * μηδείς
+        * ἕκαστος
+        * ἑκάτερος
+        * ἀλλήλων
+        * τοιοῦτος
+        * τοσοῦτος
+        * οἷος
+        * πολύς
+        * ὅσος
 * [ ] Decide if some extremely frequent words from TLG 100 MFW and Demosthenes 100 MFW are to be excluded
+ [ ] Fix UTF-8 encoding bug
+    * precombined diacritics: bug with λέγειν, οὐκέτι…

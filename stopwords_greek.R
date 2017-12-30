@@ -2,8 +2,7 @@
 
 # Current list
 
-current_greek <-
-    scan("stopwords_greek.txt", what = "character", sep = "\n")
+current_greek <- read_lines("stopwords_greek.txt")
 
 # Perseus Digital Library list
 ## http://www.perseus.tufts.edu/hopper/stopwords 2017-10-14
@@ -239,6 +238,7 @@ setdiff(X_stopped_100, tlg_1000)
 
 test <- read_lines("test.txt")
 setdiff(test, tlg_1000)
+setdiff(tlg_lem_corr, current_greek)
 
 tlg_lem_corr <- read_lines("data/tlg_top_1000_lemmatised_corrected.txt")
 table(tlg_lem_corr) %>% sort(decreasing = T)

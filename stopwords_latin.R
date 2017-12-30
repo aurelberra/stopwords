@@ -2,8 +2,7 @@
 
 # Current list
 
-current_latin <-
-    scan("stopwords_latin.txt", what = "character", sep = "\n")
+current_latin <- read_lines("stopwords_latin.txt")
 
 # Perseus Digital Library list
 ## http://www.perseus.tufts.edu/hopper/stopwords 2017-10-09
