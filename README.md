@@ -1,6 +1,6 @@
 # Project status
 
-Materials originally used to propose default Ancient Greek and Latin stopwords in [Voyant Tools](http://voyant-tools.org/). Both lists have been implemented in Voyant Tools on 2017-10-16. They have been further refined and the process is being better documented: see details and todos in the [elements for discussion](https://github.com/aurelberra/stopwords/blob/master/elements_for_discussion.md) and the written-up [rationale](rationale.md).
+Materials originally used to propose default Ancient Greek and Latin stopwords in [Voyant Tools](http://voyant-tools.org/). Both lists have been implemented in Voyant Tools on 2017-10-16. They have been further refined and the process is being better documented: see details and todos in the [elements for discussion](https://github.com/aurelberra/stopwords/blob/master/elements_for_discussion.md) and the more elaborate [rationale](https://github.com/aurelberra/stopwords/blob/master/rationale.md).
 
 # Current lists
 
@@ -22,4 +22,5 @@ Materials originally used to propose default Ancient Greek and Latin stopwords i
     * [x] Update from TLG E lists of 100, 500, 1000 most frequent words
 
 * [ ] Submit improved versions to Voyant Tools
+
 * [ ] Explain rationale and update lists on [DigiClass wiki page](http://wiki.digitalclassicist.org/Stopwords_for_Greek_and_Latin)
