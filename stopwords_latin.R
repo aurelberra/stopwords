@@ -158,10 +158,8 @@ lat_not_in_digiclass <- sort(lat_not_in_digiclass)
 
 # Compare with DCC Latin list
 
-dcc_latin <-
-    scan("data/data_dcc/dcc_latin_lemmas.txt",
-         what = "character",
-         sep = "\n")
+dcc_latin <- read_lines("data/data_dcc/dcc_latin_lemmas.txt")
+
 dcc_latin <- gsub("ā", "a", dcc_latin)
 dcc_latin <- gsub("ā", "a", dcc_latin)
 dcc_latin <- gsub("ē", "e", dcc_latin)
@@ -189,11 +187,7 @@ cic_top_100 <- c("et", "in", "non", "est", "ut", "cum", "quod", "ad", "qui", "si
 
 # bug with cic_top_500 as list: length?
 cic_top_500 <-
-    scan(
-        "/Users/aurel/Documents/github/stopwords/data/cic_top_500.txt",
-        what = "character",
-        sep = "\n"
-    )
+    read_lines("/Users/aurel/Documents/github/stopwords/data/cic_top_500.txt")
 
 addenda_cic_top_100 <- setdiff(cic_top_100, current_latin)
 addenda_cic_top_100
@@ -217,9 +211,7 @@ setdiff(phi_top_100, cic_top_100)
 setdiff(addenda_phi_top_100, addenda_cic_top_100)
 
 phi_top_1000 <-
-    scan("data/phi_top_1000_lemmatised_corrected.txt",
-         what = "character",
-         sep = "\n")
+    read_lines("data/phi_top_1000_lemmatised_corrected.txt")
 
 addenda_phi_top_1000 <- setdiff(phi_top_1000, current_latin)
 View(addenda_phi_top_1000)
@@ -234,7 +226,6 @@ addenda_phi_top_1000_selection <- setdiff(phi_top_1000_selection, current_latin)
 View(addenda_phi_top_1000_selection)
 
 write_lines(addenda_phi_top_1000_selection, "addenda_phi_top_1000_selection.txt")
-
 
 # Test from data files
 

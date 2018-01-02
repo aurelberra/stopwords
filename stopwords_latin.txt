@@ -51,7 +51,7 @@ y
 z
 ɔ
 
-# ARABIC NUMERALS
+# ARABIC NUMERALS (0-100)
 0
 1
 10
