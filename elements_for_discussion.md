@@ -8,13 +8,15 @@ Current proposal: https://github.com/aurelberra/stopwords/blob/master/stopwords_
 
 ## Sources
 
-Details about the sources and full lists can be found in the [R code used to compare the lists](https://github.com/aurelberra/stopwords/blob/master/stopwords_latin.R).
+Details about the sources and full lists can be found in the [R code used to compare the existing lists and update my proposals through statistical analysis of large corpora](https://github.com/aurelberra/stopwords/blob/master/stopwords_latin.R).
 
-* Words currently in [DigiClass list](http://wiki.digitalclassicist.org/Stopwords_for_Greek_and_Latin) (95 words): a, ab, ac, ad, adhic, aliqui, aliquis, an, ante, apud, at, atque, aut, autem, cum, cur, de, deinde, dum, ego, enim, ergo, es, est, et, etiam, etsi, ex, fio, haud, hic, iam, jam, idem, igitur, ille, in, infra, inter, interim, ipse, is, ita, magis, modo, mox, nam, ne, nec, necque, neque, nisi, non, nos, o, ob, per, possum, post, pro, quae, quam, quare, qui, quia, quicumque, quidem, quilibet, quis, quisnam, quisquam, quisque, quisquis, quo, quoniam, sed, si, sic, sive, siue, sub, sui, sum, super, suus, tam, tamen, trans, tu, tum, ubi, uel, vel, uero, vero
+The data in this section were retrieved in October 2017.
+
+* Words in [DigiClass list](http://wiki.digitalclassicist.org/Stopwords_for_Greek_and_Latin) (95 words): a, ab, ac, ad, adhic, aliqui, aliquis, an, ante, apud, at, atque, aut, autem, cum, cur, de, deinde, dum, ego, enim, ergo, es, est, et, etiam, etsi, ex, fio, haud, hic, iam, jam, idem, igitur, ille, in, infra, inter, interim, ipse, is, ita, magis, modo, mox, nam, ne, nec, necque, neque, nisi, non, nos, o, ob, per, possum, post, pro, quae, quam, quare, qui, quia, quicumque, quidem, quilibet, quis, quisnam, quisquam, quisque, quisquis, quo, quoniam, sed, si, sic, sive, siue, sub, sui, sum, super, suus, tam, tamen, trans, tu, tum, ubi, uel, vel, uero, vero
 
 * Words in [Patrick Burns' (CLTK) lists](https://github.com/diyclassics/stopwords) and not in DigiClass list (65 words): anno, bellum, bibit, contra, cui, cuius, dei, deo, deus, dicitur, dig, dixit, dominus, ea, ed, ei, eius, eo, eorum, erat, esse, esset, eum, fuit, haec, his, hoc, id, illa, me, mihi, nihil, nobis, nouus, nummus, nunc, od, omnes, omnia, omnibus, potest, qua, quaestio, quem, quibus, quid, quod, quoque, quos, res, rex, se, secundum, sibi, sicut, sine, sit, sua, sunt, tantum, te, tibi, totus, uos, ut
 
-* Words currently in DigiClass list and not in CLTK lists (39 words): a, adhic, aliqui, aliquis, an, at, cur, deinde, es, etsi, fio, haud, idem, infra, interim, is, jam, mox, necque, o, ob, possum, quare, quicumque, quilibet, quisnam, quisquam, quisque, quisquis, quoniam, siue, sive, sui, sum, suus, trans, tum, vel, vero
+* Words in DigiClass list and not in CLTK lists (39 words): a, adhic, aliqui, aliquis, an, at, cur, deinde, es, etsi, fio, haud, idem, infra, interim, is, jam, mox, necque, o, ob, possum, quare, quicumque, quilibet, quisnam, quisquam, quisque, quisquis, quoniam, siue, sive, sui, sum, suus, trans, tum, vel, vero
 
 * Word only in [Perseus Digital Library list](http://www.perseus.tufts.edu/hopper/stopwords) (1 word): unus
 
@@ -73,7 +75,9 @@ Current proposal: https://github.com/aurelberra/stopwords/blob/master/stopwords_
 
 ## Sources
 
-Details about the sources and full lists can be found in the [R code used to compare the lists](https://github.com/aurelberra/stopwords/blob/master/stopwords_greek.R).
+Details about the sources and full lists can be found in the [R code used to compare the existing lists and update my proposals through statistical analysis of large corpora](https://github.com/aurelberra/stopwords/blob/master/stopwords_greek.R).
+
+The data in this section were retrieved in October 2017.
 
 * Words currently in [DigiClass list](http://wiki.digitalclassicist.org/Stopwords_for_Greek_and_Latin) (159 words): ἄλλος, ἄλλοσ, ἄν, ἂν, ἄρα, ἀλλ, ἀλλ', ἀλλ’, ἀλλά, ἀλλὰ, ἀπό, ἀπὸ, αὐτός, αὐτόσ, αὐτὸς, αὐτὸσ, δ, δ', δ’, δαί, δαὶ, δαίς, δαίσ, δαὶς, δαὶσ, δέ, δὲ, δή, δὴ, διά, διὰ, ἑαυτοῦ, ἔτι, ἐάν, ἐὰν, ἐγώ, ἐγὼ, ἐκ, ἐμός, ἐμόσ, ἐμὸς, ἐμὸσ, ἐν, ἐπί, ἐπὶ, εἰ, εἴμι, εἰμί, εἰς, εἰσ, γάρ, γὰρ, γᾶ, γε, ἡ, ἤ, ἢ, καί, καὶ, κατά, κατὰ, μέν, μὲν, μετά, μετὰ, μή, μὴ, ὁ, ὅδε, ὅς, ὅσ, ὃς, ὃσ, ὅστις, ὅστισ, ὅτι, οἱ, οὕτως, οὕτωσ, οὗτος, οὗτοσ, οὐ, οὔτε, οὖν, οὐδέ, οὐδὲ, οὐδείς, οὐδείσ, οὐδεὶς, οὐδεὶσ, οὐκ, οὔκ, οὐχ, παρά, παρὰ, περί, περὶ, πρός, πρόσ, πρὸς, πρὸσ, σός, σόσ, σὸς, σὸσ, σύ, σὺ, σύν, σὺν, τά, τὰ, τάσ, τάς, τὰσ, τὰς, ταῖς, ταῖσ, τε, τήν, τὴν, τῆς, τῆσ, τῇ, τι, τί, τὶ, τίς, τίσ, τις, τισ, τό, τὸ, τόν, τὸν, τοί, τοὶ, τοιοῦτος, τοιοῦτοσ, τοῖς, τοῖσ, τούς, τούσ, τοὺς, τοὺσ, τοῦ, τῶν, τῷ, ὑμός, ὑμὸς, ὑμόσ, ὑμὸσ, ὑπέρ, ὑπό, ὑπὸ, ὥσ, ὥστε, ὡς, ὡσ, ὦ
 
@@ -102,6 +106,8 @@ Details about the sources and full lists can be found in the [R code used to com
 * [x] Ignore editorial artefacts in Latin script (e.g. "dig", "ed", "od") and pseudo-words due to a wrong treatment of hyphenation (e.g. "…")
 * [x] Include one-letter (abbreviated) words (e.g. γ’, ’γ’, δ’, θ’, κ’, μ’, ’μ’, ’π’, ρ’, σ’, τ’, χ’)
     * Add all single letters without diacritics, whose interpretation is always ambiguous (abbreviated forms, numerals, editorial divisions, etc.), including *stigma* and variant forms of *beta* and *sigma*: α, β, ϐ, γ, δ, ε, ϵ, ζ, η, θ, ι, κ, λ, μ, ν, ξ, ο, π, ρ, σ, ς, ϲ, ϛ, τ, υ, φ, χ, ψ, ω
+* [x] Add most frequent Greek numerals
+    * 1-100
 * [x] Add most frequent Roman numerals
     * 1-100 (including "vi", ambiguous only in Latin)
 * [x] Add most frequent Arabic numerals
@@ -118,12 +124,9 @@ Details about the sources and full lists can be found in the [R code used to com
     * [x] Interjections
         * Interjections other than ὦ, ὤ are rare and too meaningful (e.g. φεῦ)
     * [x] Conjunctions
-        * Added not in TLG 1000: …
     * [x] Prepositions/postpositions
         * Add neutral forms of ἐναντίος in TLG 1000: ἐναντίον, ἐναντία
-        * Added not in TLG 1000: …
     * [x] Adverbs
-        * Added not in TLG 1000: …
     * [x] Nouns
         * Keep even the most frequent nouns: λόγος, πρᾶγμα
         * Next most frequent nouns according to DCC list: θεός, ἄνθρωπος, ἀνήρ
@@ -142,6 +145,8 @@ Details about the sources and full lists can be found in the [R code used to com
             * σύ
             * ὑμεῖς
             * αὐτός
+            * νιν
+            * μιν
             * ἀμφότερος
             * ἄμφω
             * σφεῖς
@@ -177,16 +182,18 @@ Details about the sources and full lists can be found in the [R code used to com
         * ὑμέτερος
         * ἕτερος
         * πότερος
-        * Keep these other adjectives, not frequent enough: πλεῖστος, ποῖος, πόσος
 * [x] Decide if some extremely frequent words from TLG 100 MFW and Demosthenes 100 MFW are to be excluded from the stopwords
     * θεοῦ, δύο
-* [ ] Add *all* possible elisions
+* [x] Add possible elisions
+    * [x] Add elided forms for the following categories: articles, particles, interjections, conjunctions, prepositions/postpositions, adverbs
+    * [x] Trust Diogenes lists for the other categories: nouns, adjectives, verbs, pronouns
 * [x] Remove apostrophes: no use for Voyant Tools, where punctuation is stripped
-* [x] Add some variants systematically, as corpora cannot be assumed to be normalized
-    * [x] usual/final sigma
-        * lunate sigmas should be modified in the data
-    * [x] iota subscript/adscript > already in Diogenes lists
-    * [x] acute/grave accent on last syllable
+* [x] Add some variants systematically (via scripts and regexes), as corpora cannot be assumed to be normalized
+    * [x] Add usual/final sigma
+    * [x] Add forms with lunate sigmas only for the articles, as some of them appear in the TLG 1000 MFW (τῆϲ, τοῖϲ)
+        * Other lunate sigmas should be modified in the data
+    * [x] Add iota subscript/adscript > already in Diogenes lists
+    * [x] Add acute/grave accent on last syllable
 * [x] Fix UTF-8 encoding bug
     * Precombined diacritics: bug with λέγειν, οὐκέτι…
-    * Need to normalize data in Greek (e.g. in R with `utf8::utf8_normalize()`)
+    * Normalize data in Greek (e.g. in R with `utf8::utf8_normalize()`)
