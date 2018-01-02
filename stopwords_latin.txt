@@ -10,7 +10,6 @@ $
 <
 >
 @
-|
 \(
 \)
 \*
@@ -21,6 +20,7 @@ $
 \^
 \{
 \}
+|
 
 # SINGLE LETTERS
 a
@@ -285,8 +285,10 @@ dum
 enim
 ergo
 et
+etenim
 etiam
 etiamsi
+etsi
 igitur
 itaque
 licet
@@ -299,8 +301,11 @@ neque
 ni
 nisi
 postquam
+proinde
+quamobrem
 quamquam
 quanquam
+quare
 que
 quia
 quomodo
@@ -313,42 +318,43 @@ sin
 siue
 sive
 tamen
+tametsi
 ue
 uel
 ut
-uti
 utcunque
+uterque
+uti
 utlibet
 utne
 utque
-utue
-utve
-uterque
 utraque
 utrum
 utrumque
+utue
+utve
 ve
 vel
-etsi
-tametsi
 
 # PREPOSITIONS
 a
 ab
 abs
 ad
-aduersus
 aduersum
-adversus
+aduersus
 adversum
+adversus
 ante
 apud
 circa
 circum
 contra
+coram
 cum
 de
 e
+erga
 ex
 extra
 in
@@ -356,8 +362,10 @@ infra
 inter
 intra
 ob
+penes
 per
 post
+prae
 praeter
 pro
 prope
@@ -365,8 +373,10 @@ propter
 secundum
 sine
 sub
+subter
 super
 supra
+tenus
 trans
 ultra
 
@@ -386,11 +396,12 @@ denique
 diu
 ecce
 equidem
-etenim
 fere
+forsitan
 fortasse
 forte
 frustra
+hactenus
 haud
 hinc
 hodie
@@ -421,6 +432,7 @@ minusve
 modo
 mox
 nihilo
+nimirum
 nimis
 non
 nondum
@@ -452,8 +464,8 @@ protinus
 qualibet
 quam
 quando
-quare
 quasi
+quatenus
 quemadmodum
 quidem
 quin
@@ -493,6 +505,7 @@ tunc
 ubi
 uelut
 uero
+uidelicet
 uix
 ultro
 umquam
@@ -502,6 +515,7 @@ usque
 utique
 velut
 vero
+videlicet
 vix
 
 # NOUNS
