@@ -236,11 +236,88 @@ setdiff(X_stopped_100, tlg_1000)
 setdiff(X_stopped_100, tlg_1000)
 setdiff(X_stopped_100, tlg_1000)
 
+# Add variant form with grave last vowel
 test <- read_lines("test.txt")
-setdiff(test, tlg_1000)
-setdiff(tlg_lem_corr, current_greek)
+test_out <- str_replace_all(test, "^(.*)ά(.)?$", "\\1ά\\2\n\\1ὰ\\2")
+test_out <- str_replace_all(test_out, "^(.*)έ(.)?$", "\\1έ\\2\n\\1ὲ\\2")
+test_out <- str_replace_all(test_out, "^(.*)ή(.)?$", "\\1ή\\2\n\\1ὴ\\2")
+test_out <- str_replace_all(test_out, "^(.*)ί(.)?$", "\\1ί\\2\n\\1ὶ\\2")
+test_out <- str_replace_all(test_out, "^(.*)ό(.)?$", "\\1ό\\2\n\\1ὸ\\2")
+test_out <- str_replace_all(test_out, "^(.*)ύ(.)?$", "\\1ύ\\2\n\\1ὺ\\2")
+test_out <- str_replace_all(test_out, "^(.*)ώ(.)?$", "\\1ώ\\2\n\\1ὼ\\2")
+test_out <- str_replace_all(test_out, "^(.*)ᾴ(.)?$", "\\1ᾴ\\2\n\\1ᾲ\\2")
+test_out <- str_replace_all(test_out, "^(.*)ῄ(.)?$", "\\1ῄ\\2\n\\1ῂ\\2")
+test_out <- str_replace_all(test_out, "^(.*)ῴ(.)?$", "\\1ῴ\\2\n\\1ῲ\\2")
+
+test_out <- str_replace_all(test_out, "^(.*)ἄ(.)?$", "\\1ἄ\\2\n\\1ἂ\\2")
+test_out <- str_replace_all(test_out, "^(.*)ἔ(.)?$", "\\1ἔ\\2\n\\1ἒ\\2")
+test_out <- str_replace_all(test_out, "^(.*)ἤ(.)?$", "\\1ἤ\\2\n\\1ἢ\\2")
+test_out <- str_replace_all(test_out, "^(.*)ἴ(.)?$", "\\1ἴ\\2\n\\1ἲ\\2")
+test_out <- str_replace_all(test_out, "^(.*)ὄ(.)?$", "\\1ὄ\\2\n\\1ὂ\\2")
+test_out <- str_replace_all(test_out, "^(.*)ὔ(.)?$", "\\1ὔ\\2\n\\1ὒ\\2")
+test_out <- str_replace_all(test_out, "^(.*)ὤ(.)?$", "\\1ὤ\\2\n\\1ὢ\\2")
+test_out <- str_replace_all(test_out, "^(.*)ᾄ(.)?$", "\\1ᾄ\\2\n\\1ᾂ\\2")
+test_out <- str_replace_all(test_out, "^(.*)ᾔ(.)?$", "\\1ᾔ\\2\n\\1ᾒ\\2")
+test_out <- str_replace_all(test_out, "^(.*)ᾤ(.)?$", "\\1ᾤ\\2\n\\1ᾢ\\2")
+
+test_out <- str_replace_all(test_out, "^(.*)ἅ(.)?$", "\\1ἅ\\2\n\\1ἃ\\2")
+test_out <- str_replace_all(test_out, "^(.*)ἕ(.)?$", "\\1ἕ\\2\n\\1ἓ\\2")
+test_out <- str_replace_all(test_out, "^(.*)ἥ(.)?$", "\\1ἥ\\2\n\\1ἣ\\2")
+test_out <- str_replace_all(test_out, "^(.*)ἵ(.)?$", "\\1ἵ\\2\n\\1ἳ\\2")
+test_out <- str_replace_all(test_out, "^(.*)ὅ(.)?$", "\\1ὅ\\2\n\\1ὃ\\2")
+test_out <- str_replace_all(test_out, "^(.*)ὕ(.)?$", "\\1ὕ\\2\n\\1ὓ\\2")
+test_out <- str_replace_all(test_out, "^(.*)ὥ(.)?$", "\\1ὥ\\2\n\\1ὣ\\2")
+test_out <- str_replace_all(test_out, "^(.*)ᾅ(.)?$", "\\1ᾅ\\2\n\\1ᾃ\\2")
+test_out <- str_replace_all(test_out, "^(.*)ᾕ(.)?$", "\\1ᾕ\\2\n\\1ᾓ\\2")
+test_out <- str_replace_all(test_out, "^(.*)ᾥ(.)?$", "\\1ᾥ\\2\n\\1ᾣ\\2")
+
+test_out <- str_replace_all(test_out, "^(.*)ΐ(.)?$", "\\1ΐ\\2\n\\1ῒ\\2")
+test_out <- str_replace_all(test_out, "^(.*)ΰ(.)?$", "\\1ΰ\\2\n\\1ῢ\\2")
+
+write_lines(test_out, "test_out.txt")
+#--------------------------------------
+
+# Add variant form with non final sigma
+test <- read_lines("test.txt")
+test_out <- str_replace_all(test, "^(.*)ς$", "\\1ς\n\\1σ")
+write_lines(test_out, "test_out.txt")
+#--------------------------------------
+
+test <- read_lines("test.txt")
+current_greek <- read_lines("stopwords_greek.txt")
+test <- utf8::utf8_normalize(test)
+current_greek <- utf8::utf8_normalize(current_greek)
+setdiff(test, current_greek)
+
+
 
 tlg_lem_corr <- read_lines("data/tlg_top_1000_lemmatised_corrected.txt")
+setdiff(tlg_lem_corr, current_greek)
 table(tlg_lem_corr) %>% sort(decreasing = T)
 
 tlg_1000[1:200]
+
+
+
+
+# Normalise Unicode encoding of combined characters
+current_greek <- read_lines("stopwords_greek.txt")
+current_greek <- utf8::utf8_normalize(current_greek)
+write_lines(current_greek, "stopwords_greek.txt")
+
+
+
+current_greek <- read_lines("stopwords_greek.txt")
+current_greek <- utf8::utf8_normalize(current_greek)
+tlg_100 <- utf8::utf8_normalize(tlg_100)
+setdiff(tlg_100, current_greek)
+
+current_greek <- read_lines("stopwords_greek.txt")
+current_greek <- utf8::utf8_normalize(current_greek)
+# write_lines(current_greek, "stopwords_greek_out.txt")
+current_greek_out <- read_lines("stopwords_greek_out.txt")
+setdiff(current_greek_out, current_greek)
+
+dem_in <- read_lines("/Users/aurel/Desktop/dem.txt")
+dem_in <- utf8::utf8_normalize(dem_in)
+write_lines(dem_in, "/Users/aurel/Desktop/dem_out.txt")
