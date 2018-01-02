@@ -62,7 +62,7 @@ anno, bellum, bibit, contra, cui, cuius, dei, deo, deus, dicitur, dig, dixit, do
     * [x] Nouns
     * [x] Verbs
     * [x] Pronouns (personal, demonstrative, relative, possessive)
-* [x] Decide if some extremely frequent words from PHI 100 MFW and Cicero 100 MFW are to be excluded
+* [x] Decide if some extremely frequent words from PHI 100 MFW and Cicero 100 MFW are to be excluded from the stopwords
     * "libro": mostly in meaningful intratextual or intertextual references, not in editorial indications
     * "publicae", "publica", "publicam": used in forms of "res publica"
 
@@ -106,30 +106,13 @@ Details about the sources and full lists can be found in the [R code used to com
     * 1-100 (including "vi", ambiguous only in Latin)
 * [x] Add most frequent Arabic numerals
 * [x] Add most frequent typographical symbols (as in other lists in Voyant Tools)
-* [x] Remove δαίς, strange element from Perseus list
-    * [x] with orthographic variants: δαίς, δαίσ, δαίϲ, δαὶς, δαὶσ, δαὶϲ
-* [x] Remove ὑμός, rare Epic form (rather include ὑμέτερος, ὑμεῖς, ἡμεῖς?)
-* [ ] Add some variants systematically, as corpora cannot be assumed to be normalized
-    * [ ] acute/grave accent on last syllable
-    * [ ] usual/lunate/final sigma
-    * [ ] iota subscript/adscript
-* [ ] Add relevant dialectal forms, e.g. of the articles?
-    * [ ] Do not take into account epic, doric, aeolic forms
-* [ ] Add *all* possible elisions
-* [ ] Add crasis (ταὐ-/τοὐ-, χἡ-/χἠ-)
-* [ ] Add abbreviated forms with apostrophe?
-    * in which case, add both straight and curly quote (i.e. \' and ’)?
-    * only δι, or also δι' and δι’?, etc.
-* [ ] Add from TLG 1000 MFW
-    * 90+ from `addenda_tlg_top_1000_selection_invariable.txt`
-        * …
-    * 9 to be declined from `addenda_tlg_top_1000_selection_variable.txt`
-        * ὁ, εἷς, τοῦτο, αὐτός, οἷος, οὐδείς, ὅσπερ, ἑαυτοῦ, ὅσος, μηδείς, τοιοῦτος, ἐκεῖνος, τοσοῦτος
-* [ ] Sort most frequent verbs
-    * Based on TLG 1000 MFW and DCC vocabulary: …
-    * Add to stopwords: …
-    * Keep the other verbs, less frequent and too meaningful
-* [ ] Add words from the following categories – extended to their whole paradigms when relevant
+* [x] Keep δαίς, strange element from Perseus list
+* [x] Keep ὑμός, rare Epic form
+* [x] Use Diogenes morphology lists as they are
+    * [x] Add missing parts of paradigms but keep all forms
+    * [x] Add relevant dialectal forms, e.g. of the articles [hence: take into account epic, doric, aeolic forms]
+    * [x] Add crasis (ταὐ-/τοὐ-, χἡ-/χἠ-)
+* [x] Add words from the following categories – extended to their whole paradigms when relevant
     * [x] Articles
     * [x] Particles
     * [x] Interjections
@@ -141,12 +124,13 @@ Details about the sources and full lists can be found in the [R code used to com
         * Added not in TLG 1000: …
     * [x] Adverbs
         * Added not in TLG 1000: …
-    * [ ] Nouns
-        * @test λόγος
-        * Keep: θεός, ἄνθρωπος, ἀνήρ
+    * [x] Nouns
+        * Keep even the most frequent nouns: λόγος, πρᾶγμα
+        * Next most frequent nouns according to DCC list: θεός, ἄνθρωπος, ἀνήρ
     * [x] Verbs
-        * Add: εἰμί, λέγω, ἔχω, γίγνομαι, φημί, ποιέω
-        * @test also: δέω, οἶδα, δύναμαι, χρή, ἵστημι, ὑπάρχω
+        * Add: εἰμί, λέγω, γίγνομαι, ἔχω, φημί, ποιέω
+        * Keep other verbs, not frequent enough or arguably too meaningful
+        * Next most frequent verbs according to DCC list and my tests: ἵημι, δέω, ὁράω, λαμβάνω, δοκέω, καλέω, δεῖ, δίδωμι, δύναμαι, φύω, χράομαι, οἶδα, βούλομαι, φαίνω, γράφω, φέρω, ὑπάρχω, ἄρχω, ἀκούω, πράσσω, εὑρίσκω, ἔρχομαι, γιγνώσκω, τυγχάνω, ἵστημι, ἄγω, συμβαίνω, πλέω, χρή, δείκνυμι, τίθημι, εἶδον, οἴομαι
     * [x] Pronouns (personal, demonstrative, relative, possessive)
         * [x] Indefinite pronouns
             * τις
@@ -161,7 +145,7 @@ Details about the sources and full lists can be found in the [R code used to com
             * ἀμφότερος
             * ἄμφω
             * σφεῖς
-        * [x] Demonstratives pronouns
+        * [x] Demonstrative pronouns
             * οὗτος
             * ὅδε
             * ἐκεῖνος
@@ -170,6 +154,8 @@ Details about the sources and full lists can be found in the [R code used to com
             * ὅσπερ
             * ὅστις
         * [x] Possessive pronouns
+            * ἐμαυτοῦ
+            * σαυτοῦ
             * ἑαυτοῦ
     * [x] Adjectives
         * οὐδείς
@@ -182,6 +168,25 @@ Details about the sources and full lists can be found in the [R code used to com
         * οἷος
         * πολύς
         * ὅσος
-* [ ] Decide if some extremely frequent words from TLG 100 MFW and Demosthenes 100 MFW are to be excluded
- [ ] Fix UTF-8 encoding bug
-    * precombined diacritics: bug with λέγειν, οὐκέτι…
+        * πᾶς
+        * ἅπας
+        * ἐμός
+        * σός
+        * ἄλλος
+        * ἡμέτερος
+        * ὑμέτερος
+        * ἕτερος
+        * πότερος
+        * Keep these other adjectives, not frequent enough: πλεῖστος, ποῖος, πόσος
+* [x] Decide if some extremely frequent words from TLG 100 MFW and Demosthenes 100 MFW are to be excluded from the stopwords
+    * θεοῦ, δύο
+* [ ] Add *all* possible elisions
+* [x] Remove apostrophes: no use for Voyant Tools, where punctuation is stripped
+* [x] Add some variants systematically, as corpora cannot be assumed to be normalized
+    * [x] usual/final sigma
+        * lunate sigmas should be modified in the data
+    * [x] iota subscript/adscript > already in Diogenes lists
+    * [x] acute/grave accent on last syllable
+* [x] Fix UTF-8 encoding bug
+    * Precombined diacritics: bug with λέγειν, οὐκέτι…
+    * Need to normalize data in Greek (e.g. in R with `utf8::utf8_normalize()`)
