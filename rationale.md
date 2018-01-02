@@ -1,6 +1,8 @@
 # Stopwords: project rationale and history
 
-*Stopwords are a fundamentally relative concept: the decision that a given lexical element carries no information and should be filtered out depends on a specific corpus and on a specific aim. However, their use is typically invisible, as it is the case in most search engines. The lists provided here are designed for use in [Voyant Tools](http://voyant-tools.org/), a text analysis platform which allows users to access and disable or modify the default list enabled by automatic language detection, in a heuristic and pedagogical perspective. In this environment we don't have access to lemmatisation. Therefore we need to design default, fixed, "general-use" Ancient Greek and Latin lists, which users can iteratively adapt to their purposes. Additional advice and materials can be provided elsewhere.*
+*Stopwords are a fundamentally relative concept: the decision that a given lexical element carries no information and should be filtered out depends on a specific corpus and on a specific aim. However, their use is typically invisible, as it is the case in most search engines.*
+
+*The lists provided here are designed for use in [Voyant Tools](http://voyant-tools.org/), a text analysis platform which allows users to access and disable or modify the default list enabled by automatic language detection, in a heuristic and pedagogical perspective. In this environment we don't have access to lemmatisation. Therefore we need to design default, fixed, "general-use" Ancient Greek and Latin lists, which users can iteratively adapt to their purposes. Additional advice and materials can be provided elsewhere.*
 
 Since 2014 I have been using Voyant Tools in my Digital Humanities courses, most often as an introduction to textual analysis, showing the principles and the limits of word clouds for Ancient Greek and Latin, first without and then with stopwords. This is why I needed stopwords lists as those implemented in the platform for many modern languages. I then used and shared the lists suggested on the [Digital Classicist wiki page](http://wiki.digitalclassicist.org/Stopwords_for_Greek_and_greek), which seemed good enough as a first approach.
 
@@ -33,22 +35,20 @@ In extending paradigms I mostly relied on the lists provided with the [Diogenes]
 
 I compared my results with the lists of the [Dickinson College Commentaries Core Vocabulary](http://dcc.dickinson.edu/vocab/core-vocabulary), a project led by Christopher Francese providing "the thousand most common words in Latin and the 500 most common words in ancient Greek".
 
+I consulted several reference works on Greek and Latin grammar and syntax to make sure that no common form had be omitted.
+
 The **Latin list** includes the 100 MFW in PHI 5 except for "liber" ("libro" being a common form in intratextual or intertextual references) and the 100 MFW in Cicero except for "publica" ("publicae" being used in forms of "res publica").
 
 I closely examined the 500 MFW in PHI 5 texts and in Cicero, and included the conjunctions and some typically less informative adverbs. I also went through the 1000 MFW in PHI 5 texts, and added several adverbs.
 
 Finally, I tested the resulting list of stopwords in Voyant Tools on several corpora: Cicero's works, as well as works by Apuleius, Caesar, Petronius, Tacitus, and Vergil.
 
----
-
-*WORK IN PROGRESS*
-
-The **Greek list** includes the 100 MFW in TLG E except for "…" (…) and the 100 MFW in Demosthenes except for "…" (…).
+The **Greek list** includes the 100 MFW in TLG E except for "θεοῦ" (the word being very meaningful in the corpora where it is not omnipresent) and "δύο" (I do not include words for numerals in this list) and the 100 MFW in Demosthenes except for five words specific to oratory and to his speeches (ἄνδρες, ἀθηναῖοι, δικασταί, δίκην, νόμον) and "δεῖ" (frequent, but still meaningful).
 
 I closely examined the 500 MFW in TLG E texts and in Demosthenes, and included the conjunctions and some typically less informative adverbs. I also went through the 1000 MFW in TLG E texts, and added several adverbs.
 
-Finally, I tested the resulting list of stopwords in Voyant Tools on several corpora: Demosthenes' works, as well as works by ….
-
----
+Finally, I tested the resulting list of stopwords in Voyant Tools on several corpora: Demosthenes' works, as well as the *Iliad* and works by Cyrillus, Dio Cassius, Menander, Sophocles and Xenophon. This helped include in particular some very common poetic or dialectal forms.
 
 I maintain the full list here in a plain text file comprising headings to distinguish the parts of speech. These titles are comments prefixed with an [octothorpe](https://en.wiktionary.org/wiki/octothorpe). They are suppressed by Voyant Tools when the software updates the user-defined list and creates a single alphabetically-sorted list.
+
+Questions, comments and advice are welcome.
