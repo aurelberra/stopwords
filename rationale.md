@@ -18,6 +18,10 @@ For version 2 (January 2018) I rebased the lists on corpus statistics and greatl
 
 The lists are maintained here in plain text files. The words are sorted by parts of speech to make it easier to adapt the lists. The categories are the following: conjunctions, prepositions/postpositions, adverbs, nouns, adjectives, verbs, pronouns (Greek and Latin), articles, particles, interjections (Greek), abbreviated *praenomina* (Latin). These headings are comments prefixed with an [octothorpe](https://en.wiktionary.org/wiki/octothorpe) and are therefore suppressed in Voyant Tools when the software creates user-defined, alphabetically-sorted lists.
 
+In Greek I have included elided forms without apostrophes, variants with the non-final and the final forms of sigma, variants of the articles with a lunate sigma, the additional dialectal forms and forms with iota adscript provided by the Diogenes software (see below). Forms with an acute accent on the last syllable are also included with a grave accent, and I added forms with an enclitic accent which the tests suggested to be very frequent.
+
+The Unicode (UTF-8) encoding of the Greek list has been normalised to a combining *tonos* in order to avoid problems with precombined diacritics (see for instance the Digital Classicist wiki page on [Duplicated vowel+oxia characters in Greek Unicode range](http://wiki.digitalclassicist.org/Greek_Unicode_duplicated_vowels)). Older digital texts may be using *oxia* accents and should be normalised before they can be reliably analysed.
+
 ## Original motivation
 
 Since 2014 I have been using Voyant Tools in my Digital Humanities courses, most often as an introduction to textual analysis, showing for example the principles and the limits of word clouds for Ancient Greek and Latin, first without and then with stopwords. This is why I needed stoplists as those implemented in the platform for many modern languages. I used and shared the lists suggested on the [Digital Classicist wiki page](http://wiki.digitalclassicist.org/Stopwords_for_Greek_and_greek), which seemed good enough as a first approach.
@@ -53,7 +57,7 @@ I went on to compile lists of the 1000 MFW *after lemmatisation* with the CLTK t
 
 I manually filtered the results to discard the (still numerous) lemmatisation bugs, selected the relevant invariable words and extended the relevant variable words to their whole paradigms for the sake of consistency (as far as it is possible, one should find all forms of *sum* or none, not all forms except *est*, *sum* and *es*).
 
-In extending paradigms I mostly relied on the lists provided with the [Diogenes](http://community.dur.ac.uk/p.j.heslin/Software/Diogenes/) software by Peter Heslin, occasionally augmenting or correcting them (e.g. for the forms of *sum*).
+In extending paradigms I mostly relied on the lists provided with the [Diogenes](http://community.dur.ac.uk/p.j.heslin/Software/Diogenes/) software by Peter Heslin, occasionally augmenting or correcting them (e.g. for the forms of *sum*). These lists include not only inflected forms, but also many contracted forms (crases) and elided forms, and dialectal forms.
 
 I compared my results with the lists of the [Dickinson College Commentaries Core Vocabulary](http://dcc.dickinson.edu/vocab/core-vocabulary), a project led by Christopher Francese providing “the thousand most common words in Latin and the 500 most common words in ancient Greek”.
 
