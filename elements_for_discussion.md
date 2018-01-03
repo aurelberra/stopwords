@@ -4,7 +4,7 @@ See the [README file](https://github.com/aurelberra/stopwords/blob/master/README
 
 # Latin stopwords
 
-Current proposal: https://github.com/aurelberra/stopwords/blob/master/stopwords_latin.txt.
+Current list: https://github.com/aurelberra/stopwords/blob/master/stopwords_latin.txt.
 
 ## Sources
 
@@ -71,7 +71,7 @@ anno, bellum, bibit, contra, cui, cuius, dei, deo, deus, dicitur, dig, dixit, do
 
 # Greek stopwords
 
-Current proposal: https://github.com/aurelberra/stopwords/blob/master/stopwords_greek.txt.
+Current list: https://github.com/aurelberra/stopwords/blob/master/stopwords_greek.txt.
 
 ## Sources
 
