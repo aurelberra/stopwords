@@ -76,8 +76,9 @@ Details about the sources and full lists can be found in the [R code used to com
     * 1-100 (including *vi*, ambiguous only in Latin)
 * [x] Add most frequent Arabic numerals
 * [x] Add most frequent typographical symbols (as in other lists in Voyant Tools)
-* [x] Keep δαίς, strange element from Perseus list
-* [x] Keep ὑμός, rare Epic form
+* [x] Remove δαίς, strange item in Perseus list
+* [x] Remove ὑμός, rare Epic form?
+    * I finally reinserted ἡμός and ὑμός, for the sake of consistency with ἡμέτερος and ὑμέτερος
 * [x] Use Diogenes morphology lists as they are
     * [x] Add missing parts of paradigms but keep all forms
     * [x] Add relevant dialectal forms, e.g. of the articles [hence: take into account epic, doric, aeolic forms]
