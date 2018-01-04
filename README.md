@@ -9,6 +9,4 @@ The lists are still being refined and documented: see the [project rationale and
 * [Ancient Latin stopwords](stopwords_latin.txt) (version 2)
 * [Ancient Greek stopwords](stopwords_greek.txt) (version 2)
 
-## Feedback
-
 This is still a work in progress. Questions, comments and advice are most welcome.
