@@ -2,7 +2,7 @@
 
 ## About stopwords
 
-[Stopwords](https://en.wikipedia.org/wiki/Stop_words), an important concept in text mining, information retrieval and natural language processing, are fundamentally relative: the decision that a given lexical element carries no information and should be filtered out as background noise depends on a specific corpus and a specific purpose. Different audiences, disciplines, projects or phases in a project will perform different searches and various types of research. In non-academic contexts the use of stopwords is typically invisible: search engines do not let users iteratively strike a balance between the frequency and the meaning of words. Rather they implement stoplists aiming at acceptable relevance and practical efficiency for as many users as possible. Alternative ways are increasingly used, involving notably the use of phrase search.
+[Stopwords](https://en.wikipedia.org/wiki/Stop_words), an important concept in text mining, information retrieval and natural language processing, are fundamentally relative: the decision that a given lexical element carries no information and should be filtered out as background noise depends on a specific corpus and a specific purpose. Different audiences, disciplines, projects or phases in a project will perform different searches and various types of research. In non-academic contexts the use of stopwords is typically invisible: search engines do not let users iteratively strike a balance between the frequency and the meaning of words. Rather they implement stoplists aiming at acceptable relevance and practical efficiency for as many users as possible. Alternative or complementary methods are increasingly used, involving notably phrase search.
 
 Stoplists can be static or dynamic (or mix both methods), but always rely at some point on the determination of a statistical frequency threshold. When they are dynamic, they fit a given corpus economically by removing only the actually occurring words which reach a predetermined frequency. When they are static, more words are included in the lists, in order to fit most documents, but some research-driven, semantic decisions can be implemented by default.
 
@@ -12,11 +12,30 @@ The Ancient Greek and Latin stoplists provided here are primarily designed for u
 
 <!-- One solution is to provide short lists. TODO: include short lists? -->
 
-For version 1 (October 2017) I compared existing lists of stopwords and updated the one I was using, adding variant forms. There are 262 items for Greek ([stopwords_greek_v1.txt](stopwords_greek_v1.txt)) and 144 items for Latin ([stopwords_latin_v1.txt](stopwords_latin_v1.txt)).
+For version 1 (October 2017) I compared existing lists of stopwords and updated the one I was using, adding variant forms. – Total number of items (tokens or symbols): 262 for Greek ([stopwords_greek_v1.txt](stopwords_greek_v1.txt)) and 144 for Latin ([stopwords_latin_v1.txt](stopwords_latin_v1.txt)).
 
-For version 2 (January 2018) I rebased the lists on corpus statistics and greatly augmented them. My main sources were the lists of 100, 500, 1000 most frequent words in TLG E and PHI 5. I also refined the lists by testing them on several corpora. Variant forms, several paradigms and other elements common in stoplists (typographical symbols, single letters, numerals) were added systematically. There are 7402 items for Greek ([stopwords_greek_v2.txt](stopwords_greek_v2.txt)) and 3839 items for Latin ([stopwords_latin_v2.txt](stopwords_latin_v2.txt)).
+For version 2 (January 2018) I rebased the lists on corpus statistics and greatly augmented them. My main sources were the lists of 100, 500, 1000 most frequent words in TLG E and PHI 5. I also refined the lists by testing them on several corpora. Variant forms, several paradigms and other elements common in stoplists (typographical symbols, single letters, numerals) were added systematically. – Total number of items (tokens or symbols): 7573 for Greek ([stopwords_greek_v2.txt](stopwords_greek_v2.txt)) and 3839 for Latin ([stopwords_latin_v2.txt](stopwords_latin_v2.txt)).
 
-The lists are maintained here in plain text files. The words are sorted by parts of speech to make it easier to adapt the lists. The categories are the following: conjunctions, prepositions/postpositions, adverbs, nouns, adjectives, verbs, pronouns (Greek and Latin), articles, particles, interjections (Greek), abbreviated *praenomina* (Latin). These headings are comments prefixed with an [octothorpe](https://en.wiktionary.org/wiki/octothorpe) and are therefore suppressed in Voyant Tools when the software creates user-defined, alphabetically-sorted lists.
+The lists are maintained here in plain text files. The words are sorted by parts of speech to make it easier to adapt the lists. The categories are the following:
+
+* for Greek and Latin
+    * conjunctions
+    * prepositions/postpositions
+    * adverbs
+    * nouns
+    * adjectives
+    * verbs
+    * pronouns
+* for Greek only
+    * articles
+    * particles
+    * interjections
+* for Latin only
+    * abbreviated *praenomina*
+
+These headings are comments prefixed with an [octothorpe](https://en.wiktionary.org/wiki/octothorpe) and are therefore suppressed in Voyant Tools when the software creates user-defined, alphabetically-sorted lists.
+
+Duplicate items are also removed by Voyant Tools, so I deduplicated the lists within individual paradigms and categories, but not across them.
 
 In Greek I have included elided forms without apostrophes, variants with the non-final and the final forms of sigma, variants of the articles with a lunate sigma, the additional dialectal forms and forms with iota adscript provided by the Diogenes software (see below). Forms with an acute accent on the last syllable are also included with a grave accent, and I added forms with an enclitic accent which the tests suggested to be very frequent.
 
@@ -24,22 +43,24 @@ The Unicode (UTF-8) encoding of the Greek list has been normalised to a combinin
 
 ## Original motivation
 
-Since 2014 I have been using Voyant Tools in my Digital Humanities courses, most often as an introduction to textual analysis, showing for example the principles and the limits of word clouds for Ancient Greek and Latin, first without and then with stopwords. This is why I needed stoplists as those implemented in the platform for many modern languages. I used and shared the lists suggested on the [Digital Classicist wiki page](http://wiki.digitalclassicist.org/Stopwords_for_Greek_and_greek), which seemed good enough as a first approach.
+Since 2014 I have been using Voyant Tools in my Digital Humanities courses, most often as an introduction to textual analysis, showing for example the principles and the limits of word clouds for Ancient Greek and Latin, first without and then with stopwords. This is why I needed stoplists as those built-in for many modern languages. I used and shared the lists suggested on the [Digital Classicist wiki page](http://wiki.digitalclassicist.org/Stopwords_for_Greek_and_greek), which seemed good enough as a first approach.
 
-In 2016 I updated the Digital Classicist wiki page by adding variant forms: alternative accents, sigmas and apostrophes. I also privately asked some members of the Perseus team about the rationale for their stopwords, but the update did not go any further.
+In 2016 I updated the Digital Classicist wiki page by adding two articles (ταῖς and τοῖς) and relevant variant forms for the words already included: alternative accents, sigmas and apostrophes.
+
+I also privately asked some members of the Perseus team about the rationale for their stopwords, but the conversation and the update did not go any further. However, I became fully aware that the lists needed for Voyant Tools were different from those in use on a platform like the Perseus Digital Library, where lemmatisation and other transformations of the queried terms can be implemented.
 
 ## Version 1: Comparing existing lists
 
 In October 2017 I moved my lists to a GitHub repository and started to plan a deeper update. First for Latin, then for Greek, I checked, updated or added available lists:
 
-* [Perseus Digital Library stopwords](http://www.perseus.tufts.edu/hopper/stopwords) from the open source files
+* [Perseus Digital Library stopwords](http://www.perseus.tufts.edu/hopper/stopwords) from the open source files (these lists are the sources of the original Digital Classicist and CLTK lists)
 * Classical Language Toolkit (CTLK) stopwords ([Greek](https://github.com/cltk/cltk/blob/master/cltk/stop/greek/stops.py) and [Latin](https://github.com/cltk/cltk/blob/master/cltk/stop/latin/stops.py)) from the open source files
 * CTLK-related Latin stopwords from Patrick Burns’ 2017-07-11 [slides](https://github.com/diyclassics/stopwords) for a Perseus workshop in Leipzig (where he presented language-independent principles and their application to the design of Latin stopwords, as preliminary work towards automatic, corpus-tailored lists in CLTK)
 * other stopwords openly available online: “Stopwords ISO”’s list for [Latin](https://github.com/stopwords-iso/stopwords-la) and Annette von Stockhausen’s list for [Greek](https://github.com/pharos-alexandria/grk-stoplist/blob/master/stoplist-greek.txt)
 
 I compared those lists, which are based on non-documented or evolving criteria, and minimally updated the Digital Classicist lists, removing legacy oddities and adding variant forms.
 
-On 2017-10-16 initial, stopgap versions of the lists were implemented in Voyant Tools.
+The lists were proposed and briefly discussed in a GitHub issue: [Add default stopwords for Greek and Latin](https://github.com/sgsinclair/Voyant/issues/382). On 2017-10-16 Stéfan Sinclair implemented initial, stopgap versions in Voyant Tools.
 
 ## Version 2: Rebasing lists on corpus statistics
 
