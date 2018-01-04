@@ -7,6 +7,15 @@ See also [project rationale and history](rationale.md).
 * [ ] Submit improved versions to Voyant Tools
 * [ ] Explain rationale and update lists on [DigiClass wiki page](http://wiki.digitalclassicist.org/Stopwords_for_Greek_and_Latin)
 
+* [ ] Prepare Latin short stoplist? Add only PHI MFW?
+    * MFW in PHI 100 and not in version 1 (see file)
+    * MFW in PHI 500 and not in version 1 (see file)
+    * MFW in PHI 1000 and not in version 1 (see file)
+* [ ] Prepare Greek short stoplist? Add only TLG MFW?
+    * MFW in TLG 100 and not in version 1 (see file)
+    * MFW in TLG 500 and not in version 1 (see file)
+    * MFW in TLG 1000 and not in version 1 (see file)
+
 # Latin stopwords
 
 Current list: [https://github.com/aurelberra/stopwords/blob/master/stopwords_latin.txt](stopwords_latin.txt).
@@ -55,7 +64,6 @@ Details about the sources and full lists can be found in the [R code used to com
     * *publicae*, *publica*, *publicam*: used in forms of *res publica*
 * [x] Check manual selection from PHI 1000 MFW
     * Keep *solus*, *uter* (add later?)
-
 
 # Greek stopwords
 
