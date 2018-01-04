@@ -236,13 +236,13 @@ test_out <- str_replace_all(test_out, "^(.*)ᾥ(.)?$", "\\1ᾥ\\2\n\\1ᾣ\\2")
 ## acute to grave with diaeresis
 test_out <- str_replace_all(test_out, "^(.*)ΐ(.)?$", "\\1ΐ\\2\n\\1ῒ\\2")
 test_out <- str_replace_all(test_out, "^(.*)ΰ(.)?$", "\\1ΰ\\2\n\\1ῢ\\2")
-write_lines(test_out, "test_out.txt")
+write_lines(test_out, "test.txt")
 
 # Add variant forms with non final sigma
 
 test <- read_lines("test.txt")
 test_out <- str_replace_all(test, "^(.*)ς$", "\\1ς\n\\1σ")
-write_lines(test_out, "test_out.txt")
+write_lines(test_out, "test.txt")
 
 # Add variant forms with lunate sigma (for articles)
 
@@ -305,3 +305,7 @@ setdiff(dion_cassius_stopped_100, current_greek)
 setdiff(cyrille_stopped_100, current_greek)
 
 setdiff(dem_top_100, current_greek)
+
+current_greek <- read_lines("stopwords_greek.txt")
+test <- read_lines("test.txt")
+setdiff(test, current_greek)
