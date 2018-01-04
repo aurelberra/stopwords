@@ -256,6 +256,12 @@ intersect(test, phi_1000)
 intersect(test, cic_top_100)
 intersect(test, cic_top_500)
 
+# Normalise Unicode encoding
+
+current_latin <- read_lines("stopwords_latin.txt")
+current_latin <- utf8::utf8_normalize(current_latin)
+write_lines(current_latin, "stopwords_latin.txt")
+
 # Test from resulting lists in Voyant Tools
 
 cicero_stopped_100 <- c("publicae", "publica", "hominum", "homines", "natura", "maxime", "causam", "iudices", "verum", "senatus", "genere", "cicero", "populi", "tempore", "animi", "animo", "loco", "litteras", "necesse", "publicam", "litteris", "romani", "hominem", "unum", "iure", "vita", "iudicium", "summa", "ratio", "genus", "ratione", "una", "vim", "verbis", "velim", "modi", "iudicio", "vis", "oratio", "lege", "modum", "facile", "nomen", "consilio", "populo", "magna", "tempus", "bene", "rationem", "bellum", "hominis", "sententia", "die", "uno", "nomine", "vi", "homo", "vitae", "attico", "sal", "virtute", "senatu", "tota", "consilium", "ius", "dies", "bonis", "locum", "oportere", "viri", "partem", "puto", "opus", "recte", "deorum", "vir", "auctoritate", "pecuniam", "magno", "studio", "valde", "parte", "paulo", "senatum", "hominibus", "scribis", "venit", "animum", "scire", "kal", "civium", "nescio", "civitatis", "pecunia", "bonum", "romae", "vitam", "romano", "bona", "vehementer")
@@ -284,5 +290,6 @@ setdiff(tacite_stopped_100, phi_1000)
 setdiff(virgile_stopped_100, phi_1000)
 setdiff(petrone_stopped_100, phi_1000)
 
+current_latin <- read_lines("stopwords_latin.txt")
 test <- read_lines("test.txt")
-setdiff(test, phi_1000)
+setdiff(test, current_latin)
