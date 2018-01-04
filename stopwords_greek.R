@@ -308,4 +308,9 @@ setdiff(dem_top_100, current_greek)
 
 current_greek <- read_lines("stopwords_greek.txt")
 test <- read_lines("test.txt")
+test <- utf8::utf8_normalize(test)
 setdiff(test, current_greek)
+
+test <- read_lines("test.txt")
+test <- utf8::utf8_normalize(test)
+write_lines(test, "test.txt")
