@@ -53,6 +53,8 @@ Details about the sources and full lists can be found in the [R code used to com
 * [x] Decide if some extremely frequent words from PHI 100 MFW and Cicero 100 MFW are to be excluded from the stopwords
     * *libro*: mostly in meaningful intratextual or intertextual references, not in editorial indications
     * *publicae*, *publica*, *publicam*: used in forms of *res publica*
+* [x] Check manual selection from PHI 1000 MFW
+    * Keep *solus*, *uter* (add later?)
 
 
 # Greek stopwords
@@ -118,6 +120,8 @@ Details about the sources and full lists can be found in the [R code used to com
         * Other lunate sigmas should be modified in the data
     * [x] Add iota subscript/adscript > already in Diogenes lists
     * [x] Add acute/grave accent on last syllable
+* [x] Check manual selection from TLG 1000 MFW
+    * Keep εἷς and hence also ἓν
 * [x] Fix UTF-8 encoding bug
     * Precombined diacritics (e.g. bug with acute accent on λέγειν, οὐκέτι)
     * Normalize data in Greek (in R with `utf8::utf8_normalize()`)
