@@ -293,3 +293,18 @@ setdiff(petrone_stopped_100, phi_1000)
 current_latin <- read_lines("stopwords_latin.txt")
 test <- read_lines("test.txt")
 setdiff(test, current_latin)
+
+current_latin <- read_lines("stopwords_latin.txt")
+latin_v1 <- read_lines("stopwords_latin_v1.txt")
+phi_100 <- read_lines("data/phi_top_100.txt")
+phi_500 <- read_lines("data/phi_top_500.txt")
+phi_1000 <- read_lines("data/phi_top_1000.txt")
+
+setdiff(phi_100, current_latin) %>% length
+setdiff(phi_500, current_latin) %>% length
+setdiff(phi_1000, current_latin) %>% length
+
+not_in_latin_v1 <- setdiff(current_latin, latin_v1)
+intersect(phi_100, not_in_latin_v1)
+intersect(phi_500, not_in_latin_v1)
+intersect(phi_1000, not_in_latin_v1)

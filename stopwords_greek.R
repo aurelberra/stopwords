@@ -314,3 +314,18 @@ setdiff(test, current_greek)
 test <- read_lines("test.txt")
 test <- utf8::utf8_normalize(test)
 write_lines(test, "test.txt")
+
+current_greek <- read_lines("stopwords_greek.txt")
+greek_v1 <- read_lines("stopwords_greek_v1.txt")
+tlg_100 <- read_lines("data/tlg_top_100.txt")
+tlg_500 <- read_lines("data/tlg_top_500.txt")
+tlg_1000 <- read_lines("data/tlg_top_1000.txt")
+
+setdiff(tlg_100, current_greek) %>% length
+setdiff(tlg_500, current_greek) %>% length
+setdiff(tlg_1000, current_greek) %>% length
+
+not_in_greek_v1 <- setdiff(current_greek, greek_v1)
+intersect(tlg_100, not_in_greek_v1)
+intersect(tlg_500, not_in_greek_v1)
+intersect(tlg_1000, not_in_greek_v1)
