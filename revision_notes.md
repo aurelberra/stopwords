@@ -47,7 +47,7 @@ Details about the sources and full lists can be found in the [R code used to com
         * *sum*, *possum*, *do*, *video*, *facio*, *dico*, *habeo*, *fero*, *fio*, *inquam*, *aio*
         * Keep the other verbs, less frequent and too meaningful
         * Based on PHI 1000 MFW and DCC vocabulary: *sum*, *possum*, *do*, *video*, *facio*, *dico*, *habeo*, *fero*, *venio*, *volo*, *ago*, *peto*, *iubeo*, *eo*, *vinco*, *pono*, *teneo*, *sequor*, *credo*, *accipio*, *quaero*, *mitto*, *capio*, *duco*, *relinquo*, *fio*, *timeo*, *debeo*, *vivo*, *voco*, *paro*, *inquam*
-* [x] Integrate additions suggested by Peter Heslin on Digital Classicist listserv (2017-10-16, [source](https://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=DIGITALCLASSICIST;a0f93c9c.1710)) with this *caveat*: "I generated that list when looking at frequencies in a small subset of Latin epic"
+* [x] Integrate additions suggested by Peter Heslin on Digital Classicist listserv (2017-10-16, [source](https://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=DIGITALCLASSICIST;a0f93c9c.1710)) with this *caveat*: “I generated that list when looking at frequencies in a small subset of Latin epic”
     * *sum*, *possum*, *facio*, *do*, *dico*, *video*, *fero*, *facio*, *venio*, *habeo*, *voco*, *inquam*; *meus*, *tuus*, *suus*; *ille*, *hic*, *ipse*; *omnis*; *qui*, *quis*; *res*
     * All words included in version 2, except for *venio* and *voco*
 * [x] Decide if some extremely frequent words from PHI 100 MFW and Cicero 100 MFW are to be excluded from the stopwords
