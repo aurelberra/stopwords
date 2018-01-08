@@ -1,20 +1,18 @@
 # Stopwords: revision notes
 
-See also [project rationale and history](rationale.md).
+See also [project rationale and history](rationale.md), as well as [Voyant Tools GitHub issue](https://github.com/sgsinclair/Voyant/issues/382).
 
 # TODO
 
-* [ ] Submit improved versions to Voyant Tools
+* [x] Submit version 2 to Voyant Tools
+* [ ] Possible improvements for Ancient Greek in Voyant Tools
+    * [ ] Standardize final and lunate sigma to sigma in the Trombone analyzer (cf. Lucene `GreekLowerCaseFilter` for Modern Greek)?
+    * [ ] Unicode NFC normalising during import to fix *oxia*/*tonos* problem?
+
 * [ ] Explain rationale and update lists on [DigiClass wiki page](http://wiki.digitalclassicist.org/Stopwords_for_Greek_and_Latin)
 
-* [ ] Prepare Latin short stoplist? Add only PHI MFW?
-    * MFW in PHI 100 and not in version 1 (see file)
-    * MFW in PHI 500 and not in version 1 (see file)
-    * MFW in PHI 1000 and not in version 1 (see file)
-* [ ] Prepare Greek short stoplist? Add only TLG MFW?
-    * MFW in TLG 100 and not in version 1 (see file)
-    * MFW in TLG 500 and not in version 1 (see file)
-    * MFW in TLG 1000 and not in version 1 (see file)
+* [ ] Prepare Latin short stoplist? Add only PHI 100/500/1000 MFW not in version 1?
+* [ ] Prepare Greek short stoplist? Add only TLG 100/500/1000 MFW not in version 1?
 
 # Latin stopwords
 
