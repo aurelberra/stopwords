@@ -96,7 +96,7 @@ Details about the sources and full lists can be found in the [R code used to com
         * Interjections other than ὦ, ὤ are rare and too meaningful (e.g. φεῦ)
     * [x] Conjunctions
     * [x] Prepositions/postpositions
-        * Add neutral forms of ἐναντίος in TLG 1000: ἐναντίον, ἐναντία
+        * Add neutral forms of ἐναντίος in TLG 1000: ἐναντίον, ἐναντία
     * [x] Adverbs
     * [x] Pronouns
         * Indefinite pronouns: τις, τίς
@@ -130,5 +130,5 @@ Details about the sources and full lists can be found in the [R code used to com
 * [x] Check manual selection from TLG 1000 MFW
     * Keep εἷς and hence also ἓν
 * [x] Fix UTF-8 encoding bug
-    * Precombined diacritics (e.g. bug with acute accent on λέγειν, οὐκέτι)
+    * Precombined diacritics (e.g. bug with acute accent on λέγειν, οὐκέτι)
     * Normalize data in Greek (in R with `utf8::utf8_normalize()`)
