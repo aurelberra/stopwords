@@ -132,3 +132,37 @@ Details about the sources and full lists can be found in the [R code used to com
 * [x] Fix UTF-8 encoding bug
     * Precombined diacritics (e.g. bug with acute accent on λέγειν, οὐκέτι)
     * Normalize data in Greek (in R with `utf8::utf8_normalize()`)
+
+## Unicode Greek precombined diacritics
+
+As mentioned in the [rationale](rationale.md), it is best to use the combining *tonos* and not the *oxia* accent.
+
+The [TLG Guide to Unicode Precomposed Forms](http://tlg.uci.edu/encoding/precomposed.pdf) sums up the problem thus:
+
+> * Unicode has codepoints for Greek vowels with acute accents.
+> * In all instances the codepoint given in the table of precomposed forms
+above is to be used and the duplicate codepoints should be regarded as
+redundant.
+> * The following table gives the redundant codepoints first, followed by the
+correct codepoint.
+
+Here are the codes as they appear in these guidelines (I added the names *oxia* and *tonos* for the sake of clarity):
+
+|                           | Duplicate Form |   Use   |
+|                           |     *oxia*     | *tonos* |
+|---------------------------|----------------|---------|
+| Lowercase Alpha + acute   | 1F71           | 03AC    |
+| Uppercase Alpha + acute   | 1FBB           | 0386    |
+| Lowercase Epsilon + acute | 1F73           | 03AD    |
+| Uppercase Epsilon + acute | 1FC9           | 0388    |
+| Lowercase Eta + acute     | 1F75           | 03AE    |
+| Uppercase Eta + acute     | 1FCB           | 0389    |
+| Lowercase Iota + acute    | 1F77           | 03AF    |
+| Uppercase Iota + acute    | 1FDB           | 038A    |
+| Lowercase Omicron + acute | 1F79           | 03CC    |
+| Uppercase Omicron + acute | 1F79F9         | 038C    |
+| Lowercase Upsilon + acute | 1F7B           | 03CD    |
+| Uppercase Upsilon + acute | 1FEB           | 038E    |
+| Lowercase Omega + acute   | 1F7D           | 03CE    |
+| Uppercase Omega + acute   | 1FFB           | 038F    |
+
