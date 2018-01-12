@@ -132,7 +132,15 @@ Details about the sources and full lists can be found in the [R code used to com
 * [x] Fix UTF-8 encoding bug
     * Precombined diacritics (e.g. bug with acute accent on λέγειν, οὐκέτι)
     * Normalize data in Greek (in R with `utf8::utf8_normalize()`)
-
+* [ ] Implement normalisation in Voyant Tools?
+    * Normalise text to NFC Unicode during text import?
+    * Normalise precomposed forms during text import?
+        * See codepoints below
+    * Normalise all sigmas to non final "small sigma" in the analyser?
+        * Replace `U+03C2` (small final sigma) and `U+03F2` (lunate sigma) with `U+03C3` (small sigma)
+        * As in the Lucene [GreekLowerCaseFilter for Modern Greek](https://github.com/apache/lucene-solr/blob/a3a0e0b11e4538ccdff998c09b1145ce9036ac33/lucene/analysis/common/src/java/org/apache/lucene/analysis/el/GreekLowerCaseFilter.java)
+    * See test files in directory [voyant_test_grc](/Users/hchn/Dropbox/Abroad/voyant_test_grc)
+ 
 ## Unicode Greek precombined diacritics
 
 As mentioned in the [rationale](rationale.md), it is best to use the combining *tonos* and not the *oxia* accent.
