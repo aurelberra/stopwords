@@ -1,8 +1,13 @@
-# Stopwords: Greek
+# ---------------- #
+# Stopwords: Greek #
+# ---------------- #
 
 # Current list
 
 current_greek <- read_lines("stopwords_greek.txt")
+
+# Version 1: Comparing existing lists
+# -----------------------------------
 
 # Perseus Digital Library list
 ## http://www.perseus.tufts.edu/hopper/stopwords 2017-10-14
@@ -123,6 +128,9 @@ v.dcc_greek_all <- as.vector(dcc_greek)
 addenda_dcc_greek <- setdiff(v.dcc_greek_all, current_greek)
 
 not_in_dcc_greek_100 <- setdiff(current_greek, v.dcc_greek_100)
+
+# Version 2: Rebasing lists on corpus statistics
+# ----------------------------------------------
 
 # Demosthenes most frequent words (no lemmatisation)
 
@@ -260,19 +268,11 @@ write_lines(current_greek, "stopwords_greek.txt")
 # Check lists of MFW
 
 current_greek <- read_lines("stopwords_greek.txt")
-tlg_100 <- utf8::utf8_normalize(tlg_100)
 setdiff(tlg_100, current_greek)
-tlg_500 <- utf8::utf8_normalize(tlg_500)
 setdiff(tlg_500, current_greek)
-tlg_1000 <- utf8::utf8_normalize(tlg_1000)
 setdiff(tlg_1000, current_greek)
 
 # Test from resulting lists in Voyant Tools
-
-## Normalise test corpora
-this_text <- read_lines("data/corpus_test/greek_iliade.txt")
-this_text <- utf8::utf8_normalize(this_text)
-write_lines(this_text, "data/corpus_test/greek_iliade_normalised.txt")
 
 cyrille_stopped_100 <- c("θεοῦ", "γάρ", "πάντων", "δέ", "πάντα", "ὅλων", "τί", "θεὸν", "θεὸς", "τούτοις", "γενέσθαι", "μωσέως", "πάλιν", "τοίνυν", "δόξαν", "γῆν", "ἑλλήνων", "λόγον", "λόγος", "φύσιν", "οἶμαι", "θεόν", "τούτων", "θεός", "καίτοι", "τρόπον", "λέγειν", "λέγων", "φύσει", "γῆς", "εἶναί", "δόξης", "θεῷ", "λόγου", "οὐρανὸν", "πλάτων", "τούτου", "ἀληθείας", "ἀνωτάτω", "μόνον", "ὀλυμπιάδι", "οὐδέν", "τούτῳ", "χρῆναι", "ἕνα", "ὅλως", "αὐτόν", "καί", "κόσμου", "σαφῶς", "γένεσιν", "λόγους", "λόγῳ", "μάλα", "φύσις", "φῶς", "εἰκόνα", "μάλιστα", "οὐρανόν", "ἀληθῶς", "δεῖν", "δογμάτων", "δύνασθαι", "ἔτει", "εἷς", "κόσμον", "μωσῆς", "νοῦν", "πλάτωνος", "τίς", "φρονεῖν", "κατά", "ἄνθρωπον", "ἀνθρώπου", "θεοῖς", "κύριος", "μωσέα", "οὐρανοῦ", "χριστιανῶν", "γῆ", "ἐκείνου", "ἕλλησι", "ἑτέροις", "θεσπέσιος", "θεῶν", "μόνος", "πρός", "σοφῶν", "στοιχείων", "φησί", "χρῆμα", "ἀβραάμ", "ἁγίων", "αὐτός", "γεγονότες", "δύναμις", "εἰκότως", "θεοὺς", "ὁμοίωσιν", "πάντως")
 
@@ -308,12 +308,7 @@ setdiff(dem_top_100, current_greek)
 
 current_greek <- read_lines("stopwords_greek.txt")
 test <- read_lines("test.txt")
-test <- utf8::utf8_normalize(test)
 setdiff(test, current_greek)
-
-test <- read_lines("test.txt")
-test <- utf8::utf8_normalize(test)
-write_lines(test, "test.txt")
 
 current_greek <- read_lines("stopwords_greek.txt")
 greek_v1 <- read_lines("stopwords_greek_v1.txt")
@@ -331,6 +326,7 @@ intersect(tlg_500, not_in_greek_v1)
 intersect(tlg_1000, not_in_greek_v1)
 
 # Make test files for Voyant
+
 source("../hn3-dev/sextus/code/corpus_functions.R")
 
 test_oxia <- read_lines("voyant_test_grc_oxia.txt")
@@ -347,4 +343,3 @@ write_lines(test_oxia_split_nfc, "voyant_test_grc_oxia_split_nfc.txt")
 test_tonos_split_nfc <- utf8::utf8_normalize(test_tonos_split)
 write_lines(test_tonos_split_nfc, "voyant_test_grc_tonos_split_nfc.txt")
 setdiff(test_oxia_split_nfc, test_tonos_split_nfc)
-
