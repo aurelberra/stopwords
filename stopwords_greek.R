@@ -329,3 +329,22 @@ not_in_greek_v1 <- setdiff(current_greek, greek_v1)
 intersect(tlg_100, not_in_greek_v1)
 intersect(tlg_500, not_in_greek_v1)
 intersect(tlg_1000, not_in_greek_v1)
+
+# Make test files for Voyant
+source("../hn3-dev/sextus/code/corpus_functions.R")
+
+test_oxia <- read_lines("voyant_test_grc_oxia.txt")
+test_tonos <- read_lines("voyant_test_grc_tonos_nfc.txt")
+
+test_oxia_split <- splitText(test_oxia)
+write_lines(test_oxia_split, "voyant_test_grc_oxia_split.txt")
+test_tonos_split <- splitText(test_tonos)
+write_lines(test_oxia_split, "voyant_test_grc_tonos_split.txt")
+setdiff(test_oxia_split, test_tonos_split)
+
+test_oxia_split_nfc <- utf8::utf8_normalize(test_oxia_split)
+write_lines(test_oxia_split_nfc, "voyant_test_grc_oxia_split_nfc.txt")
+test_tonos_split_nfc <- utf8::utf8_normalize(test_tonos_split)
+write_lines(test_tonos_split_nfc, "voyant_test_grc_tonos_split_nfc.txt")
+setdiff(test_oxia_split_nfc, test_tonos_split_nfc)
+
