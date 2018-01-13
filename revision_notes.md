@@ -10,7 +10,7 @@ See also [project rationale and history](rationale.md), as well as [Voyant Tools
     * Normalise all text to NFC Unicode during text import?
     * Normalise Ancient Greek precomposed forms during text import to fix *oxia*/*tonos* problem?
     * Normalise Ancient Greek all sigmas to non final "small sigma" in the Trombone analyser (cf. Lucene [GreekLowerCaseFilter for Modern Greek](https://github.com/apache/lucene-solr/blob/a3a0e0b11e4538ccdff998c09b1145ce9036ac33/lucene/analysis/common/src/java/org/apache/lucene/analysis/el/GreekLowerCaseFilter.java))?
-    * Cf. codepoints at the end of this file and test files in directory [voyant_test_grc](/Users/hchn/Dropbox/Abroad/voyant_test_grc)
+    * Cf. codepoints at the end of this file and test files in directory `voyant_test_files`
 
 * [ ] Explain rationale and update lists on [DigiClass wiki page](http://wiki.digitalclassicist.org/Stopwords_for_Greek_and_Latin)
 
