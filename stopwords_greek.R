@@ -252,7 +252,7 @@ test <- read_lines("test.txt")
 test_out <- str_replace_all(test, "^(.*)ς$", "\\1ς\n\\1σ")
 write_lines(test_out, "test.txt")
 
-# Add variant forms with lunate sigma (for articles)
+# Add variant forms with final lunate sigma (for articles)
 
 test <- read_lines("test.txt")
 test_out <- str_replace_all(test, "^(.*?)ς$", "\\1ς\n\\1ϲ")
