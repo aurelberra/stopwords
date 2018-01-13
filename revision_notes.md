@@ -162,20 +162,19 @@ correct codepoint.
 
 Here are the codes as they appear in these guidelines (I added the names *oxia* and *tonos*, as well as the actual characters, for the sake of clarity):
 
-|                             | Duplicate Form     | | Use      | |
-|                             | *oxia*             | | *tonos*  | |
-| --------------------------- | :----------------: | --- | :------: | --- |
-| Lowercase Alpha + acute     | 1F71               | ά   | 03AC     | ά   |
-| Uppercase Alpha + acute     | 1FBB               | Ά   | 0386     | Ά   |
-| Lowercase Epsilon + acute   | 1F73               | έ   | 03AD     | έ   |
-| Uppercase Epsilon + acute   | 1FC9               | Έ   | 0388     | Έ   |
-| Lowercase Eta + acute       | 1F75               | ή   | 03AE     | ή   |
-| Uppercase Eta + acute       | 1FCB               | Ή   | 0389     | Ή   |
-| Lowercase Iota + acute      | 1F77               | ί   | 03AF     | ί   |
-| Uppercase Iota + acute      | 1FDB               | Ί   | 038A     | Ί   |
-| Lowercase Omicron + acute   | 1F79               | ό   | 03CC     | ό   |
-| Uppercase Omicron + acute   | 1FF9               | Ό   | 038C     | Ό   |
-| Lowercase Upsilon + acute   | 1F7B               | ύ   | 03CD     | ύ   |
-| Uppercase Upsilon + acute   | 1FEB               | Ύ   | 038E     | Ύ   |
-| Lowercase Omega + acute     | 1F7D               | ώ   | 03CE     | ώ   |
-| Uppercase Omega + acute     | 1FFB               | Ώ   | 038F     | Ώ   |
+|                             | Duplicate Form (*oxia*) |     | Use (*tonos*) |     |
+| --------------------------- | :----------------:      | --- | :------:      | --- |
+| Lowercase Alpha + acute     | 1F71                    | ά   | 03AC          | ά   |
+| Uppercase Alpha + acute     | 1FBB                    | Ά   | 0386          | Ά   |
+| Lowercase Epsilon + acute   | 1F73                    | έ   | 03AD          | έ   |
+| Uppercase Epsilon + acute   | 1FC9                    | Έ   | 0388          | Έ   |
+| Lowercase Eta + acute       | 1F75                    | ή   | 03AE          | ή   |
+| Uppercase Eta + acute       | 1FCB                    | Ή   | 0389          | Ή   |
+| Lowercase Iota + acute      | 1F77                    | ί   | 03AF          | ί   |
+| Uppercase Iota + acute      | 1FDB                    | Ί   | 038A          | Ί   |
+| Lowercase Omicron + acute   | 1F79                    | ό   | 03CC          | ό   |
+| Uppercase Omicron + acute   | 1FF9                    | Ό   | 038C          | Ό   |
+| Lowercase Upsilon + acute   | 1F7B                    | ύ   | 03CD          | ύ   |
+| Uppercase Upsilon + acute   | 1FEB                    | Ύ   | 038E          | Ύ   |
+| Lowercase Omega + acute     | 1F7D                    | ώ   | 03CE          | ώ   |
+| Uppercase Omega + acute     | 1FFB                    | Ώ   | 038F          | Ώ   |
