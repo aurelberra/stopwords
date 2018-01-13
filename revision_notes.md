@@ -7,15 +7,16 @@ See also [project rationale and history](rationale.md), as well as [Voyant Tools
 * [x] Submit version 2 to Voyant Tools
 
 * [ ] Implement normalisation in Voyant Tools?
-    * Normalise all text to NFC Unicode during text import?
-    * Normalise Ancient Greek precomposed forms during text import to fix *oxia*/*tonos* problem?
-    * Normalise Ancient Greek all sigmas to non final "small sigma" in the Trombone analyser (cf. Lucene [GreekLowerCaseFilter for Modern Greek](https://github.com/apache/lucene-solr/blob/a3a0e0b11e4538ccdff998c09b1145ce9036ac33/lucene/analysis/common/src/java/org/apache/lucene/analysis/el/GreekLowerCaseFilter.java))?
-    * Cf. codepoints at the end of this file and test files in directory `voyant_test_files`
+    * Normalise all text to NFC Unicode during text import? – No, may be incautious. Leave it to the user.
+    * [ ] Normalise Ancient Greek precomposed forms during text import to fix *oxia*/*tonos* problem?
+    * [ ] Normalise Ancient Greek all sigmas to non final "small sigma" in the Trombone analyser (cf. Lucene [GreekLowerCaseFilter for Modern Greek](https://github.com/apache/lucene-solr/blob/a3a0e0b11e4538ccdff998c09b1145ce9036ac33/lucene/analysis/common/src/java/org/apache/lucene/analysis/el/GreekLowerCaseFilter.java))?
+    * Cf. Unicode codepoints at the end of this file and test files in directory `voyant_test_files`
 
 * [ ] Explain rationale and update lists on [DigiClass wiki page](http://wiki.digitalclassicist.org/Stopwords_for_Greek_and_Latin)
 
-* [ ] Prepare Latin short stoplist? Add only PHI 100/500/1000 MFW not in version 1?
-* [ ] Prepare Greek short stoplist? Add only TLG 100/500/1000 MFW not in version 1?
+* [ ] Prepare shorter stoplists? – Probably not…
+    * [ ] Prepare Latin short stoplist? Add only PHI 100/500/1000 MFW not in version 1?
+    * [ ] Prepare Greek short stoplist? Add only TLG 100/500/1000 MFW not in version 1?
 
 # Latin stopwords
 
@@ -160,21 +161,23 @@ redundant.
 > * The following table gives the redundant codepoints first, followed by the
 correct codepoint.
 
-Here are the codes as they appear in these guidelines – I add the names *oxia* and *tonos*, as well as the actual characters, for the sake of clarity:
+Here are the codepoints. I add *iota* and *upsilon* with *diaeresis*. I mention the names *oxia* and *tonos*, as well as the actual characters, for the sake of clarity.
 
-|                             | Duplicate Form (*oxia*) |     | Use (*tonos*) |     |
-| --------------------------- | :----------------:      | --- | :------:      | --- |
-| Lowercase Alpha + acute     | 1F71                    | ά   | 03AC          | ά   |
-| Uppercase Alpha + acute     | 1FBB                    | Ά   | 0386          | Ά   |
-| Lowercase Epsilon + acute   | 1F73                    | έ   | 03AD          | έ   |
-| Uppercase Epsilon + acute   | 1FC9                    | Έ   | 0388          | Έ   |
-| Lowercase Eta + acute       | 1F75                    | ή   | 03AE          | ή   |
-| Uppercase Eta + acute       | 1FCB                    | Ή   | 0389          | Ή   |
-| Lowercase Iota + acute      | 1F77                    | ί   | 03AF          | ί   |
-| Uppercase Iota + acute      | 1FDB                    | Ί   | 038A          | Ί   |
-| Lowercase Omicron + acute   | 1F79                    | ό   | 03CC          | ό   |
-| Uppercase Omicron + acute   | 1FF9                    | Ό   | 038C          | Ό   |
-| Lowercase Upsilon + acute   | 1F7B                    | ύ   | 03CD          | ύ   |
-| Uppercase Upsilon + acute   | 1FEB                    | Ύ   | 038E          | Ύ   |
-| Lowercase Omega + acute     | 1F7D                    | ώ   | 03CE          | ώ   |
-| Uppercase Omega + acute     | 1FFB                    | Ώ   | 038F          | Ώ   |
+|                                       | Duplicate Form (*oxia*) |     | Use (*tonos*) |     |
+| ---------------------------           | :----------------:      | --- | :------:      | --- |
+| Lowercase Alpha + acute               | 1F71                    | ά   | 03AC          | ά   |
+| Uppercase Alpha + acute               | 1FBB                    | Ά   | 0386          | Ά   |
+| Lowercase Epsilon + acute             | 1F73                    | έ   | 03AD          | έ   |
+| Uppercase Epsilon + acute             | 1FC9                    | Έ   | 0388          | Έ   |
+| Lowercase Eta + acute                 | 1F75                    | ή   | 03AE          | ή   |
+| Uppercase Eta + acute                 | 1FCB                    | Ή   | 0389          | Ή   |
+| Lowercase Iota + acute                | 1F77                    | ί   | 03AF          | ί   |
+| Uppercase Iota + acute                | 1FDB                    | Ί   | 038A          | Ί   |
+| Lowercase Omicron + acute             | 1F79                    | ό   | 03CC          | ό   |
+| Uppercase Omicron + acute             | 1FF9                    | Ό   | 038C          | Ό   |
+| Lowercase Upsilon + acute             | 1F7B                    | ύ   | 03CD          | ύ   |
+| Uppercase Upsilon + acute             | 1FEB                    | Ύ   | 038E          | Ύ   |
+| Lowercase Omega + acute               | 1F7D                    | ώ   | 03CE          | ώ   |
+| Uppercase Omega + acute               | 1FFB                    | Ώ   | 038F          | Ώ   |
+| Lowercase Iota + dialytika + acute    | 1FD3                    | ΐ   | 0390          | ΐ   |
+| Lowercase Upsilon + dialytika + acute | 1FE3                    | ΰ   | 03B0          | ΰ   |
