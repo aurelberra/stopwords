@@ -162,8 +162,8 @@ correct codepoint.
 
 Here are the codes as they appear in these guidelines (I added the names *oxia* and *tonos*, as well as the actual characters, for the sake of clarity):
 
-|                             | Duplicate Form     || Use      ||
-|                             | *oxia*             || *tonos*  ||
+|                             | Duplicate Form     | | Use      | |
+|                             | *oxia*             | | *tonos*  | |
 | --------------------------- | :----------------: | --- | :------: | --- |
 | Lowercase Alpha + acute     | 1F71               | ά   | 03AC     | ά   |
 | Uppercase Alpha + acute     | 1FBB               | Ά   | 0386     | Ά   |
