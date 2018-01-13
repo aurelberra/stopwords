@@ -140,7 +140,7 @@ Details about the sources and full lists can be found in the [R code used to com
 
 ### Forms of sigma
 
-Here are the replacements to implement in an analyser.
+The following replacements should be implemented in an analyser:
 
 |                                          | From |  To  |
 |------------------------------------------|------|------|
@@ -151,7 +151,7 @@ Here are the replacements to implement in an analyser.
 
 As mentioned in the [rationale](rationale.md), it is best to use the combining *tonos* and not the *oxia* accent.
 
-The [TLG Guide to Unicode Precomposed Forms](http://tlg.uci.edu/encoding/precomposed.pdf) sums up the problem thus:
+The [TLG Guide to Unicode Precomposed Forms](http://tlg.uci.edu/encoding/precomposed.pdf) succinctly sums up the problem:
 
 > * Unicode has codepoints for Greek vowels with acute accents.
 > * In all instances the codepoint given in the table of precomposed forms
@@ -160,7 +160,7 @@ redundant.
 > * The following table gives the redundant codepoints first, followed by the
 correct codepoint.
 
-Here are the codes as they appear in these guidelines (I added the names *oxia* and *tonos*, as well as the actual characters, for the sake of clarity):
+Here are the codes as they appear in these guidelines – I add the names *oxia* and *tonos*, as well as the actual characters, for the sake of clarity:
 
 |                             | Duplicate Form (*oxia*) |     | Use (*tonos*) |     |
 | --------------------------- | :----------------:      | --- | :------:      | --- |
