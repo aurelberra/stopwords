@@ -1,6 +1,6 @@
 # Stopwords: revision notes
 
-See also [project rationale and history](rationale.md), as well as [Voyant Tools GitHub issue](https://github.com/sgsinclair/Voyant/issues/382).
+See also the [project rationale and history](rationale.md), as well as the relevant [Voyant Tools GitHub issue](https://github.com/sgsinclair/Voyant/issues/382).
 
 # TODO
 
