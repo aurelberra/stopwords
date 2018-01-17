@@ -4,19 +4,19 @@ See also the [project rationale and history](rationale.md), as well as the relev
 
 # TODO
 
-* [x] Submit version 2 to Voyant Tools
-
 * [ ] Implement normalisation in Voyant Tools?
     * Normalise all text to NFC Unicode during text import? – No, may be incautious. Leave it to the user.
     * [ ] Normalise Ancient Greek precomposed forms during text import to fix *oxia*/*tonos* problem?
     * [ ] Normalise Ancient Greek all sigmas to non final "small sigma" in the Trombone analyser (cf. Lucene [GreekLowerCaseFilter for Modern Greek](https://github.com/apache/lucene-solr/blob/a3a0e0b11e4538ccdff998c09b1145ce9036ac33/lucene/analysis/common/src/java/org/apache/lucene/analysis/el/GreekLowerCaseFilter.java))?
     * Cf. Unicode codepoints at the end of this file and test files in directory `voyant_test_files`
 
-* [ ] Explain rationale and update lists on [DigiClass wiki page](http://wiki.digitalclassicist.org/Stopwords_for_Greek_and_Latin)
+* [ ] Follow up on Peter Heslin's suggestions on Digital Classicist listserv
 
-* [ ] Prepare shorter stoplists? – Probably not…
-    * [ ] Prepare Latin short stoplist? Add only PHI 100/500/1000 MFW not in version 1?
-    * [ ] Prepare Greek short stoplist? Add only TLG 100/500/1000 MFW not in version 1?
+* [ ] Explain rationale and update or link to lists on [DigiClass wiki page](http://wiki.digitalclassicist.org/Stopwords_for_Greek_and_Latin)
+
+* [ ] Design shorter, custom stoplists for certain uses?
+    * minimal lists (e.g. for search engines): based on frequency only, or including the paradigms of articles and a few verbs?
+    * generic lists: separate versions for epic poetry, tragedy, oratory, theology, etc.?
 
 # Latin stopwords
 
