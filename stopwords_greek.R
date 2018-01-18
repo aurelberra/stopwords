@@ -328,6 +328,7 @@ intersect(tlg_1000, not_in_greek_v1)
 # Make test files for Voyant
 
 source("../hn3-dev/sextus/code/corpus_functions.R")
+library(tidyverse)
 
 test_oxia <- read_lines("voyant_test_files/voyant_test_grc_oxia.txt")
 test_tonos_nfc <- utf8::utf8_normalize(test_oxia)
@@ -350,5 +351,5 @@ test_el_split <- splitText(test_el)
 write_lines(test_el_split, "voyant_test_files/voyant_test_el_split.txt")
 
 length(test_oxia_split)
-length(test_tonos_split)
+length(test_tonos_nfc_split)
 length(test_el_split)
