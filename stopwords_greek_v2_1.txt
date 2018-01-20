@@ -5,6 +5,7 @@
 
 # TYPOGRAPHICAL SYMBOLS
 !
+#
 $
 %
 &
@@ -26,6 +27,12 @@ $
 \{
 \}
 |
+\\
+\/
+§
+°
+†
+¿
 
 # SINGLE LETTERS: LATIN
 a
