@@ -4,15 +4,7 @@ See also the [project rationale and history](rationale.md), as well as the relev
 
 # TODO
 
-* [x] Implement normalisation in Voyant Tools (see discussion in [GitHub issue](https://github.com/sgsinclair/Voyant/issues/382), as well as Unicode codepoints at the end of this file and test files in directory `voyant_test_files`)
-    * [x] Normalise Ancient Greek precomposed forms during text import to fix *oxia*/*tonos* problem
-    * [x] Normalise Ancient Greek all sigmas to non final "small sigma" in the Trombone analyser (cf. Lucene [GreekLowerCaseFilter for Modern Greek](https://github.com/apache/lucene-solr/blob/a3a0e0b11e4538ccdff998c09b1145ce9036ac33/lucene/analysis/common/src/java/org/apache/lucene/analysis/el/GreekLowerCaseFilter.java))
-* [ ] Prepare v2.1 of the list after implementation of `GreekCustomFilter` in Voyant Tools
-    * [x] Remove all forms with lunate sigma in v2
-        * 18 forms of the article
-    * [x] Remove all forms with non final sigma in final position in v2
-        * 1044 forms
-    * [ ] Test the list in the updated online version of Voyant Tools
+* [ ] Test Greek v2.1 in the updated online version of Voyant Tools
 
 * [ ] Follow up on Peter Heslin's suggestions on Digital Classicist listserv
 
@@ -140,17 +132,26 @@ Details about the sources and full lists can be found in the [R code used to com
 * [x] Fix UTF-8 encoding bug
     * Precombined diacritics (e.g. bug with acute accent on λέγειν, οὐκέτι)
     * Normalize data in Greek (in R with `utf8::utf8_normalize()`)
+* [x] Implement normalisation in Voyant Tools (see discussion in [GitHub issue](https://github.com/sgsinclair/Voyant/issues/382), as well as Unicode codepoints at the end of this file and test files in directory `voyant_test_files`)
+    * [x] Normalise Ancient Greek precomposed forms during text import to fix *oxia*/*tonos* problem
+    * [x] Normalise Ancient Greek all sigmas to non final "small sigma" in the Trombone analyser (cf. Lucene [GreekLowerCaseFilter for Modern Greek](https://github.com/apache/lucene-solr/blob/a3a0e0b11e4538ccdff998c09b1145ce9036ac33/lucene/analysis/common/src/java/org/apache/lucene/analysis/el/GreekLowerCaseFilter.java))
+* [x] Prepare v2.1 of the list after implementation of `GreekCustomFilter` in Voyant Tools
+    * [x] Remove all forms with lunate sigma in v2
+        * 18 forms of the article
+    * [x] Remove all forms with non final sigma in final position in v2
+        * 1044 forms
 
-## Unicode Greek
+## Unicode Greek memo
 
 ### Forms of sigma
 
-The following replacements should be implemented in an analyser:
-
-|                                          | From |  To  |
-|------------------------------------------|------|------|
-| Small final sigma (ς) to small sigma (σ) | 03C2 | 03C3 |
-| Lunate sigma (ϲ) to small sigma (σ)      | 03F2 | 03C3 |
+|                                   | Code | Char |
+| --------------------------------- | :--: | ---- |
+| Greek capital letter sigma        | 03A3 | Σ    |
+| Greek small letter final sigma    | 03C2 | ς    |
+| Greek small letter sigma          | 03C3 | σ    |
+| Greek lunate sigma symbol         | 03F2 | ϲ    |
+| Greek capital lunate sigma symbol | 03F9 | Ϲ    |
 
 ### Precombined diacritics
 
@@ -165,23 +166,23 @@ redundant.
 > * The following table gives the redundant codepoints first, followed by the
 correct codepoint.
 
-Here are the codepoints. I add *iota* and *upsilon* with *diaeresis*. I mention the names *oxia* and *tonos*, as well as the actual characters, for the sake of clarity.
+Here are the codepoints. I add *iota* and *upsilon* with *diaeresis*. I rename the columns and add the actual characters, for the sake of clarity.
 
-|                                       | Duplicate Form (*oxia*) |     | Use (*tonos*) |     |
-| ---------------------------           | :----------------:      | --- | :------:      | --- |
-| Lowercase Alpha + acute               | 1F71                    | ά   | 03AC          | ά   |
-| Uppercase Alpha + acute               | 1FBB                    | Ά   | 0386          | Ά   |
-| Lowercase Epsilon + acute             | 1F73                    | έ   | 03AD          | έ   |
-| Uppercase Epsilon + acute             | 1FC9                    | Έ   | 0388          | Έ   |
-| Lowercase Eta + acute                 | 1F75                    | ή   | 03AE          | ή   |
-| Uppercase Eta + acute                 | 1FCB                    | Ή   | 0389          | Ή   |
-| Lowercase Iota + acute                | 1F77                    | ί   | 03AF          | ί   |
-| Uppercase Iota + acute                | 1FDB                    | Ί   | 038A          | Ί   |
-| Lowercase Omicron + acute             | 1F79                    | ό   | 03CC          | ό   |
-| Uppercase Omicron + acute             | 1FF9                    | Ό   | 038C          | Ό   |
-| Lowercase Upsilon + acute             | 1F7B                    | ύ   | 03CD          | ύ   |
-| Uppercase Upsilon + acute             | 1FEB                    | Ύ   | 038E          | Ύ   |
-| Lowercase Omega + acute               | 1F7D                    | ώ   | 03CE          | ώ   |
-| Uppercase Omega + acute               | 1FFB                    | Ώ   | 038F          | Ώ   |
-| Lowercase Iota + dialytika + acute    | 1FD3                    | ΐ   | 0390          | ΐ   |
-| Lowercase Upsilon + dialytika + acute | 1FE3                    | ΰ   | 03B0          | ΰ   |
+|                                       | Code *oxia* | Char | Code *tonos* | Char |
+| ------------------------------------- | :---------: | ---- | :----------: | ---- |
+| Lowercase Alpha + acute               | 1F71        | ά    | 03AC         | ά    |
+| Uppercase Alpha + acute               | 1FBB        | Ά    | 0386         | Ά    |
+| Lowercase Epsilon + acute             | 1F73        | έ    | 03AD         | έ    |
+| Uppercase Epsilon + acute             | 1FC9        | Έ    | 0388         | Έ    |
+| Lowercase Eta + acute                 | 1F75        | ή    | 03AE         | ή    |
+| Uppercase Eta + acute                 | 1FCB        | Ή    | 0389         | Ή    |
+| Lowercase Iota + acute                | 1F77        | ί    | 03AF         | ί    |
+| Uppercase Iota + acute                | 1FDB        | Ί    | 038A         | Ί    |
+| Lowercase Omicron + acute             | 1F79        | ό    | 03CC         | ό    |
+| Uppercase Omicron + acute             | 1FF9        | Ό    | 038C         | Ό    |
+| Lowercase Upsilon + acute             | 1F7B        | ύ    | 03CD         | ύ    |
+| Uppercase Upsilon + acute             | 1FEB        | Ύ    | 038E         | Ύ    |
+| Lowercase Omega + acute               | 1F7D        | ώ    | 03CE         | ώ    |
+| Uppercase Omega + acute               | 1FFB        | Ώ    | 038F         | Ώ    |
+| Lowercase Iota + dialytika + acute    | 1FD3        | ΐ    | 0390         | ΐ    |
+| Lowercase Upsilon + dialytika + acute | 1FE3        | ΰ    | 03B0         | ΰ    |
