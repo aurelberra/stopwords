@@ -10,11 +10,9 @@ Stoplists can be static or dynamic (or mix both methods), but always rely at som
 
 The Ancient Greek and Latin stoplists provided here are primarily designed for use in [Voyant Tools](http://voyant-tools.org/), a platform which enables many types of (basic or more advanced) text analyses in numerous languages. Voyant Tools allows users to disable or modify the built-in lists, in a heuristic and pedagogical perspective. Therefore we need to design static, “general-use” lists, which users can adapt to their purposes. But as we have no access to lemmatisation or normalisation in this environment, many alternative forms and spellings (especially for Greek), as well as some extensive or comprehensive paradigms have to be included for the lists to be reasonably useful.
 
-<!-- One solution is to provide short lists. TODO: include short lists? -->
-
 For version 1 (October 2017) I compared existing lists of stopwords and updated the one I was using, adding variant forms. – Total number of items (tokens or symbols): 262 for Greek ([stopwords_greek_v1.txt](stopwords_greek_v1.txt)) and 144 for Latin ([stopwords_latin_v1.txt](stopwords_latin_v1.txt)).
 
-For version 2 (January 2018) I rebased the lists on corpus statistics and greatly augmented them. My main sources were the lists of 100, 500, 1000 most frequent words in TLG E and PHI 5. I also refined the lists by testing them on several corpora. Variant forms, several paradigms and other elements common in stoplists (typographical symbols, single letters, numerals) were added systematically. – Total number of items (tokens or symbols): 7573 for Greek ([stopwords_greek_v2.txt](stopwords_greek_v2.txt)) and 3839 for Latin ([stopwords_latin_v2.txt](stopwords_latin_v2.txt)).
+For version 2 (January 2018) I rebased the lists on corpus statistics and greatly augmented them. My main sources were the lists of 100, 500, 1000 most frequent words in TLG E and PHI 5. I also refined the lists by testing them on several corpora. Variant forms, several paradigms and other elements common in stoplists (typographical symbols, single letters, numerals) were added systematically. – Total number of items (tokens or symbols): 7573 for Greek v2 ([stopwords_greek_v2.txt](stopwords_greek_v2.txt)), 6511 for Greek v2.1 ([stopwords_greek_v2_1.txt](stopwords_greek_v2_1.txt)), and 3839 for Latin ([stopwords_latin_v2.txt](stopwords_latin_v2.txt)).
 
 The lists are maintained here in plain text files. The words are sorted by parts of speech to make it easier to adapt the lists. The categories are the following:
 
@@ -37,9 +35,9 @@ These headings are comments prefixed with an [octothorpe](https://en.wiktionary.
 
 Duplicate items are also removed by Voyant Tools, so I deduplicated the lists within individual paradigms and categories, but not across them.
 
-In Greek I have included elided forms without apostrophes, variants with the non-final and the final forms of sigma, variants of the articles with a lunate sigma, the additional dialectal forms and forms with iota adscript provided by the Diogenes software (see below). Forms with an acute accent on the last syllable are also included with a grave accent, and I added forms with an enclitic accent which the tests suggested to be very frequent.
+In Greek I have included elided forms without apostrophes and the additional dialectal forms and forms with iota adscript provided by the Diogenes software (see below). Forms with an acute accent on the last syllable are also included with a grave accent, and I added forms with an enclitic accent which the tests suggested to be very frequent.
 
-The Unicode (UTF-8) encoding of the Greek list has been normalised to Normalization Form C (NFC) in order to avoid problems with precombined diacritics. On this question, see for instance the Digital Classicist wiki page on [Duplicated vowel+oxia characters in Greek Unicode range](http://wiki.digitalclassicist.org/Greek_Unicode_duplicated_vowels) and [Python, Unicode and Ancient Greek](https://jktauber.com/articles/python-unicode-ancient-greek/) by J. K. Tauber. Older digital texts may be using *oxia* accents and should be normalised to a combining *tonos* before they can be reliably analysed. See the [full table of Unicode codepoints in the revision notes](revision_notes.md#unicode-greek-precombined-diacritics).
+The Unicode (UTF-8) encoding of the Greek list has been normalised to Normalization Form C (NFC) in order to avoid problems with precombined diacritics. (On this question, see for instance the Digital Classicist wiki page on [Duplicated vowel+oxia characters in Greek Unicode range](http://wiki.digitalclassicist.org/Greek_Unicode_duplicated_vowels) and [Python, Unicode and Ancient Greek](https://jktauber.com/articles/python-unicode-ancient-greek/) by J. K. Tauber. Older digital texts may be using *oxia* accents and should be normalised to a combining *tonos* before they can be reliably analysed. See the [full table of Unicode codepoints in the revision notes](revision_notes.md#unicode-greek-precombined-diacritics).) This normalisation from *oxia* to *tonos* has also been implemented in the Voyant Tools import process (see the [discussion](https://github.com/sgsinclair/Voyant/issues/382)).
 
 ## Original motivation
 
@@ -96,6 +94,10 @@ I closely examined the 500 MFW in TLG E texts and in Demosthenes, and included t
 
 Finally, I tested the resulting list of stopwords in Voyant Tools on several corpora: Demosthenes’ works, as well as the *Iliad* and works by Cyrillus, Dio Cassius, Menander, Sophocles and Xenophon. This helped include some common variants like elided forms, and poetic or dialectal forms.
 
+## Version 2.1: Update after the implementation of a Greek custom filter in Voyant Tools
+
+Version 2 included variants with the non-final and the final forms of sigma, as well as variants of the articles with a lunate sigma, but they were removed from version 2.1, after the implementation of a Greek custom filter in Voyant Tools which made variant forms of *sigma* redundant. See the discussion in the relevant [Voyant Tools GitHub issue](https://github.com/sgsinclair/Voyant/issues/382).
+
 ## Feedback?
 
-This is still a work in progress. Questions, comments and advice are most welcome.
+Questions, comments and advice are most welcome.
