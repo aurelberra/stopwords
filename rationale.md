@@ -39,6 +39,8 @@ In Greek I have included elided forms without apostrophes and the additional dia
 
 The Unicode (UTF-8) encoding of the Greek list has been normalised to Normalization Form C (NFC) in order to avoid problems with precombined diacritics. (On this question, see for instance the Digital Classicist wiki page on [Duplicated vowel+oxia characters in Greek Unicode range](http://wiki.digitalclassicist.org/Greek_Unicode_duplicated_vowels) and [Python, Unicode and Ancient Greek](https://jktauber.com/articles/python-unicode-ancient-greek/) by J. K. Tauber. Older digital texts may be using *oxia* accents and should be normalised to a combining *tonos* before they can be reliably analysed. See the [full table of Unicode codepoints in the revision notes](revision_notes.md#unicode-greek-precombined-diacritics).) This normalisation from *oxia* to *tonos* has also been implemented in the Voyant Tools import process (see the [discussion](https://github.com/sgsinclair/Voyant/issues/382)).
 
+Details can be found in the [revision notes](revision_notes.md).
+
 ## Original motivation
 
 Since 2014 I have been using Voyant Tools in my Digital Humanities courses, most often as an introduction to textual analysis, showing for example the principles and the limits of word clouds for Ancient Greek and Latin, first without and then with stopwords. This is why I needed stoplists as those built-in for many modern languages. I used and shared the lists suggested on the [Digital Classicist wiki page](http://wiki.digitalclassicist.org/Stopwords_for_Greek_and_greek), which seemed good enough as a first approach.
@@ -94,7 +96,7 @@ I closely examined the 500 MFW in TLG E texts and in Demosthenes, and included t
 
 Finally, I tested the resulting list of stopwords in Voyant Tools on several corpora: Demosthenes’ works, as well as the *Iliad* and works by Cyrillus, Dio Cassius, Menander, Sophocles and Xenophon. This helped include some common variants like elided forms, and poetic or dialectal forms.
 
-## Version 2.1: Update after the implementation of a Greek custom filter in Voyant Tools
+### Greek version 2.1: Removing redundant sigma variants
 
 Version 2 included variants with the non-final and the final forms of sigma, as well as variants of the articles with a lunate sigma, but they were removed from version 2.1, after the implementation of a Greek custom filter in Voyant Tools which made variant forms of *sigma* redundant. See the discussion in the relevant [Voyant Tools GitHub issue](https://github.com/sgsinclair/Voyant/issues/382).
 
