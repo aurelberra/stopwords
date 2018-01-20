@@ -2,6 +2,9 @@
 # Stopwords: Greek #
 # ---------------- #
 
+source("../hn3-dev/sextus/code/corpus_functions.R")
+library(tidyverse)
+
 # Current list
 
 current_greek <- read_lines("stopwords_greek.txt")
@@ -330,25 +333,27 @@ intersect(tlg_1000, not_in_greek_v1)
 
 # Make test files for Voyant
 
-source("../hn3-dev/sextus/code/corpus_functions.R")
-library(tidyverse)
-
 # initial oxia sample taken from TLGU converted Unicode text
 # of TLG E Betacode file
-test_oxia <- read_lines("voyant_test_files/voyant_test_grc_oxia.txt")
+test_oxia <-
+    read_lines("voyant_test_files/voyant_test_grc_oxia.txt")
 test_tonos_nfc <- utf8::utf8_normalize(test_oxia)
-write_lines(test_tonos_nfc, "voyant_test_files/voyant_test_grc_tonos_nfc.txt")
+write_lines(test_tonos_nfc,
+            "voyant_test_files/voyant_test_grc_tonos_nfc.txt")
 
 test_oxia <- tolower(test_oxia)
 test_oxia_split <- splitText(test_oxia)
-write_lines(test_oxia_split, "voyant_test_files/voyant_test_grc_oxia_split.txt")
+write_lines(test_oxia_split,
+            "voyant_test_files/voyant_test_grc_oxia_split.txt")
 test_tonos_nfc <- tolower(test_tonos_nfc)
 test_tonos_nfc_split <- splitText(test_tonos_nfc)
-write_lines(test_tonos_nfc_split, "voyant_test_files/voyant_test_grc_tonos_nfc_split.txt")
+write_lines(test_tonos_nfc_split,
+            "voyant_test_files/voyant_test_grc_tonos_nfc_split.txt")
 setdiff(test_oxia_split, test_tonos_nfc_split)
 
 test_oxia_split_nfc <- utf8::utf8_normalize(test_oxia_split)
-write_lines(test_oxia_split_nfc, "voyant_test_files/voyant_test_grc_oxia_split_nfc.txt")
+write_lines(test_oxia_split_nfc,
+            "voyant_test_files/voyant_test_grc_oxia_split_nfc.txt")
 setdiff(test_oxia_split_nfc, test_tonos_nfc_split)
 
 test_el <- read_lines("voyant_test_files/voyant_test_el.txt")
@@ -363,7 +368,8 @@ length(test_el_split)
 greek_v2 <- read_lines("stopwords_greek_v2.txt")
 (empty <- sum(str_count(greek_v2, "^$")))  # empty lines
 (comments <- sum(str_count(greek_v2, "^#(.*)")))  # comments
-(stopwords_v2 <- sum(str_count(greek_v2, "^(.*)$")) - empty - comments)  # stop items
+(stopwords_v2 <-
+        sum(str_count(greek_v2, "^(.*)$")) - empty - comments)  # stop items
 
 # Remove variant forms with non final sigma
 
@@ -371,7 +377,8 @@ sum(str_count(greek_v2, "^(.+)σ$"))
 greek_v2_1 <- str_replace_all(greek_v2, "^(.+)σ$", "TEMP")
 greek_v2_1 <- greek_v2_1[which(greek_v2_1 != "TEMP")]
 write_lines(greek_v2_1, "stopwords_greek_v2_1.txt")
-(stopwords_v2_1 <- sum(str_count(greek_v2_1, "^(.*)$")) - empty - comments)  # stop items
+(stopwords_v2_1 <-
+        sum(str_count(greek_v2_1, "^(.*)$")) - empty - comments)  # stop items
 
 # Remove variant forms with final lunate sigma (for articles)
 
@@ -380,4 +387,5 @@ sum(str_count(greek_v2_1, "^(.*?)ϲ(.*?)$"))
 greek_v2_1 <- str_replace_all(greek_v2_1, "^(.*?)ϲ(.*?)$", "TEMP")
 greek_v2_1 <- greek_v2_1[which(greek_v2_1 != "TEMP")]
 write_lines(greek_v2_1, "stopwords_greek_v2_1.txt")
-(stopwords_v2_1 <- sum(str_count(greek_v2_1, "^(.*)$")) - empty - comments)  # stop items
+(stopwords_v2_1 <-
+        sum(str_count(greek_v2_1, "^(.*)$")) - empty - comments)  # stop items

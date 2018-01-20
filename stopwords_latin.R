@@ -2,6 +2,8 @@
 # Stopwords: Latin
 # ---------------- #
 
+library(tidyverse)
+
 # Current list
 
 current_latin <- read_lines("stopwords_latin.txt")
