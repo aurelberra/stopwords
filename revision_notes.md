@@ -4,11 +4,15 @@ See also the [project rationale and history](rationale.md), as well as the relev
 
 # TODO
 
-* [ ] Implement normalisation in Voyant Tools?
-    * Normalise all text to NFC Unicode during text import? – No, may be incautious. Leave it to the user.
-    * [ ] Normalise Ancient Greek precomposed forms during text import to fix *oxia*/*tonos* problem?
-    * [ ] Normalise Ancient Greek all sigmas to non final "small sigma" in the Trombone analyser (cf. Lucene [GreekLowerCaseFilter for Modern Greek](https://github.com/apache/lucene-solr/blob/a3a0e0b11e4538ccdff998c09b1145ce9036ac33/lucene/analysis/common/src/java/org/apache/lucene/analysis/el/GreekLowerCaseFilter.java))?
-    * Cf. Unicode codepoints at the end of this file and test files in directory `voyant_test_files`
+* [x] Implement normalisation in Voyant Tools (see discussion in [GitHub issue](https://github.com/sgsinclair/Voyant/issues/382), as well as Unicode codepoints at the end of this file and test files in directory `voyant_test_files`)
+    * [x] Normalise Ancient Greek precomposed forms during text import to fix *oxia*/*tonos* problem
+    * [x] Normalise Ancient Greek all sigmas to non final "small sigma" in the Trombone analyser (cf. Lucene [GreekLowerCaseFilter for Modern Greek](https://github.com/apache/lucene-solr/blob/a3a0e0b11e4538ccdff998c09b1145ce9036ac33/lucene/analysis/common/src/java/org/apache/lucene/analysis/el/GreekLowerCaseFilter.java))
+* [ ] Prepare v2.1 of the list after implementation of `GreekCustomFilter` in Voyant Tools
+    * [x] Remove all forms with lunate sigma in v2
+        * 18 forms of the article
+    * [x] Remove all forms with non final sigma in final position in v2
+        * 1044 forms
+    * [ ] Test the list in the updated online version of Voyant Tools
 
 * [ ] Follow up on Peter Heslin's suggestions on Digital Classicist listserv
 
