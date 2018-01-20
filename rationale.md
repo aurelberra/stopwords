@@ -98,7 +98,7 @@ Finally, I tested the resulting list of stopwords in Voyant Tools on several cor
 
 ### Greek version 2.1: Removing redundant sigma variants
 
-Version 2 included variants with the non-final and the final forms of sigma, as well as variants of the articles with a lunate sigma, but they were removed from version 2.1, after the implementation of a Greek custom filter in Voyant Tools which made variant forms of *sigma* redundant. See the discussion in the relevant [Voyant Tools GitHub issue](https://github.com/sgsinclair/Voyant/issues/382).
+Version 2 included variants with the non-final and the final forms of sigma, as well as variants of the articles with a lunate sigma, but they were removed from version 2.1, after the implementation of a Greek custom filter in Voyant Tools which made variant forms of sigma redundant. See the discussion in the relevant [Voyant Tools GitHub issue](https://github.com/sgsinclair/Voyant/issues/382).
 
 ## Feedback?
 
