@@ -325,11 +325,16 @@ intersect(tlg_100, not_in_greek_v1)
 intersect(tlg_500, not_in_greek_v1)
 intersect(tlg_1000, not_in_greek_v1)
 
+# Version 2.1 after implementation of GreekCustomFilter in Voyant Tools
+# which made variant forms of *sigma* redundant
+
 # Make test files for Voyant
 
 source("../hn3-dev/sextus/code/corpus_functions.R")
 library(tidyverse)
 
+# initial oxia sample taken from TLGU converted Unicode text
+# of TLG E Betacode file
 test_oxia <- read_lines("voyant_test_files/voyant_test_grc_oxia.txt")
 test_tonos_nfc <- utf8::utf8_normalize(test_oxia)
 write_lines(test_tonos_nfc, "voyant_test_files/voyant_test_grc_tonos_nfc.txt")
@@ -353,3 +358,26 @@ write_lines(test_el_split, "voyant_test_files/voyant_test_el_split.txt")
 length(test_oxia_split)
 length(test_tonos_nfc_split)
 length(test_el_split)
+
+# Totals
+greek_v2 <- read_lines("stopwords_greek_v2.txt")
+(empty <- sum(str_count(greek_v2, "^$")))  # empty lines
+(comments <- sum(str_count(greek_v2, "^#(.*)")))  # comments
+(stopwords_v2 <- sum(str_count(greek_v2, "^(.*)$")) - empty - comments)  # stop items
+
+# Remove variant forms with non final sigma
+
+sum(str_count(greek_v2, "^(.+)σ$"))
+greek_v2_1 <- str_replace_all(greek_v2, "^(.+)σ$", "TEMP")
+greek_v2_1 <- greek_v2_1[which(greek_v2_1 != "TEMP")]
+write_lines(greek_v2_1, "stopwords_greek_v2_1.txt")
+(stopwords_v2_1 <- sum(str_count(greek_v2_1, "^(.*)$")) - empty - comments)  # stop items
+
+# Remove variant forms with final lunate sigma (for articles)
+
+greek_v2_1 <- read_lines("stopwords_greek_v2_1.txt")
+sum(str_count(greek_v2_1, "^(.*?)ϲ(.*?)$"))
+greek_v2_1 <- str_replace_all(greek_v2_1, "^(.*?)ϲ(.*?)$", "TEMP")
+greek_v2_1 <- greek_v2_1[which(greek_v2_1 != "TEMP")]
+write_lines(greek_v2_1, "stopwords_greek_v2_1.txt")
+(stopwords_v2_1 <- sum(str_count(greek_v2_1, "^(.*)$")) - empty - comments)  # stop items
