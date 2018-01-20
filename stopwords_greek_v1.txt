@@ -2,6 +2,7 @@
 # 2017-10-16 version 1
 # Aurélien Berra
 # https://github.com/aurelberra/stopwords
+# Total number of items (tokens or symbols): 262
 
 αἱ
 αἳ
