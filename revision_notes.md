@@ -6,9 +6,9 @@ See also the [project rationale and history](rationale.md), as well as the relev
 
 * [ ] Follow up on Peter Heslin's suggestions on Digital Classicist listserv
 * [ ] Explain rationale and update or link to lists on [DigiClass wiki page](http://wiki.digitalclassicist.org/Stopwords_for_Greek_and_Latin)
-* [ ] Design shorter, custom stoplists for certain uses?
-    * minimal lists (e.g. for search engines): based on frequency only, or including the paradigms of articles and a few verbs?
-    * generic lists: separate versions for epic poetry, tragedy, oratory, theology, etc.?
+* [ ] Design shorter, custom stoplists for certain uses? Interesting, but not a priority.
+    * Minimal lists (e.g. for search engines): based on frequency only, or including the paradigms of articles and a few verbs?
+    * Generic lists: separate versions for epic poetry, tragedy, oratory, theology, etc.?
 
 # Latin stopwords
 
@@ -16,7 +16,7 @@ Current list: [https://github.com/aurelberra/stopwords/blob/master/stopwords_lat
 
 ## Sources and code
 
-Details about the sources and full lists can be found in the [R code used to compare the existing lists and update my proposals through statistical analysis of large corpora](stopwords_latin.R).
+Details about the sources and full lists can be found in the [R code](stopwords_latin.R) used to compare the existing lists and update my proposals through statistical analysis of large corpora.
 
 ## Revision notes
 
@@ -66,7 +66,7 @@ Current list: [https://github.com/aurelberra/stopwords/blob/master/stopwords_gre
 
 ## Sources and code
 
-Details about the sources and full lists can be found in the [R code used to compare the existing lists and update my proposals through statistical analysis of large corpora](stopwords_greek.R).
+Details about the sources and full lists can be found in the [R code](stopwords_greek.R) used to compare the existing lists and update my proposals through statistical analysis of large corpora.
 
 ## Revision notes
 
