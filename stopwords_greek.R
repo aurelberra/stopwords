@@ -389,3 +389,51 @@ greek_v2_1 <- greek_v2_1[which(greek_v2_1 != "TEMP")]
 write_lines(greek_v2_1, "stopwords_greek_v2_1.txt")
 (stopwords_v2_1 <-
         sum(str_count(greek_v2_1, "^(.*)$")) - empty - comments)  # stop items
+
+# Implement JSON output
+
+# install.packages("rjson")
+library(rjson)
+
+# current_greek <-
+
+x <- list(
+    alpha = 1:5,
+    beta = "Bravo",
+    gamma = list(a = 1:3, b = NULL),
+    delta = c(TRUE, FALSE)
+)
+json <- toJSON(x)
+json <- read_file("/Users/hchn/Desktop/grc.json")
+fjson <- fromJSON(json)
+
+test <- as.list(read_lines("/Users/hchn/Desktop/test.txt"))
+
+test <- list("LEVEL 1" = c("αἱ", "ἡ", "ὁ"))
+test <- list("LEVEL 1" = list("LEVEL 2" = "αἱ", "ἡ", "ὁ"))
+
+test <- list(
+    "TYPOGRAPHICAL SYMBOLS" = c("!", "$"),
+    "PRONOUNS" = list(
+        "ego" = c("ego",
+                  "egon"),
+        "meus" = c("mea", "meae")
+    )
+)
+
+test_to <- toJSON(test)
+write_lines(test_to, "/Users/hchn/Desktop/test_to.json")
+
+test_from <- fromJSON(test_to)
+test_from <- as.list(json)
+write_lines(test_from, "/Users/hchn/Desktop/test_from.json")
+
+
+test_out <- read_file("/Users/hchn/Desktop/test.txt")
+test_out <- str_replace_all(test_out, "^([^#].*)\n", "\"\\1\",\n")
+test_out <- str_replace_all(test_out, "^##\\s(.*)\n", "\"\\1\": [")
+test_out <- str_replace_all(test_out, "\n\n", "\n],\n")
+# test_out <- str_replace_all(test_out, "##\\s(.*)\n\n##", "\"\\1\": {\n#")
+# test_out <- str_replace_all(test_out, "(.+,\n)\n", "\\1\n")
+test_out <- c("{", test_out, "}")
+write_lines(test_out, "/Users/hchn/Desktop/test_out.txt")
