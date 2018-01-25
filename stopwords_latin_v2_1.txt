@@ -12,6 +12,7 @@
 
 # TYPOGRAPHICAL SYMBOLS
 !
+#
 $
 %
 &
@@ -33,6 +34,12 @@ $
 \{
 \}
 |
+\\
+\/
+§
+°
+†
+¿
 
 # SINGLE LETTERS
 a
