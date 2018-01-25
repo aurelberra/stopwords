@@ -409,6 +409,10 @@ write_lines(test_txt, "/Users/aurel/Desktop/md_to_json/test_txt.txt")
 test_to <- toJSON(test)
 write_lines(test_to, "/Users/aurel/Desktop/md_to_json/test_to.json")
 
+test <- read_file("./versions/stopwords_latin_v2_1.json")
+test_from <- fromJSON(test)
+write_lines(test_from, "/Users/aurel/Desktop/md_to_json/test_from_json.txt")
+
 # Markdown to JSON
 # can't close brackets
 test_out <- read_file("/Users/aurel/Desktop/md_to_json/test.txt")
