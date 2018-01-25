@@ -6,7 +6,7 @@ See the [project rationale and history](rationale.md) and the [revision notes](r
 
 # Current lists
 
-* [Ancient Latin stopwords](stopwords_latin.txt) (version 2)
-* [Ancient Greek stopwords](stopwords_greek.txt) (version 2.1)
+* [Ancient Latin stopwords](stopwords_latin.txt)
+* [Ancient Greek stopwords](stopwords_greek.txt)
 
 Questions, comments and advice are most welcome.
