@@ -10,7 +10,9 @@ source("../hn3-dev/sextus/code/corpus_functions.R")
 current_greek <- read_lines("stopwords_greek.txt")
 
 # Count items in lists
-count_items_in_txt_lists_in_dir("/Users/aurel/Documents/github/stopwords/")
+
+count_items_in_txt_lists_in_dir("/Users/aurel/Documents/github/stopwords")
+count_items_in_txt_lists_in_dir("/Users/aurel/Documents/github/stopwords/versions")
 
 # Version 1: Comparing existing lists
 # -----------------------------------
@@ -317,7 +319,7 @@ test <- read_lines("test.txt")
 setdiff(test, current_greek)
 
 current_greek <- read_lines("stopwords_greek.txt")
-greek_v1 <- read_lines("stopwords_greek_v1.txt")
+greek_v1 <- read_lines("versions/stopwords_greek_v1.txt")
 tlg_100 <- read_lines("data/tlg_top_100.txt")
 tlg_500 <- read_lines("data/tlg_top_500.txt")
 tlg_1000 <- read_lines("data/tlg_top_1000.txt")
@@ -372,17 +374,17 @@ length(test_el_split)
 sum(str_count(greek_v2, "^(.+)σ$"))
 greek_v2_1 <- str_replace_all(greek_v2, "^(.+)σ$", "TEMP")
 greek_v2_1 <- greek_v2_1[which(greek_v2_1 != "TEMP")]
-write_lines(greek_v2_1, "stopwords_greek_v2_1.txt")
+write_lines(greek_v2_1, "versions/stopwords_greek_v2_1.txt")
 (stopwords_v2_1 <-
         sum(str_count(greek_v2_1, "^(.*)$")) - empty - comments)  # stop items
 
 # Remove variant forms with final lunate sigma (for articles)
 
-greek_v2_1 <- read_lines("stopwords_greek_v2_1.txt")
+greek_v2_1 <- read_lines("versions/stopwords_greek_v2_1.txt")
 sum(str_count(greek_v2_1, "^(.*?)ϲ(.*?)$"))
 greek_v2_1 <- str_replace_all(greek_v2_1, "^(.*?)ϲ(.*?)$", "TEMP")
 greek_v2_1 <- greek_v2_1[which(greek_v2_1 != "TEMP")]
-write_lines(greek_v2_1, "stopwords_greek_v2_1.txt")
+write_lines(greek_v2_1, "versions/stopwords_greek_v2_1.txt")
 (stopwords_v2_1 <-
         sum(str_count(greek_v2_1, "^(.*)$")) - empty - comments)  # stop items
 

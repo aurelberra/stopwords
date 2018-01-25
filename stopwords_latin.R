@@ -2,11 +2,16 @@
 # Stopwords: Latin
 # ---------------- #
 
-library(tidyverse)
+source("~/Documents/github/r-dev/helpers.R")
 
 # Current list
 
 current_latin <- read_lines("stopwords_latin.txt")
+
+# Count items in lists
+
+count_items_in_txt_lists_in_dir("/Users/aurel/Documents/github/stopwords/")
+count_items_in_txt_lists_in_dir("/Users/aurel/Documents/github/stopwords/versions/")
 
 # Version 1: Comparing existing lists
 # -----------------------------------
@@ -310,7 +315,7 @@ test <- read_lines("test.txt")
 setdiff(test, current_latin)
 
 current_latin <- read_lines("stopwords_latin.txt")
-latin_v1 <- read_lines("stopwords_latin_v1.txt")
+latin_v1 <- read_lines("versions/stopwords_latin_v1.txt")
 phi_100 <- read_lines("data/phi_top_100.txt")
 phi_500 <- read_lines("data/phi_top_500.txt")
 phi_1000 <- read_lines("data/phi_top_1000.txt")
