@@ -4,8 +4,7 @@ See also the [project rationale and history](rationale.md), as well as the relev
 
 # TODO
 
-* [ ] Harmonise "TYPOGRAPHICAL SYMBOLS" in Greek and Latin lists
-* [ ] Feed [list of addenda](stopwords_greek_add.md) as tests reveal missing words or variants
+* [ ] Use tool to fix alphabetical sort in Greek
 * [ ] Explain rationale and update or link to lists on [DigiClass wiki page](http://wiki.digitalclassicist.org/Stopwords_for_Greek_and_Latin)
 * [ ] Design shorter, custom stoplists for certain uses? Interesting, but not a priority.
     * Minimal lists (e.g. for search engines): based on frequency only, or including the paradigms of articles and a few verbs?
@@ -60,6 +59,7 @@ Details about the sources and full lists can be found in the [R code](stopwords_
 * [x] Check manual selection from PHI 1000 MFW
     * Keep *solus*, *uter* (add later?)
 * [x] Add "Total number of items (tokens or symbols)" in files metadata headers
+* [x] Harmonise Latin "TYPOGRAPHICAL SYMBOLS" with Greek
 
 # Greek stopwords
 
