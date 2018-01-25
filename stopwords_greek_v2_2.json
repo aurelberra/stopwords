@@ -1,5 +1,17 @@
 {
-  "METADATA": "Ancient Greek stopwords, 2018-01-20 version 2.1, Aurélien Berra, https://github.com/aurelberra/stopwords, Total number of items (tokens or symbols): 6511",
+  "METADATA": {
+    "title": "Ancient Greek stopwords",
+    "version": 2.2,
+    "date": "2018-01-25",
+    "author": "Aurélien Berra",
+    "description": "Ancient Greek stopwords for textual analysis",
+    "language": "Ancient Greek (grc)",
+    "type": "dataset",
+    "count": 6511,
+    "url": "https://github.com/aurelberra/stopwords",
+    "rights": "CC-BY-NC-SA",
+    "$schema": "http://json-schema.org/schema#"
+  },
   "TYPOGRAPHICAL SYMBOLS": [
     "!",
     "#",

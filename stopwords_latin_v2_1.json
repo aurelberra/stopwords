@@ -1,5 +1,17 @@
 {
-  "METADATA": "Ancient Latin stopwords, 2018-01-02 version 2, Aurélien Berra, https://github.com/aurelberra/stopwords, Total number of items (tokens or symbols): 3839",
+  "METADATA": {
+    "title": "Ancient Latin stopwords",
+    "version": 2.1,
+    "date": "2018-01-25",
+    "author": "Aurélien Berra",
+    "description": "Latin stopwords for textual analysis",
+    "language": "Latin (la, lat)",
+    "type": "dataset",
+    "count": 3839,
+    "url": "https://github.com/aurelberra/stopwords",
+    "rights": "CC-BY-NC-SA",
+    "$schema": "http://json-schema.org/schema#"
+  },
   "TYPOGRAPHICAL SYMBOLS": [
     "!",
     "$",
