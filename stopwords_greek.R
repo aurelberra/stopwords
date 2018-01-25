@@ -2,12 +2,15 @@
 # Stopwords: Greek #
 # ---------------- #
 
+source("~/Documents/github/r-dev/helpers.R")
 source("../hn3-dev/sextus/code/corpus_functions.R")
-library(tidyverse)
 
 # Current list
 
 current_greek <- read_lines("stopwords_greek.txt")
+
+# Count items in lists
+count_items_in_txt_lists_in_dir("/Users/aurel/Documents/github/stopwords/")
 
 # Version 1: Comparing existing lists
 # -----------------------------------
@@ -363,13 +366,6 @@ write_lines(test_el_split, "voyant_test_files/voyant_test_el_split.txt")
 length(test_oxia_split)
 length(test_tonos_nfc_split)
 length(test_el_split)
-
-# Totals
-greek_v2 <- read_lines("stopwords_greek_v2.txt")
-(empty <- sum(str_count(greek_v2, "^$")))  # empty lines
-(comments <- sum(str_count(greek_v2, "^#(.*)")))  # comments
-(stopwords_v2 <-
-        sum(str_count(greek_v2, "^(.*)$")) - empty - comments)  # stop items
 
 # Remove variant forms with non final sigma
 
