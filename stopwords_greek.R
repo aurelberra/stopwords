@@ -390,17 +390,13 @@ write_lines(greek_v2_1, "stopwords_greek_v2_1.txt")
 (stopwords_v2_1 <-
         sum(str_count(greek_v2_1, "^(.*)$")) - empty - comments)  # stop items
 
-# Implement JSON output
+# Add JSON output
 
 # install.packages("rjson")
-library(rjson)
 source("~/Documents/github/r-dev/helpers.R")
+library(rjson)
 
-# current_greek <- read_lines("stopwords_greek.txt")
-
-# test <- list("LEVEL 1" = c("αἱ", "ἡ", "ὁ"))
-# test <- list("LEVEL 1" = list("LEVEL 2" = "αἱ", "ἡ", "ὁ"))
-
+# needed R structure
 test <- list(
     "TYPOGRAPHICAL SYMBOLS" = c("!", "$"),
     "PRONOUNS" = list(
@@ -416,7 +412,7 @@ test_to <- toJSON(test)
 write_lines(test_to, "/Users/aurel/Desktop/md_to_json/test_to.json")
 
 # Markdown to JSON
-# can't close brackets?
+# can't close brackets
 test_out <- read_file("/Users/aurel/Desktop/md_to_json/test.txt")
 test_out <- c("{", test_out, "}")
 test_out <- str_replace_all(test_out, "#\\s(.*)\n(?=\n##)", "\"\\1\": {\n")
@@ -430,29 +426,7 @@ test_out <- str_replace_all(test_out, ",\\n\\n\\}", "\n}")  # nope
 # test_out <- c("{", test_out, "}")
 write_lines(test_out, "/Users/aurel/Desktop/md_to_json/test_out.txt")
 
-# Markdown to R list (then toJSON)
-test_out <- read_file("/Users/aurel/Desktop/md_to_json/test.txt")
-test_out <- str_replace_all(test_out, "#\\s(.*)\n(?=\n##)", "\"\\1\" = c(\n")
-test_out <- str_replace_all(test_out, "#+\\s(.*)\n", "\"\\1\": [\n")
-test_out <- str_replace_all(test_out, "\\{\n\n", "\\{\n")
-test_out <- str_replace_all(test_out, "\n\n", "\n],\n")
-test_out <- str_replace_all(test_out, "\n([^\\]\"].*)", "\n\"\\1\",")
-test_out <- str_replace_all(test_out, ",\n([\\]\\}])", "\n\\1")
-# test_out <- str_replace_all(test_out, "\n\\}", "}")
-# test_out <- c("{", test_out, "}")
-write_lines(test_out, "/Users/aurel/Desktop/md_to_json/test_out.txt")
+# or try Markdown to R list, then toJSON?
 
-
-test <- list(
-    "TYPOGRAPHICAL SYMBOLS" = c("!", "$"),
-    "PRONOUNS" = list(
-        "ego" = c("ego", "egon"),
-        "meus" = c("mea", "meae")
-    )
-)
-
-
-
-require(markdown)
-test_out <- read_file("/Users/aurel/Desktop/md_to_json/test.txt")
-html <- renderMarkdown(text = test_out)
+# for now use a CLI Python Markdown to JSON converter
+# https://github.com/njvack/markdown-to-json
