@@ -8,11 +8,13 @@ source("../hn3-dev/sextus/code/corpus_functions.R")
 # Current list
 
 current_greek <- read_lines("stopwords_greek.txt")
+current_greek_count <- count_items_in_txt_list("stopwords_greek.txt")
 
 # Count items in lists
 
 count_items_in_txt_lists_in_dir("/Users/aurel/Documents/github/stopwords")
 count_items_in_txt_lists_in_dir("/Users/aurel/Documents/github/stopwords/versions")
+
 
 # Version 1: Comparing existing lists
 # -----------------------------------
@@ -432,3 +434,50 @@ write_lines(test_out, "/Users/aurel/Desktop/md_to_json/test_out.txt")
 
 # for now use a CLI Python Markdown to JSON converter
 # https://github.com/njvack/markdown-to-json
+
+# JSON to Markdown with my stopwords headings
+test_out <- read_file("/Users/aurel/Desktop/md_to_json/input.json")
+test_out %>%
+    str_replace_all("^\\{\n", "") %>%
+    str_replace_all("\\}\n\\}\n", "") %>%
+    str_replace_all("\\s*\"([A-Z]+.*)\": [\\[\\{\\],]+\n", "# \\1\n") %>%
+    str_replace_all("\\s*\"(.*)\": \\[\n", "## \\1\n") %>%
+    str_replace_all("[\":\\{\\}\\[\\],]", "\n") %>%
+    str_replace_all("\n\\s+", "\n") %>%
+    str_replace_all("##", "\n##") %>%
+    str_replace_all("\n#(.)", "\n\n#\\1") %>%
+    str_replace_all("\n\n\n", "\n\n") %>%
+    write_file("/Users/aurel/Desktop/md_to_json/output.md")
+
+# Add metadata
+today <- format(Sys.time(), "%Y-%m-%d")
+test_out <- read_file("/Users/aurel/Desktop/md_to_json/output.md")
+# meta <- read_file("stopwords_latin_metadata.txt")
+current_latin_metadata <- paste0(
+    "# Ancient Latin stopwords", "\n",
+    "# version 2.1", "\n",
+    "# ", today, "\n",
+    "# Aurélien Berra", "\n",
+    "# ", "\n",
+    "# Ancient Latin stopwords for textual analysis", "\n",
+    "# language: Latin (la, lat)", "\n",
+    "# type: dataset", "\n",
+    "# items count: ", current_latin_count, "\n",
+    "# https://github.com/aurelberra/stopwords", "\n",
+    "# rights: CC-BY-NC-SA", "\n",
+    "\n"
+)
+test_out <- paste0(meta, test_out)
+write_file(test_out, "/Users/aurel/Desktop/md_to_json/stopwords_latin.txt")
+
+# Ancient Greek stopwords
+# version 2.2
+# 2018-01-25
+# Aurélien Berra
+#
+# Ancient Greek stopwords for textual analysis
+# language: Ancient Greek (grc)
+# type: dataset
+# items count: 6532
+# https://github.com/aurelberra/stopwords
+# rights: CC-BY-NC-SA

@@ -7,6 +7,7 @@ source("~/Documents/github/r-dev/helpers.R")
 # Current list
 
 current_latin <- read_lines("stopwords_latin.txt")
+current_latin_count <- count_items_in_txt_list("stopwords_latin.txt")
 
 # Count items in lists
 
