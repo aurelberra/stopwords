@@ -1,0 +1,12 @@
+# Ancient Latin stopwords
+# version 2.1
+# 2018-01-25
+# Aurélien Berra
+# 
+# Ancient Latin stopwords for textual analysis
+# language: Latin (la, lat)
+# type: dataset
+# items count: 3845
+# https://github.com/aurelberra/stopwords
+# rights: CC-BY-NC-SA
+
