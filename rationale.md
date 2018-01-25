@@ -14,7 +14,7 @@ For version 1 (October 2017) I compared existing lists of stopwords and updated 
 
 For version 2 (January 2018) I rebased the lists on corpus statistics and greatly augmented them. My main sources were the lists of 100, 500, 1000 most frequent words in TLG E and PHI 5. I also refined the lists by testing them on several corpora. Variant forms, several paradigms and other elements common in stoplists (typographical symbols, single letters, numerals) were added systematically. – Total number of items (tokens or symbols): 7573 for Greek v2 ([stopwords_greek_v2.txt](stopwords_greek_v2.txt)), 6511 for Greek v2.1 ([stopwords_greek_v2_1.txt](stopwords_greek_v2_1.txt)), and 3839 for Latin ([stopwords_latin_v2.txt](stopwords_latin_v2.txt)).
 
-The lists are maintained here in plain text files. The words are sorted by parts of speech to make it easier to adapt the lists. The categories are the following:
+The lists are maintained here in plain text files, and also in JSON files. The words are sorted by parts of speech to make it easier to adapt the lists. The categories are the following:
 
 * for Greek and Latin
     * conjunctions
