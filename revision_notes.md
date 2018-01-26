@@ -5,7 +5,6 @@ See also the [project rationale and history](rationale.md), as well as the relev
 # TODO
 
 * [ ] Use tool to fix alphabetical sort in Greek
-* [ ] Explain rationale and update or link to lists on [DigiClass wiki page](http://wiki.digitalclassicist.org/Stopwords_for_Greek_and_Latin)
 * [ ] Design shorter, custom stoplists for certain uses? Interesting, but not a priority.
     * Minimal lists (e.g. for search engines): based on frequency only, or including the paradigms of articles and a few verbs?
     * Generic lists: separate versions for epic poetry, tragedy, oratory, theology, etc.?
