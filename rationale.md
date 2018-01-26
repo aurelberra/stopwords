@@ -119,6 +119,10 @@ Finally, I tested the resulting list of stopwords in Voyant Tools on several cor
 
 Version 2 included variants with the non-final and the final forms of sigma, as well as variants of the articles with a lunate sigma, but they were removed from version 2.1, after the implementation of a Greek custom filter in Voyant Tools which made variant forms of sigma redundant. See the discussion in the relevant [Voyant Tools GitHub issue](https://github.com/sgsinclair/Voyant/issues/382).
 
+### Latin version 2.1 and Greek version 2.2: Automating and cleaning up
+
+I harmonised or fixed item counts, headings and typographical symbols. I also added a few missing forms found in the MFW of Greek historians. The sources are now JSON files, which are turned into text files with the same Markdown headings as before. The metadata header (including version number, date, items count, Creative Commons licence and link to the repository) is prepended in the process. It can be found only in the text files, as embedded JSON metadata are usually considered an oxymoron.
+
 ## Feedback?
 
 Questions, comments and advice are most welcome.
