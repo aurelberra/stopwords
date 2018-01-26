@@ -17,31 +17,38 @@ For version 2 (January 2018) I rebased the lists on corpus statistics and greatl
 Total number of items (tokens or symbols):
 
 * Latin
-    * 3845 items in [stopwords_latin_v2_1.txt](versions/stopwords_latin_v2_1.txt)
+    * 3844 items in [stopwords_latin_v2_1.txt](versions/stopwords_latin_v2_1.txt)
     * 3839 items in [stopwords_latin_v2_0.txt](versions/stopwords_latin_v2_0.txt)
     * 0144 items in [stopwords_latin_v1_0.txt](versions/stopwords_latin_v1_0.txt)
 * Greek
-    * 6532 items in [stopwords_greek_v2_2.txt](versions/stopwords_greek_v2_2.txt)
+    * 6529 items in [stopwords_greek_v2_2.txt](versions/stopwords_greek_v2_2.txt)
     * 6517 items in [stopwords_greek_v2_1.txt](versions/stopwords_greek_v2_1.txt)
     * 7573 items in [stopwords_greek_v2_0.txt](versions/stopwords_greek_v2_0.txt)
     * 0262 items in [stopwords_greek_v1_0.txt](versions/stopwords_greek_v1_0.txt)
 
-The lists are maintained here in plain text files, and also in JSON files. The words are sorted by parts of speech to make it easier to adapt the lists. The categories are the following:
+The lists are maintained here in JSON and plain text files. The words are sorted by parts of speech and a few other categories to make it easier to adapt the lists. The categories are the following:
 
-* for Greek and Latin
-    * conjunctions
-    * prepositions/postpositions
-    * adverbs
-    * nouns
-    * adjectives
-    * verbs
-    * pronouns
-* for Greek only
-    * articles
-    * particles
-    * interjections
-* for Latin only
-    * abbreviated *praenomina*
+* Greek and Latin
+    * Typographical symbols
+    * Single letters (Latin)
+    * Arabic numerals (0-100)
+    * Roman numerals (1-100)
+    * Articles
+    * Particles
+    * Interjections
+    * Conjunctions
+    * Adverbs
+    * Pronouns
+    * Nouns
+    * Adjectives
+    * Verbs
+* Greek only
+    * Single letters (Greek)
+    * Greek numerals (1-100)
+    * Prepositions/postpositions
+* Latin only
+    * Abbreviated praenomina
+    * Prepositions
 
 These headings are comments prefixed with an [octothorpe](https://en.wiktionary.org/wiki/octothorpe) and are therefore suppressed in Voyant Tools when the software creates user-defined, alphabetically-sorted lists.
 
