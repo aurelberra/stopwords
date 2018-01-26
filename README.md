@@ -1,3 +1,5 @@
+[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-blue.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+
 # Project status
 
 These Ancient Greek and Latin stopwords for textual analysis are primarily designed to be used in [Voyant Tools](http://voyant-tools.org/), where they are implemented.
