@@ -18,13 +18,13 @@ Total number of items (tokens or symbols):
 
 * Latin
     * 3845 items in [stopwords_latin_v2_1.txt](versions/stopwords_latin_v2_1.txt)
-    * 3839 items in [stopwords_latin_v2.txt](versions/stopwords_latin_v2.txt)
-    * 0144 items in [stopwords_latin_v1.txt](versions/stopwords_latin_v1.txt)
+    * 3839 items in [stopwords_latin_v2_0.txt](versions/stopwords_latin_v2_0.txt)
+    * 0144 items in [stopwords_latin_v1_0.txt](versions/stopwords_latin_v1_0.txt)
 * Greek
     * 6532 items in [stopwords_greek_v2_2.txt](versions/stopwords_greek_v2_2.txt)
     * 6517 items in [stopwords_greek_v2_1.txt](versions/stopwords_greek_v2_1.txt)
-    * 7573 items in [stopwords_greek_v2.txt](versions/stopwords_greek_v2.txt)
-    * 0262 items in [stopwords_greek_v1.txt](versions/stopwords_greek_v1.txt)
+    * 7573 items in [stopwords_greek_v2_0.txt](versions/stopwords_greek_v2_0.txt)
+    * 0262 items in [stopwords_greek_v1_0.txt](versions/stopwords_greek_v1_0.txt)
 
 The lists are maintained here in plain text files, and also in JSON files. The words are sorted by parts of speech to make it easier to adapt the lists. The categories are the following:
 

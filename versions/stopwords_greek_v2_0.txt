@@ -1,5 +1,5 @@
 # Ancient Greek stopwords
-# 2018-01-02 version 2
+# 2018-01-02 version 2.0
 # Aurélien Berra
 # https://github.com/aurelberra/stopwords
 # Total number of items (tokens or symbols): 7573
