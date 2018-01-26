@@ -4,6 +4,7 @@ See also the [project rationale and history](rationale.md), as well as the relev
 
 # TODO
 
+* [ ] Check automatic item counts in TXT output
 * [ ] Use tool to fix alphabetical sort in Greek
 * [ ] Design shorter, custom stoplists for certain uses? Interesting, but not a priority.
     * Minimal lists (e.g. for search engines): based on frequency only, or including the paradigms of articles and a few verbs?
