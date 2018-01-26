@@ -23,14 +23,13 @@
     "{",
     "}",
     "|",
-    "\\",
     "/",
     "§",
     "°",
     "†",
     "¿"
   ],
-  "SINGLE LETTERS": [
+  "SINGLE LETTERS (LATIN)": [
     "a",
     "b",
     "c",
