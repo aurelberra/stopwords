@@ -60,6 +60,8 @@ The Unicode (UTF-8) encoding of the Greek list has been normalised to Normalizat
 
 Details can be found in the [revision notes](revision_notes.md).
 
+The lists are implemented in Voyant Tools as the "Ancient Greek" and "Latin" stoplists.
+
 ## Original motivation
 
 Since 2014 I have been using Voyant Tools in my Digital Humanities courses, most often as an introduction to textual analysis, showing for example the principles and the limits of word clouds for Ancient Greek and Latin, first without and then with stopwords. This is why I needed stoplists as those built-in for many modern languages. I used and shared the lists suggested on the [Digital Classicist wiki page](http://wiki.digitalclassicist.org/Stopwords_for_Greek_and_greek), which seemed good enough as a first approach.
