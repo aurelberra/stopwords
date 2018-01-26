@@ -7,7 +7,7 @@
     "description": "Latin stopwords for textual analysis",
     "language": "Latin (la, lat)",
     "type": "dataset",
-    "count": 3839,
+    "count": 3844,
     "url": "https://github.com/aurelberra/stopwords",
     "rights": "CC-BY-NC-SA",
     "$schema": "http://json-schema.org/schema#"
@@ -36,14 +36,13 @@
     "{",
     "}",
     "|",
-    "\\",
     "/",
     "§",
     "°",
     "†",
     "¿"
   ],
-  "SINGLE LETTERS": [
+  "SINGLE LETTERS (LATIN)": [
     "a",
     "b",
     "c",

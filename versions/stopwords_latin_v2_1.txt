@@ -1,12 +1,12 @@
 # Ancient Latin stopwords
 # version 2.1
-# 2018-01-25
+# 2018-01-26
 # Aurélien Berra
 # 
 # Ancient Latin stopwords for textual analysis
 # language: Latin (la, lat)
 # type: dataset
-# items count: 3845
+# items count: 3844
 # https://github.com/aurelberra/stopwords
 # rights: CC-BY-NC-SA
 
@@ -23,25 +23,24 @@ $
 <
 >
 @
-\(
-\)
-\*
-\+
-\?
-\[
-\]
-\^
-\{
-\}
+(
+)
+*
++
+?
+[
+]
+^
+{
+}
 |
-\\
-\/
+/
 §
 °
 †
 ¿
 
-# SINGLE LETTERS
+# SINGLE LETTERS (LATIN)
 a
 b
 c
@@ -172,7 +171,7 @@ z
 98
 99
 
-# ROMAN NUMERALS (1-100 except for ambiguous "vi")
+# ROMAN NUMERALS (1-100 except for ambiguous 'vi')
 i
 ii
 iii
