@@ -321,7 +321,7 @@ test <- read_lines("test.txt")
 setdiff(test, current_greek)
 
 current_greek <- read_lines("stopwords_greek.txt")
-greek_v1 <- read_lines("versions/stopwords_greek_v1.txt")
+greek_v1 <- read_lines("versions/stopwords_greek_v1_0.txt")
 tlg_100 <- read_lines("data/tlg_top_100.txt")
 tlg_500 <- read_lines("data/tlg_top_500.txt")
 tlg_1000 <- read_lines("data/tlg_top_1000.txt")
@@ -390,7 +390,9 @@ write_lines(greek_v2_1, "versions/stopwords_greek_v2_1.txt")
 (stopwords_v2_1 <-
         sum(str_count(greek_v2_1, "^(.*)$")) - empty - comments)  # stop items
 
-# Add JSON output
+
+# Switch to JSON and make Markdown output
+# -----------------------------------
 
 # install.packages("rjson")
 source("~/Documents/github/r-dev/helpers.R")

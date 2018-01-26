@@ -316,7 +316,7 @@ test <- read_lines("test.txt")
 setdiff(test, current_latin)
 
 current_latin <- read_lines("stopwords_latin.txt")
-latin_v1 <- read_lines("versions/stopwords_latin_v1.txt")
+latin_v1 <- read_lines("versions/stopwords_latin_v1_0.txt")
 phi_100 <- read_lines("data/phi_top_100.txt")
 phi_500 <- read_lines("data/phi_top_500.txt")
 phi_1000 <- read_lines("data/phi_top_1000.txt")
