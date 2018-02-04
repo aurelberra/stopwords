@@ -3,9 +3,9 @@
 
 # Project status
 
-These Ancient Greek and Latin stopwords for textual analysis are primarily designed to be used in [Voyant Tools](http://voyant-tools.org/), where they are implemented.
+This repository contains Ancient Greek and Latin [stopwords](https://github.com/aurelberra/stopwords/blob/master/rationale.md#about-stopwords) for textual analysis.
 
-See the [project rationale and history](rationale.md) and the [revision notes](revision_notes.md).
+The lists were primarily designed to be used in the [Voyant Tools](http://voyant-tools.org/) environment, where they are implemented. Their creation is documented in the [project rationale and history](rationale.md) and the [revision notes](revision_notes.md).
 
 # Current lists
 
