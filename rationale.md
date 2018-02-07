@@ -28,27 +28,25 @@ Total number of items (tokens or symbols):
 
 The lists are maintained here in JSON and plain text files. The words are sorted by parts of speech and a few other categories to make it easier to adapt the lists. The categories are the following:
 
-* Greek and Latin
-    * Typographical symbols
-    * Single letters (Latin)
-    * Arabic numerals (0-100)
-    * Roman numerals (1-100)
-    * Articles
-    * Particles
-    * Interjections
-    * Conjunctions
-    * Adverbs
-    * Pronouns
-    * Nouns
-    * Adjectives
-    * Verbs
-* Greek only
-    * Single letters (Greek)
-    * Greek numerals (1-100)
-    * Prepositions/postpositions
-* Latin only
-    * Abbreviated praenomina
-    * Prepositions
+|           Greek            |          Latin          |
+|----------------------------|-------------------------|
+| Typographical symbols      | Typographical symbols   |
+| Single letters (Latin)     | Single letters (Latin)  |
+| Single letters (Greek)     |                         |
+| Greek numerals (1-100)     |                         |
+| Arabic numerals (0-100)    | Arabic numerals (0-100) |
+| Roman numerals (1-100)     | Roman numerals (1-100)  |
+|                            | Abbreviated praenomina  |
+| Articles                   |                         |
+| Particles                  |                         |
+| Interjections              |                         |
+| Conjunctions               | Conjunctions            |
+| Prepositions/postpositions | Prepositions            |
+| Adverbs                    | Adverbs                 |
+| Pronouns                   | Pronouns                |
+| Nouns                      | Nouns                   |
+| Adjectives                 | Adjectives              |
+| Verbs                      | Verbs                   |
 
 These headings are comments prefixed with an [octothorpe](https://en.wiktionary.org/wiki/octothorpe) and are therefore suppressed in Voyant Tools when the software creates user-defined, alphabetically-sorted lists.
 
