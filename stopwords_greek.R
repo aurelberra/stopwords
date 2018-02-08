@@ -3,7 +3,6 @@
 # ---------------- #
 
 source("~/Documents/github/r-dev/helpers.R")
-source("../hn3-dev/sextus/code/corpus_functions.R")
 
 # Current list
 
