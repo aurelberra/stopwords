@@ -4,6 +4,10 @@ See also the [project rationale and history](rationale.md), as well as the relev
 
 # TODO
 
+* [ ] Add Latin sources suggested by Marco Passarotti
+    * LEMLAT3: invariable words  https://github.com/CIRCSE/LEMLAT3
+    * Index thomisticus: abbreviations http://www.corpusthomisticum.org/it/index.age (Terms: #96550)
+    * Index thomisticus: abbreviations for loci notatio http://www.corpusthomisticum.org/it/index.age (Terms: #96600)
 * [ ] Use tool to fix alphabetical sort in Greek
 * [ ] Design shorter, custom stoplists for certain uses? Interesting, but not a priority.
     * Minimal lists (e.g. for search engines): based on frequency only, or including the paradigms of articles and a few verbs?
