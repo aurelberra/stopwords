@@ -4,7 +4,7 @@ See also the [project rationale and history](rationale.md), as well as the relev
 
 # TODO
 
-* [ ] Add Latin sources suggested by Marco Passarotti
+* [ ] Check Latin sources suggested by Marco Passarotti
     * LEMLAT3: invariable words  https://github.com/CIRCSE/LEMLAT3
     * Index thomisticus: abbreviations http://www.corpusthomisticum.org/it/index.age (Terms: #96550)
     * Index thomisticus: abbreviations for loci notatio http://www.corpusthomisticum.org/it/index.age (Terms: #96600)
@@ -63,6 +63,7 @@ Details about the sources and full lists can be found in the [R code](stopwords_
     * Keep *solus*, *uter* (add later?)
 * [x] Add "Total number of items (tokens or symbols)" in files metadata headers
 * [x] Harmonise Latin "TYPOGRAPHICAL SYMBOLS" with Greek
+
 
 # Greek stopwords
 
