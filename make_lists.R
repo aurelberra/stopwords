@@ -8,7 +8,7 @@ source("~/Documents/github/r-dev/helpers.R")
 # GREEK
 
 # Set version number
-version_greek <- "2.3"
+version_greek <- "2.4"
 
 # Convert current JSON list to TXT with Markdown headings
 greek_json <- read_file("stopwords_greek.json")
@@ -59,7 +59,7 @@ write_file(stopwords_greek, "stopwords_greek.txt")
 # LATIN
 
 # Set version number
-version_latin <- "2.2"
+version_latin <- "2.3"
 
 # Convert current JSON list to TXT with Markdown headings
 latin_json <- read_file("stopwords_latin.json")
