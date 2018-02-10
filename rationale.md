@@ -130,7 +130,7 @@ I harmonised or fixed item counts, headings and typographical symbols. I also ad
 
 ### Latin version 2.2 and Greek version 2.3: Adding critical abbreviations
 
-I added abbreviations commonly found in critical apparatus and notes. They don't include one-letter abbreviations, abbreviations which can also be full Latin words, or abbreviations of names of authors, editors and works.
+I added abbreviations commonly found in critical apparatus and notes. They don't include one-letter abbreviations, abbreviations which can also be full Latin words, or abbreviations of names of authors, editors and works. Their purpose is to make it easier to work with text files where references and critical notes are embedded in the text so often that, for instance, they may appear in visualisations of most frequent words. The need actually arised from dealing with TLG E texts converted from Betacode to Unicode.
 
 ### Latin version 2.3 and Greek version 2.4: Sorting
 
