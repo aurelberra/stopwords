@@ -171,12 +171,12 @@ setdiff(tlg_e_top_100, dem_top_100)
 setdiff(addenda_tlg_e_top_100, addenda_dem_top_100)
 
 tlg_top_1000 <-
-    read_lines("data/tlg_top_1000_lemmatised_corrected.txt")
+    read_lines("data/tlg_data/tlg_top_1000_lemmatised_corrected.txt")
 
 addenda_tlg_top_1000 <- setdiff(tlg_top_1000, current_greek)
 
 tlg_top_1000_selection <-
-    read_lines("data/tlg_top_1000_selection.txt")
+    read_lines("data/tlg_data/tlg_top_1000_selection.txt")
 
 addenda_tlg_top_1000_selection <- setdiff(tlg_top_1000_selection, current_greek)
 View(addenda_tlg_top_1000_selection)
@@ -185,9 +185,9 @@ write_lines(addenda_tlg_top_1000_selection, "addenda_tlg_top_1000_selection.txt"
 
 # Test from data files
 
-tlg_100 <- read_lines("data/tlg_top_100.txt")
-tlg_500 <- read_lines("data/tlg_top_500.txt")
-tlg_1000 <- read_lines("data/tlg_top_1000.txt")
+tlg_100 <- read_lines("data/tlg_data/tlg_top_100.txt")
+tlg_500 <- read_lines("data/tlg_data/tlg_top_500.txt")
+tlg_1000 <- read_lines("data/tlg_data/tlg_top_1000.txt")
 
 test <- read_lines("data/greek_paradigms/ho_articles.txt")
 intersect(tlg_100, test) %>% length
@@ -321,9 +321,9 @@ setdiff(test, current_greek)
 
 current_greek <- read_lines("stopwords_greek.txt")
 greek_v1 <- read_lines("versions/stopwords_greek_v1_0.txt")
-tlg_100 <- read_lines("data/tlg_top_100.txt")
-tlg_500 <- read_lines("data/tlg_top_500.txt")
-tlg_1000 <- read_lines("data/tlg_top_1000.txt")
+tlg_100 <- read_lines("data/tlg_data/tlg_top_100.txt")
+tlg_500 <- read_lines("data/tlg_data/tlg_top_500.txt")
+tlg_1000 <- read_lines("data/tlg_data/tlg_top_1000.txt")
 
 setdiff(tlg_100, current_greek) %>% length
 setdiff(tlg_500, current_greek) %>% length
@@ -388,3 +388,8 @@ greek_v2_1 <- greek_v2_1[which(greek_v2_1 != "TEMP")]
 write_lines(greek_v2_1, "versions/stopwords_greek_v2_1.txt")
 (stopwords_v2_1 <-
         sum(str_count(greek_v2_1, "^(.*)$")) - empty - comments)  # stop items
+
+# Extract ASCII words from TLG E to improve list of critical abbreviations
+
+tlg_ascii <- extract_ascii_chars_unique_from_files_in_dir("/Users/aurel/Documents/github/tlg/tlg_e_unicode")
+# write_lines(tlg_ascii, "/Users/aurel/Documents/github/stopwords/test/test_abbreviations/tlg_e_unicode_ascii.txt")
