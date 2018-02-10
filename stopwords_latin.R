@@ -232,7 +232,7 @@ setdiff(phi_top_100, cic_top_100)
 setdiff(addenda_phi_top_100, addenda_cic_top_100)
 
 phi_top_1000 <-
-    read_lines("data/phi_top_1000_lemmatised_corrected.txt")
+    read_lines("data/phi_data/phi_top_1000_lemmatised_corrected.txt")
 
 addenda_phi_top_1000 <- setdiff(phi_top_1000, current_latin)
 View(addenda_phi_top_1000)
@@ -240,7 +240,7 @@ View(addenda_phi_top_1000)
 write_lines(addenda_phi_top_1000, "addenda_phi_top_1000.txt")
 
 phi_top_1000_selection <-
-    read_lines("data/phi_top_1000_selection.txt")
+    read_lines("data/phi_data/phi_top_1000_selection.txt")
 View(phi_top_1000_selection)
 
 addenda_phi_top_1000_selection <- setdiff(phi_top_1000_selection, current_latin)
@@ -250,9 +250,9 @@ write_lines(addenda_phi_top_1000_selection, "addenda_phi_top_1000_selection.txt"
 
 # Test from data files
 
-phi_100 <- read_lines("data/phi_top_100.txt")
-phi_500 <- read_lines("data/phi_top_500.txt")
-phi_1000 <- read_lines("data/phi_top_1000.txt")
+phi_100 <- read_lines("data/phi_data/phi_top_100.txt")
+phi_500 <- read_lines("data/phi_data/phi_top_500.txt")
+phi_1000 <- read_lines("data/phi_data/phi_top_1000.txt")
 
 test <- read_lines("data/latin_paradigms/omnis.txt")
 intersect(phi_100, test) %>% length
@@ -317,9 +317,9 @@ setdiff(test, current_latin)
 
 current_latin <- read_lines("stopwords_latin.txt")
 latin_v1 <- read_lines("versions/stopwords_latin_v1_0.txt")
-phi_100 <- read_lines("data/phi_top_100.txt")
-phi_500 <- read_lines("data/phi_top_500.txt")
-phi_1000 <- read_lines("data/phi_top_1000.txt")
+phi_100 <- read_lines("data/phi_data/phi_top_100.txt")
+phi_500 <- read_lines("data/phi_data/phi_top_500.txt")
+phi_1000 <- read_lines("data/phi_data/phi_top_1000.txt")
 
 setdiff(phi_100, current_latin) %>% length
 setdiff(phi_500, current_latin) %>% length
