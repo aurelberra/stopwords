@@ -2,13 +2,8 @@
 
 See also the [project rationale and history](rationale.md), as well as the relevant [Voyant Tools GitHub issue](https://github.com/sgsinclair/Voyant/issues/382).
 
-# TODO
+# MAYBE/TODO
 
-* [ ] Check Latin sources suggested by Marco Passarotti
-    * LEMLAT3: invariable words  https://github.com/CIRCSE/LEMLAT3
-    * Index thomisticus: abbreviations http://www.corpusthomisticum.org/it/index.age (Terms: #96550)
-    * Index thomisticus: abbreviations for loci notatio http://www.corpusthomisticum.org/it/index.age (Terms: #96600)
-* [ ] Use tool to fix alphabetical sort in Greek
 * [ ] Design shorter, custom stoplists for certain uses? Interesting, but not a priority.
     * Minimal lists (e.g. for search engines): based on frequency only, or including the paradigms of articles and a few verbs?
     * Generic lists: separate versions for epic poetry, tragedy, oratory, theology, etc.?
@@ -63,7 +58,20 @@ Details about the sources and full lists can be found in the [R code](stopwords_
     * Keep *solus*, *uter* (add later?)
 * [x] Add "Total number of items (tokens or symbols)" in files metadata headers
 * [x] Harmonise Latin "TYPOGRAPHICAL SYMBOLS" with Greek
-
+* [x] Check Latin sources suggested by Marco Passarotti
+    * LEMLAT3 invariable words https://github.com/CIRCSE/LEMLAT3
+    * Index thomisticus abbreviations http://www.corpusthomisticum.org/it/index.age (Terms: #96550 and #96600)
+* [x] Add "CRITICAL ABBREVIATIONS": abbreviations found in critical apparatus and notes
+    * Sources
+        * Index thomisticus abbreviations http://www.corpusthomisticum.org/it/index.age (Terms: #96550)
+        * Index thomisticus: abbreviations for loci notatio http://www.corpusthomisticum.org/it/index.age (Terms: #96600)
+        * Most frequent ASCII words in Unicode TLG E texts
+        * Scholarly editing manuals and scholarly editions
+    * Exclude one-letter abbreviations, as the Latin alphabet is already in the lists
+    * Exclude ambiguous abbreviations which can also be Latin words (*cens*, *fors*, *lac*, *stat*) once the final dot is removed as it is in Voyant Tools
+    * Exclude abbreviations of almost all names (authors, editors) and works (ancient or modern)
+* [x] Sort list alphabetically (except for numerals) using James Tauber's [Pyuca](https://github.com/jtauber/pyuca/) software
+* [x] Reinsert number "79" in Roman numerals
 
 # Greek stopwords
 
@@ -143,6 +151,17 @@ Details about the sources and full lists can be found in the [R code](stopwords_
     * [x] Remove all forms with non final sigma in final position in v2
         * 1044 forms
 * [x] Add "Total number of items (tokens or symbols)" in files metadata headers
+* [x] Add "CRITICAL ABBREVIATIONS": abbreviations found in critical apparatus and notes
+    * Sources
+        * Index thomisticus abbreviations http://www.corpusthomisticum.org/it/index.age (Terms: #96550)
+        * Index thomisticus: abbreviations for loci notatio http://www.corpusthomisticum.org/it/index.age (Terms: #96600)
+        * Most frequent ASCII words in Unicode TLG E texts
+        * Scholarly editing manuals and scholarly editions
+    * Exclude one-letter abbreviations, as the Latin alphabet is already in the lists
+    * Exclude ambiguous abbreviations which can also be Latin words (*cens*, *fors*, *lac*, *stat*) once the final dot is removed as it is in Voyant Tools
+    * Exclude abbreviations of almost all names (authors, editors) and works (ancient or modern)
+* [x] Sort list alphabetically (except for numerals) using James Tauber's [Pyuca](https://github.com/jtauber/pyuca/) software
+* [x] Reinsert number "79" in Roman numerals
 
 ## Unicode Greek memo
 
@@ -189,3 +208,7 @@ Here are the codepoints. I add *iota* and *upsilon* with *diaeresis*. I rename t
 | Uppercase Omega + acute               | 1FFB        | Ώ    | 038F         | Ώ    |
 | Lowercase Iota + dialytika + acute    | 1FD3        | ΐ    | 0390         | ΐ    |
 | Lowercase Upsilon + dialytika + acute | 1FE3        | ΰ    | 03B0         | ΰ    |
+
+On this question, see for instance the Digital Classicist wiki page on [Duplicated vowel+oxia characters in Greek Unicode range](http://wiki.digitalclassicist.org/Greek_Unicode_duplicated_vowels) and [Python, Unicode and Ancient Greek](https://jktauber.com/articles/python-unicode-ancient-greek/) by J. K. Tauber.
+
+Older digital texts may be using *oxia* accents and should be normalised to a combining *tonos* before they can be reliably analysed. See the [full table of Unicode codepoints in the revision notes](revision_notes.md#unicode-greek-precombined-diacritics).) This normalisation from *oxia* to *tonos* has also been implemented in the Voyant Tools import process (see the [discussion](https://github.com/sgsinclair/Voyant/issues/382).
