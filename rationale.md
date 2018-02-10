@@ -12,41 +12,46 @@ The Ancient Greek and Latin stoplists provided here are primarily designed for u
 
 For version 1 (October 2017) I compared existing lists of stopwords and updated the one I was using, adding variant forms.
 
-For version 2 (January 2018) I rebased the lists on corpus statistics and greatly augmented them. My main sources were the lists of 100, 500, 1000 most frequent words in TLG E and PHI 5. I also refined the lists by testing them on several corpora. Variant forms, several paradigms and other elements common in stoplists (typographical symbols, single letters, numerals) were added systematically.
+For version 2 (January-February 2018) I rebased the lists on corpus statistics and greatly augmented them. My main sources were the lists of 100, 500, 1000 most frequent words in TLG E and PHI 5. I also refined the lists by testing them on several corpora. Variant forms, several paradigms and other elements common in stoplists (typographical symbols, single letters, numerals, critical abbreviations) were added systematically.
 
 Total number of items (tokens or symbols):
 
 * Latin
+    * 4009 items in [stopwords_latin_v2_3.txt](versions/stopwords_latin_v2_3.txt)
+    * 4008 items in [stopwords_latin_v2_2.txt](versions/stopwords_latin_v2_2.txt)
     * 3844 items in [stopwords_latin_v2_1.txt](versions/stopwords_latin_v2_1.txt)
     * 3839 items in [stopwords_latin_v2_0.txt](versions/stopwords_latin_v2_0.txt)
     * 0144 items in [stopwords_latin_v1_0.txt](versions/stopwords_latin_v1_0.txt)
 * Greek
+    * 6694 items in [stopwords_greek_v2_4.txt](versions/stopwords_greek_v2_4.txt)
+    * 6693 items in [stopwords_greek_v2_3.txt](versions/stopwords_greek_v2_3.txt)
     * 6529 items in [stopwords_greek_v2_2.txt](versions/stopwords_greek_v2_2.txt)
     * 6517 items in [stopwords_greek_v2_1.txt](versions/stopwords_greek_v2_1.txt)
     * 7573 items in [stopwords_greek_v2_0.txt](versions/stopwords_greek_v2_0.txt)
     * 0262 items in [stopwords_greek_v1_0.txt](versions/stopwords_greek_v1_0.txt)
 
-The lists are maintained here in JSON and plain text files. The words are sorted by parts of speech and a few other categories to make it easier to adapt the lists. The categories are the following:
+The lists are maintained here in JSON (without metadata) and derived plain text files (including a metadata header). Items are sorted by parts of speech and a few other categories to make it easier to adapt the lists. In each category items are sorted, either alphabetically or numerically. The categories are the following:
 
-|           Greek            |          Latin          |
-|----------------------------|-------------------------|
-| Typographical symbols      | Typographical symbols   |
-| Single letters (Latin)     | Single letters (Latin)  |
-| Single letters (Greek)     |                         |
-| Greek numerals (1-100)     |                         |
-| Arabic numerals (0-100)    | Arabic numerals (0-100) |
-| Roman numerals (1-100)     | Roman numerals (1-100)  |
-|                            | Abbreviated praenomina  |
-| Articles                   |                         |
-| Particles                  |                         |
-| Interjections              |                         |
-| Conjunctions               | Conjunctions            |
-| Prepositions/postpositions | Prepositions            |
-| Adverbs                    | Adverbs                 |
-| Pronouns                   | Pronouns                |
-| Nouns                      | Nouns                   |
-| Adjectives                 | Adjectives              |
-| Verbs                      | Verbs                   |
+|           Greek            |          Latin           |
+|----------------------------|--------------------------|
+| Typographical symbols      | Typographical symbols    |
+| Single letters (Latin)     | Single letters (Latin)   |
+| Single letters (Greek)     |                          |
+| Greek numerals (1-100)     |                          |
+| Arabic numerals (0-100)    | Arabic numerals (0-100)  |
+| Roman numerals (1-100)     | Roman numerals (1-100)   |
+| Critical abbreviations     | Critical abbreviations   |
+|                            | Abbreviated *praenomina* |
+| Articles                   |                          |
+| Particles                  |                          |
+| Interjections              |                          |
+| Conjunctions               | Conjunctions             |
+| Prepositions/postpositions | Prepositions             |
+| Adverbs                    | Adverbs                  |
+| Pronouns                   | Pronouns                 |
+| Nouns                      | Nouns                    |
+| Adjectives                 | Adjectives               |
+| Verbs                      | Verbs                    |
 
 These headings are comments prefixed with an [octothorpe](https://en.wiktionary.org/wiki/octothorpe) and are therefore suppressed in Voyant Tools when the software creates user-defined, alphabetically-sorted lists.
 
@@ -54,7 +59,7 @@ Duplicate items are also removed by Voyant Tools, so I deduplicated the lists wi
 
 In Greek I have included elided forms without apostrophes and the additional dialectal forms and forms with iota adscript provided by the Diogenes software (see below). Forms with an acute accent on the last syllable are also included with a grave accent, and I added forms with an enclitic accent which the tests suggested to be very frequent.
 
-The Unicode (UTF-8) encoding of the Greek list has been normalised to Normalization Form C (NFC) in order to avoid problems with precombined diacritics. (On this question, see for instance the Digital Classicist wiki page on [Duplicated vowel+oxia characters in Greek Unicode range](http://wiki.digitalclassicist.org/Greek_Unicode_duplicated_vowels) and [Python, Unicode and Ancient Greek](https://jktauber.com/articles/python-unicode-ancient-greek/) by J. K. Tauber. Older digital texts may be using *oxia* accents and should be normalised to a combining *tonos* before they can be reliably analysed. See the [full table of Unicode codepoints in the revision notes](revision_notes.md#unicode-greek-precombined-diacritics).) This normalisation from *oxia* to *tonos* has also been implemented in the Voyant Tools import process (see the [discussion](https://github.com/sgsinclair/Voyant/issues/382)).
+The Unicode (UTF-8) encoding of the Greek list has been normalised to Normalization Form C (NFC) in order to avoid problems with precombined diacritics.
 
 Details can be found in the [revision notes](revision_notes.md).
 
@@ -122,6 +127,14 @@ Version 2 included variants with the non-final and the final forms of sigma, as 
 ### Latin version 2.1 and Greek version 2.2: Automating and cleaning up
 
 I harmonised or fixed item counts, headings and typographical symbols. I also added a few missing forms found in the MFW of Greek historians. The sources are now JSON files, which are turned into text files with the same Markdown headings as before. The metadata header (including version number, date, items count, Creative Commons licence and link to the repository) is prepended in the process. It can be found only in the text files, as embedded JSON metadata are usually considered an oxymoron.
+
+### Latin version 2.2 and Greek version 2.3: Adding critical abbreviations
+
+I added abbreviations commonly found in critical apparatus and notes. They don't include one-letter abbreviations, abbreviations which can also be full Latin words, or abbreviations of names of authors, editors and works.
+
+### Latin version 2.3 and Greek version 2.4: Sorting
+
+I sorted both lists alphabetically (except for numerals) with James Tauber's [Pyuca](https://github.com/jtauber/pyuca/) software ("Python Unicode Collation Algorithm implementation"). This was mostly useful for Greek as polytonic Unicode is not handled correctly by default. I also reinserted a number ("79") missing in Roman numerals.
 
 ## Feedback?
 
