@@ -1,5 +1,5 @@
 [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-blue.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/) 
-[![DOI](https://zenodo.org/badge/106132777.svg)](https://zenodo.org/badge/latestdoi/106132777)
+[![DOI](https://zenodo.org/badge/106132777.svg)](https://zenodo.org/badge/latestdoi/1172759)
 
 # Project status
 
