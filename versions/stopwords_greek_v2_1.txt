@@ -2,7 +2,7 @@
 # 2018-01-20 version 2.1
 # Aurélien Berra
 # https://github.com/aurelberra/stopwords
-# Total number of items (tokens or symbols): 6517
+# Total number of items (tokens or symbols): 6518
 
 # TYPOGRAPHICAL SYMBOLS
 !

@@ -6,7 +6,7 @@
 # Ancient Greek stopwords for textual analysis
 # language: Ancient Greek (grc)
 # type: dataset
-# items count: 6694
+# items count: 6695
 # https://github.com/aurelberra/stopwords
 # rights: CC-BY-NC-SA
 

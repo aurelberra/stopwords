@@ -6,7 +6,7 @@
 # Ancient Latin stopwords for textual analysis
 # language: Latin (la, lat)
 # type: dataset
-# items count: 3844
+# items count: 3845
 # https://github.com/aurelberra/stopwords
 # rights: CC-BY-NC-SA
 
