@@ -17,13 +17,15 @@ For version 2 (January-February 2018) I rebased the lists on corpus statistics a
 Total number of items (tokens or symbols):
 
 * Latin
-    * 4010 items in [stopwords_latin_v2_4.txt](versions/stopwords_latin_v2_4.txt)   
+    * 4011 items in [stopwords_latin_v2_5.txt](versions/stopwords_latin_v2_5.txt)
+    * 4010 items in [stopwords_latin_v2_4.txt](versions/stopwords_latin_v2_4.txt)
     * 4010 items in [stopwords_latin_v2_3.txt](versions/stopwords_latin_v2_3.txt)
     * 4009 items in [stopwords_latin_v2_2.txt](versions/stopwords_latin_v2_2.txt)
     * 3845 items in [stopwords_latin_v2_1.txt](versions/stopwords_latin_v2_1.txt)
     * 3839 items in [stopwords_latin_v2_0.txt](versions/stopwords_latin_v2_0.txt)
     * 0144 items in [stopwords_latin_v1_0.txt](versions/stopwords_latin_v1_0.txt)
 * Greek
+    * 6696 items in [stopwords_greek_v2_6.txt](versions/stopwords_greek_v2_6.txt)
     * 6695 items in [stopwords_greek_v2_5.txt](versions/stopwords_greek_v2_5.txt)
     * 6695 items in [stopwords_greek_v2_4.txt](versions/stopwords_greek_v2_4.txt)
     * 6694 items in [stopwords_greek_v2_3.txt](versions/stopwords_greek_v2_3.txt)
@@ -141,6 +143,10 @@ I sorted both lists alphabetically (except for numerals) with James Tauber's [Py
 ### Latin version 2.4 and Greek version 2.5: Fixing counts
 
 I only corrected the item counts. The function I used was counting the octothorpe sign as a comment in the list of typographical symbols.
+
+### Latin version 2.4 and Greek version 2.5: Trifling
+
+I added "iiii" for "iv" in Roman numerals.
 
 ## Feedback?
 

@@ -4,7 +4,6 @@ See also the [project rationale and history](rationale.md), as well as the relev
 
 # MAYBE/TODO
 
-* [ ] Add "iiii" for "iv"
 * [ ] Design shorter, custom stoplists for certain uses? Interesting, but not a priority.
     * Minimal lists (e.g. for search engines): based on frequency only, or including the paradigms of articles and a few verbs?
     * Generic lists: separate versions for epic poetry, tragedy, oratory, theology, etc.?
@@ -73,6 +72,7 @@ Details about the sources and full lists can be found in the [R code](stopwords_
     * Exclude abbreviations of almost all names (authors, editors) and works (ancient or modern)
 * [x] Sort list alphabetically (except for numerals) using James Tauber's [Pyuca](https://github.com/jtauber/pyuca/) software
 * [x] Reinsert number "79" in Roman numerals
+* [x] Add "iiii" for "iv" in Roman numerals
 
 # Greek stopwords
 
@@ -163,6 +163,7 @@ Details about the sources and full lists can be found in the [R code](stopwords_
     * Exclude abbreviations of almost all names (authors, editors) and works (ancient or modern)
 * [x] Sort list alphabetically (except for numerals) using James Tauber's [Pyuca](https://github.com/jtauber/pyuca/) software
 * [x] Reinsert number "79" in Roman numerals
+* [x] Add "iiii" for "iv" in Roman numerals
 
 ## Unicode Greek memo
 
