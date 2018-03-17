@@ -2,14 +2,6 @@
 
 See also the [project rationale and history](rationale.md), as well as the relevant [Voyant Tools GitHub issue](https://github.com/sgsinclair/Voyant/issues/382).
 
-# MAYBE/TODO
-
-* [ ] Add most common proper names in Greek and Latin lists
-    * [ ] Compile NER lists and determine thresholds
-* [ ] Design shorter, custom stoplists for certain uses? Interesting, but not a priority.
-    * Minimal lists (e.g. for search engines): based on frequency only, or including the paradigms of articles and a few verbs?
-    * Generic lists: separate versions for epic poetry, tragedy, oratory, theology, etc.?
-
 # Latin stopwords
 
 Current list: [https://github.com/aurelberra/stopwords/blob/master/stopwords_latin.txt](stopwords_latin.txt).
