@@ -1,11 +1,12 @@
-# ------------------------------------- #
-# Stopwords: Latin and Greek            #
-# Make TXT/Markdown stoplists from JSON #
-# ------------------------------------- #
+# -------------------------------------+
+# Stopwords: Latin and Greek
+# Make TXT/Markdown stoplists from JSON
+# -------------------------------------+
 
-source("~/Documents/github/r-dev/helpers.R")
+source("~/Documents/github/helpers/R/helpers.R")
 
-# GREEK
+
+# GREEK -------------------------------------------------------------------
 
 # Set version number
 version_greek <- "2.6"
@@ -62,7 +63,8 @@ greek_raw %>%
     str_replace_all("\n+", "\n") %>%
     write_file("./test/test_json_txt/stopwords_greek_no_comments.txt")
 
-# LATIN
+
+# LATIN -------------------------------------------------------------------
 
 # Set version number
 version_latin <- "2.5"
