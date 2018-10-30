@@ -158,6 +158,10 @@ Details about the sources and full lists can be found in the [R code](stopwords_
 * [x] Sort list alphabetically (except for numerals) using James Tauber's [Pyuca](https://github.com/jtauber/pyuca/) software
 * [x] Reinsert number "79" in Roman numerals
 * [x] Add "iiii" for "iv" in Roman numerals
+* [x] Add Homeric stopwords from the 1000 MFW of non-lemmatised and lemmatised versions of the *Iliad* and the *Odyssey*: 203 words, of which 137 unique.
+    * 103 *Iliad* stopwords
+    * 100 *Odyssey* stopwords
+* [x] Check the whole Greek list and remove 27 duplicates accidentally introduced in the critical abbreviations and in the articles.
 
 ## Unicode Greek memo
 
