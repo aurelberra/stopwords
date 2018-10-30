@@ -1,10 +1,12 @@
-# ---------------- #
+# ----------------+
 # Stopwords: Latin
-# ---------------- #
+# ----------------+
 
-source("~/Documents/github/r-dev/helpers.R")
+source("~/Documents/github/helpers/R/packages_ab.R")
+source("~/Documents/github/helpers/R/helpers.R")
 
-# Current list
+
+# Current list ------------------------------------------------------------
 
 current_latin <- read_lines("stopwords_latin.txt")
 current_latin_count <- count_items_in_txt_list("stopwords_latin.txt")
@@ -14,8 +16,8 @@ current_latin_count <- count_items_in_txt_list("stopwords_latin.txt")
 count_items_in_txt_lists_in_dir("/Users/aurel/Documents/github/stopwords/")
 count_items_in_txt_lists_in_dir("/Users/aurel/Documents/github/stopwords/versions/")
 
-# Version 1: Comparing existing lists
-# -----------------------------------
+
+# Version 1: Comparing existing lists -------------------------------------
 
 # Perseus Digital Library list
 ## http://www.perseus.tufts.edu/hopper/stopwords 2017-10-09
@@ -199,8 +201,8 @@ addenda_dcc_latin <- setdiff(v.dcc_latin_all, current_latin)
 
 not_in_dcc_latin_100 <- setdiff(current_latin, v.dcc_latin_100)
 
-# Version 2: Rebasing lists on corpus statistics
-# ----------------------------------------------
+
+# Version 2: Rebasing lists on corpus statistics --------------------------
 
 # Cicero most frequent words (no lemmatisation)
 
