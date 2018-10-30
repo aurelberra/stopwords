@@ -12,7 +12,7 @@ The Ancient Greek and Latin stoplists provided here are primarily designed for u
 
 For version 1 (October 2017) I compared existing lists of stopwords and updated the one I was using, adding variant forms.
 
-For version 2 (January-February 2018) I rebased the lists on corpus statistics and greatly augmented them. My main sources were the lists of 100, 500, 1000 most frequent words in TLG E and PHI 5. I also refined the lists by testing them on several corpora. Variant forms, several paradigms and other elements common in stoplists (typographical symbols, single letters, numerals, critical abbreviations) were added systematically.
+For version 2 (January-February 2018) I rebased the lists on corpus statistics and greatly augmented them. My main sources were the lists of 100, 500, 1000 most frequent words in TLG E and PHI 5. I also refined the lists by testing them on several corpora. Variant forms, several paradigms and other elements common in stoplists (typographical symbols, single letters, numerals, critical abbreviations) were added systematically. In version 2.7 (October 2018) I added stopwords specific to the Homeric poems.
 
 Total number of items (tokens or symbols):
 
@@ -25,6 +25,7 @@ Total number of items (tokens or symbols):
     * 3839 items in [stopwords_latin_v2_0.txt](versions/stopwords_latin_v2_0.txt)
     * 0144 items in [stopwords_latin_v1_0.txt](versions/stopwords_latin_v1_0.txt)
 * Greek
+    * 6872 items in [stopwords_greek_v2_7.txt](versions/stopwords_greek_v2_7.txt)
     * 6696 items in [stopwords_greek_v2_6.txt](versions/stopwords_greek_v2_6.txt)
     * 6695 items in [stopwords_greek_v2_5.txt](versions/stopwords_greek_v2_5.txt)
     * 6695 items in [stopwords_greek_v2_4.txt](versions/stopwords_greek_v2_4.txt)
@@ -36,26 +37,28 @@ Total number of items (tokens or symbols):
 
 The lists are maintained here in JSON (without metadata) and derived plain text files (including a metadata header). Items are sorted by parts of speech and a few other categories to make it easier to adapt the lists. In each category items are sorted, either alphabetically or numerically. The categories are the following:
 
-|           Greek            |          Latin           |
-|----------------------------|--------------------------|
-| Typographical symbols      | Typographical symbols    |
-| Single letters (Latin)     | Single letters (Latin)   |
-| Single letters (Greek)     |                          |
-| Greek numerals (1-100)     |                          |
-| Arabic numerals (0-100)    | Arabic numerals (0-100)  |
-| Roman numerals (1-100)     | Roman numerals (1-100)   |
-| Critical abbreviations     | Critical abbreviations   |
-|                            | Abbreviated *praenomina* |
-| Articles                   |                          |
-| Particles                  |                          |
-| Interjections              |                          |
-| Conjunctions               | Conjunctions             |
-| Prepositions/postpositions | Prepositions             |
-| Adverbs                    | Adverbs                  |
-| Pronouns                   | Pronouns                 |
-| Nouns                      | Nouns                    |
-| Adjectives                 | Adjectives               |
-| Verbs                      | Verbs                    |
+|             Greek             |          Latin           |
+|-------------------------------|--------------------------|
+| Typographical symbols         | Typographical symbols    |
+| Single letters (Latin)        | Single letters (Latin)   |
+| Single letters (Greek)        |                          |
+| Greek numerals (1-100)        |                          |
+| Arabic numerals (0-100)       | Arabic numerals (0-100)  |
+| Roman numerals (1-100)        | Roman numerals (1-100)   |
+| Critical abbreviations        | Critical abbreviations   |
+|                               | Abbreviated *praenomina* |
+| Articles                      |                          |
+| Particles                     |                          |
+| Interjections                 |                          |
+| Conjunctions                  | Conjunctions             |
+| Prepositions/postpositions    | Prepositions             |
+| Adverbs                       | Adverbs                  |
+| Pronouns                      | Pronouns                 |
+| Nouns                         | Nouns                    |
+| Adjectives                    | Adjectives               |
+| Verbs                         | Verbs                    |
+| Homeric stopwords (*Iliad*)   |                          |
+| Homeric stopwords (*Odyssey*) |                          |
 
 These headings are comments prefixed with an [octothorpe](https://en.wiktionary.org/wiki/octothorpe) and are therefore suppressed in Voyant Tools when the software creates user-defined, alphabetically-sorted lists.
 
@@ -144,9 +147,13 @@ I sorted both lists alphabetically (except for numerals) with James Tauber's [Py
 
 I only corrected the item counts. The function I used was counting the octothorpe sign as a comment in the list of typographical symbols.
 
-### Latin version 2.4 and Greek version 2.5: Trifling
+### Latin version 2.5 and Greek version 2.6: Trifling
 
 I added "iiii" for "iv" in Roman numerals.
+
+### Greek version 2.7: Adding Homeric stopwords
+
+I added stopwords for the *Iliad* and the *Odyssey* based on the 1000 MFW of each poem in the TLG E full texts and the Perseus lemmatised texts (I extracted the lemmas from the Perseus [Lemmatized Ancient Greek Texts](https://github.com/gcelano/LemmatizedAncientGreekXML), version 1.2.5). I compared these lists with the previously used TLG E 1000 MFW, with each other, and with the current version of the Greek stopwords. In the structured source for the list I keep the 103 *Iliad* and the 100 *Odyssey* stopwords separate. Together they provide a total of 137 unique new words, which are mostly dialectal variants of common words. I also checked the whole list and removed 27 duplicates accidentally introduced in the critical abbreviations and in the articles.
 
 ## Feedback?
 
