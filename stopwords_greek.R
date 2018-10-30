@@ -1,10 +1,12 @@
-# ---------------- #
-# Stopwords: Greek #
-# ---------------- #
+# ----------------+
+# Stopwords: Greek
+# ----------------+
 
-source("~/Documents/github/r-dev/helpers.R")
+source("~/Documents/github/helpers/R/packages_ab.R")
+source("~/Documents/github/helpers/R/helpers.R")
 
-# Current list
+
+# Current list ------------------------------------------------------------
 
 current_greek <- read_lines("stopwords_greek.txt")
 current_greek_count <- count_items_in_txt_list("stopwords_greek.txt")
@@ -15,8 +17,7 @@ count_items_in_txt_lists_in_dir("/Users/aurel/Documents/github/stopwords")
 count_items_in_txt_lists_in_dir("/Users/aurel/Documents/github/stopwords/versions")
 
 
-# Version 1: Comparing existing lists
-# -----------------------------------
+# Version 1: Comparing existing lists -------------------------------------
 
 # Perseus Digital Library list
 ## http://www.perseus.tufts.edu/hopper/stopwords 2017-10-14
@@ -138,8 +139,8 @@ addenda_dcc_greek <- setdiff(v.dcc_greek_all, current_greek)
 
 not_in_dcc_greek_100 <- setdiff(current_greek, v.dcc_greek_100)
 
-# Version 2: Rebasing lists on corpus statistics
-# ----------------------------------------------
+
+# Version 2: Rebasing lists on corpus statistics --------------------------
 
 # Demosthenes most frequent words (no lemmatisation)
 
@@ -334,7 +335,9 @@ intersect(tlg_100, not_in_greek_v1)
 intersect(tlg_500, not_in_greek_v1)
 intersect(tlg_1000, not_in_greek_v1)
 
-# Version 2.1 after implementation of GreekCustomFilter in Voyant Tools
+
+# Version 2.1 -------------------------------------------------------------
+# after implementation of GreekCustomFilter in Voyant
 # which made variant forms of *sigma* redundant
 
 # Make test files for Voyant
@@ -389,7 +392,13 @@ write_lines(greek_v2_1, "versions/stopwords_greek_v2_1.txt")
 (stopwords_v2_1 <-
         sum(str_count(greek_v2_1, "^(.*)$")) - empty - comments)  # stop items
 
+
+# Further improvements ----------------------------------------------------
 # Extract ASCII words from TLG E to improve list of critical abbreviations
 
 tlg_ascii <- extract_ascii_chars_unique_from_files_in_dir("/Users/aurel/Documents/github/tlg/tlg_e_unicode")
 # write_lines(tlg_ascii, "/Users/aurel/Documents/github/stopwords/test/test_abbreviations/tlg_e_unicode_ascii.txt")
+
+
+# Add Homeric stopwords ---------------------------------------------------
+# See specific R and data files
