@@ -41,3 +41,9 @@ Vopiscus (Vop.)
 * single letters: A., K., D., F., C., L., M., M'., N., P., Q., S., T., V.
 * more than one letter: Agr., Ap., Cn., Mam., Oct., Opet., Pro., Sert., Ser., Sex., St., Ti., Vol., Vop.
 * relevant forms for stopwords: agr, ap, cn, mam, oct, opet, pro, sert, ser, sex, st, ti, vol, vop
+
+# As lists
+
+c("A.", "K.", "D.", "F.", "C.", "L.", "M.", "M'.", "N.", "P.", "Q.", "S.", "T.", "V." ,"Agr.", "Ap.", "Cn.", "Mam.", "Oct.", "Opet.", "Pro.", "Sert.", "Ser.", "Sex.", "St.", "Ti.", "Vol.", "Vop.", "a.", "k.", "d.", "f.", "c.", "l.", "m.", "m'.", "n.", "p.", "q.", "s.", "t.", "v." ,"agr.", "ap.", "cn.", "mam.", "oct.", "opet.", "pro.", "sert.", "ser.", "sex.", "st.", "ti.", "vol.", "vop.")
+
+[A|K|D|F|C|L|M|M'|N|P|Q|S|T|V|Agr|Ap|Cn|Mam|Oct|Opet|Pro|Sert|Ser|Sex|St|Ti|Vol|Vop|a|k|d|f|c|l|m|m'|n|p|q|s|t|v|agr|ap|cn|mam|oct|opet|pro|sert|ser|sex|st|ti|vol|vop]
