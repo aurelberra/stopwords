@@ -6,7 +6,7 @@
 # Ancient Greek stopwords for textual analysis
 # language: Ancient Greek (grc)
 # type: dataset
-# items count: 6871
+# items count: 6872
 # https://github.com/aurelberra/stopwords
 # rights: CC-BY-NC-SA
 
@@ -2285,6 +2285,7 @@ vv
 αἵτινες
 ἅντιν
 ἅντινα
+ἅσσ
 ἅσσα
 ἅστινας
 ἁστινασοῦν
