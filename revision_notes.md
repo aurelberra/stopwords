@@ -162,6 +162,7 @@ Details about the sources and full lists can be found in the [R code](stopwords_
     * 103 *Iliad* stopwords
     * 100 *Odyssey* stopwords
 * [x] Check the whole Greek list and remove 27 duplicates accidentally introduced in the critical abbreviations and in the articles.
+* [x] Remove νῷ as a form of νώ: much more common as form of νοῦς (cf. [GitHub issue](https://github.com/aurelberra/stopwords/issues/5))
 
 ## Unicode Greek memo
 
