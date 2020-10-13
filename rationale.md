@@ -25,6 +25,7 @@ Total number of items (tokens or symbols):
     * 3839 items in [stopwords_latin_v2_0.txt](versions/stopwords_latin_v2_0.txt)
     * 0144 items in [stopwords_latin_v1_0.txt](versions/stopwords_latin_v1_0.txt)
 * Greek
+    * 6872 items in [stopwords_greek_v2_8.txt](versions/stopwords_greek_v2_8.txt)
     * 6872 items in [stopwords_greek_v2_7.txt](versions/stopwords_greek_v2_7.txt)
     * 6696 items in [stopwords_greek_v2_6.txt](versions/stopwords_greek_v2_6.txt)
     * 6695 items in [stopwords_greek_v2_5.txt](versions/stopwords_greek_v2_5.txt)
