@@ -156,6 +156,10 @@ I added "iiii" for "iv" in Roman numerals.
 
 I added stopwords for the *Iliad* and the *Odyssey* based on the 1000 MFW of each poem in the TLG E full texts and the Perseus lemmatised texts (I extracted the lemmas from the Perseus [Lemmatized Ancient Greek Texts](https://github.com/gcelano/LemmatizedAncientGreekXML), version 1.2.5). I compared these lists with the previously used TLG E 1000 MFW, with each other, and with the current version of the Greek stopwords. In the structured source for the list I keep the 103 *Iliad* and the 100 *Odyssey* stopwords separate. Together they provide a total of 137 unique new words, which are mostly dialectal variants of common words. I also checked the whole list and removed 27 duplicates accidentally introduced in the critical abbreviations and in the articles.
 
+### Greek version 2.8: Fixing details
+
+I removed νῷ as a form of νώ, because it is much more common as a form of νοῦς. I added an abbreviated form for the sake of consistency (ἅσσ for ἅσσα).
+
 ## Feedback?
 
 Questions, comments and advice are most welcome.
