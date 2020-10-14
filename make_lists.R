@@ -67,7 +67,7 @@ greek_raw %>%
 # LATIN -------------------------------------------------------------------
 
 # Set version number
-version_latin <- "2.5"
+version_latin <- "2.6"
 
 # Convert current JSON list to TXT with Markdown headings
 latin_json <- read_file("stopwords_latin.json")

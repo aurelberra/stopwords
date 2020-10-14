@@ -17,6 +17,7 @@ For version 2 (January-February 2018) I rebased the lists on corpus statistics a
 Total number of items (tokens or symbols):
 
 * Latin
+    * 4001 items in [stopwords_latin_v2_6.txt](versions/stopwords_latin_v2_6.txt)
     * 4011 items in [stopwords_latin_v2_5.txt](versions/stopwords_latin_v2_5.txt)
     * 4010 items in [stopwords_latin_v2_4.txt](versions/stopwords_latin_v2_4.txt)
     * 4010 items in [stopwords_latin_v2_3.txt](versions/stopwords_latin_v2_3.txt)
@@ -159,6 +160,10 @@ I added stopwords for the *Iliad* and the *Odyssey* based on the 1000 MFW of eac
 ### Greek version 2.8: Fixing details
 
 I removed νῷ as a form of νώ, because it is much more common as a form of νοῦς. I added an abbreviated form for the sake of consistency (ἅσσ for ἅσσα).
+
+### Latin version 2.6: Fixing details
+
+I removed 10 duplicates accidentally introduced in the critical abbreviations.
 
 ## Feedback?
 

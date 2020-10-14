@@ -304,7 +304,6 @@ def
 del
 dett
 dist
-dist
 distin
 distinc
 distinct
@@ -323,7 +322,6 @@ exp
 fg
 fgs
 fin
-fin
 fort
 fr
 frg
@@ -335,17 +333,14 @@ il
 ill
 indic
 inf
-inf
 infr
 init
 inscr
 interl
 lect
-lect
 lit
 litt
 ll
-loc
 loc
 marg
 mg
@@ -374,7 +369,6 @@ prop
 propos
 qq
 qu
-qu
 quaest
 quaestiunc
 quaestiuncul
@@ -382,7 +376,6 @@ ras
 recc
 rell
 respons
-sc
 sc
 schol
 scholl
@@ -392,7 +385,6 @@ seq
 seqq
 sim
 solut
-sq
 sq
 sqq
 ss
@@ -415,7 +407,6 @@ uit
 ult
 ultim
 uu
-uu
 uulg
 vd
 vers
@@ -424,7 +415,6 @@ vett
 vid
 vit
 vulg
-vv
 vv
 γρ
 
