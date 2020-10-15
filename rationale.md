@@ -39,29 +39,29 @@ Total number of items (tokens or symbols):
 
 The lists are maintained here in JSON (without metadata) and derived plain text files (including a metadata header). Items are sorted by parts of speech and a few other categories to make it easier to adapt the lists. In each category items are sorted, either alphabetically or numerically. The categories are the following:
 
-|           Greek            | # in v2.8 |          Latin           | # in v2.6 |
-|----------------------------|-----------|--------------------------|-----------|
-| Typographical symbols      |        28 | Typographical symbols    |        28 |
-| Single letters (Latin)     |        26 | Single letters (Latin)   |        27 |
-| Single letters (Greek)     |        28 |                          |           |
-| Greek numerals (1-100)     |       100 |                          |           |
-| Arabic numerals (0-100)    |       101 | Arabic numerals (0-100)  |       101 |
-| Roman numerals (1-100)     |       101 | Roman numerals (1-100)   |       100 |
-| Critical abbreviations     |       154 | Critical abbreviations   |       154 |
-|                            |           | Abbreviated *praenomina* |        16 |
-| Articles                   |        81 |                          |           |
-| Particles                  |        44 |                          |           |
-| Interjections              |         3 |                          |           |
-| Conjunctions               |        83 | Conjunctions             |        62 |
-| Prepositions/postpositions |        85 | Prepositions             |        42 |
-| Adverbs                    |       212 | Adverbs                  |       136 |
-| Pronouns                   |      1435 | Pronouns                 |       967 |
-| Nouns                      |         0 | Nouns                    |        37 |
-| Adjectives                 |      1206 | Adjectives               |       454 |
-| Verbs                      |      2982 | Verbs                    |      1877 |
-| Homeric stopwords          |       203 |                          |           |
-| TOTAL                      |      6872 | TOTAL                    |      4001 |
-| TOTAL unique forms         |      6618 | TOTAL unique forms       |      3945 |
+|         Greek v2.8         | # forms | # lemmas |        Latin v2.6        | # forms | # lemmas |
+|----------------------------|---------|----------|--------------------------|---------|----------|
+| Typographical symbols      |      28 |          | Typographical symbols    |      28 |          |
+| Single letters (Latin)     |      26 |          | Single letters (Latin)   |      27 |          |
+| Single letters (Greek)     |      28 |          |                          |         |          |
+| Greek numerals (1-100)     |     100 |          |                          |         |          |
+| Arabic numerals (0-100)    |     101 |          | Arabic numerals (0-100)  |     101 |          |
+| Roman numerals (1-100)     |     101 |          | Roman numerals (1-100)   |     100 |          |
+| Critical abbreviations     |     154 |          | Critical abbreviations   |     154 |          |
+|                            |         |          | Abbreviated *praenomina* |      16 |          |
+| Articles                   |      81 |        3 |                          |         |          |
+| Particles                  |      44 |          |                          |         |          |
+| Interjections              |       3 |          |                          |         |          |
+| Conjunctions               |      83 |          | Conjunctions             |      62 |          |
+| Prepositions/postpositions |      85 |          | Prepositions             |      42 |          |
+| Adverbs                    |     212 |          | Adverbs                  |     136 |          |
+| Pronouns                   |    1435 |       22 | Pronouns                 |     967 |       27 |
+| Nouns                      |       0 |        0 | Nouns                    |      37 |        4 |
+| Adjectives                 |    1206 |       23 | Adjectives               |     454 |       12 |
+| Verbs                      |    2982 |        6 | Verbs                    |    1877 |       11 |
+| Homeric stopwords          |     203 |          |                          |         |          |
+| **TOTAL**                  |    6872 |          | **TOTAL**                |    4001 |          |
+| TOTAL unique forms         |    6618 |          | TOTAL unique forms       |    3945 |          |
 
 These headings are comments prefixed with an [octothorpe](https://en.wiktionary.org/wiki/octothorpe) and are therefore suppressed in Voyant Tools when the software creates user-defined, alphabetically-sorted lists.
 
