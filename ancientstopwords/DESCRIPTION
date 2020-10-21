@@ -1,0 +1,10 @@
+Package: ancientstopwords
+Type: Package
+Title: Ancient Greek and Latin Stopwords (Title Case)
+Version: 0.1.0
+Author: Aurélien Berra
+Maintainer: Aurélien Berra <aurelien.berra@parisnanterre.fr>
+Description: Ancient Greek and Latin stopwords for textual analysis.
+License: CC BY-NC-SA
+Encoding: UTF-8
+LazyData: true
