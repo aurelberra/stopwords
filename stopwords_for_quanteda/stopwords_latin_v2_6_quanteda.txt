@@ -1,46 +1,3 @@
-# Ancient Latin stopwords
-# version 2.6
-# 2020-10-14
-# Aurélien Berra
-# 
-# Ancient Latin stopwords for textual analysis
-# language: Latin (la, lat)
-# type: dataset
-# items count: 4001
-# https://github.com/aurelberra/stopwords
-# rights: CC-BY-NC-SA
-
-# TYPOGRAPHICAL SYMBOLS
--
-;
-:
-!
-?
-¿
-.
-(
-)
-[
-]
-{
-}
-§
-@
-*
-/
-&
-#
-%
-†
-^
-°
-+
-<
->
-|
-$
-
-# SINGLE LETTERS (LATIN)
 a
 b
 c
@@ -68,121 +25,13 @@ x
 y
 z
 ɔ
-
-# ARABIC NUMERALS (0-100)
-0
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-34
-35
-36
-37
-38
-39
-40
-41
-42
-43
-44
-45
-46
-47
-48
-49
-50
-51
-52
-53
-54
-55
-56
-57
-58
-59
-60
-61
-62
-63
-64
-65
-66
-67
-68
-69
-70
-71
-72
-73
-74
-75
-76
-77
-78
-79
-80
-81
-82
-83
-84
-85
-86
-87
-88
-89
-90
-91
-92
-93
-94
-95
-96
-97
-98
-99
-100
-
-# ROMAN NUMERALS (1-100 except for ambiguous 'vi')
-i
 ii
 iii
 iiii
 iv
-v
 vii
 viii
 ix
-x
 xi
 xii
 xiii
@@ -222,7 +71,6 @@ xlvi
 xlvii
 xlviii
 xlix
-l
 li
 lii
 liii
@@ -272,9 +120,6 @@ xcvi
 xcvii
 xcviii
 xcix
-c
-
-# CRITICAL ABBREVIATIONS
 abiud
 add
 adesp
@@ -429,8 +274,6 @@ vit
 vulg
 vv
 γρ
-
-# ABBREVIATED PRAENOMINA
 agr
 ap
 cn
@@ -447,8 +290,6 @@ uol
 uop
 vol
 vop
-
-# CONJUNCTIONS
 ac
 an
 antequam
@@ -511,9 +352,6 @@ utue
 utve
 ve
 vel
-
-# PREPOSITIONS
-a
 ab
 abs
 ad
@@ -529,7 +367,6 @@ contra
 coram
 cum
 de
-e
 erga
 ex
 extra
@@ -543,7 +380,6 @@ per
 post
 prae
 praeter
-pro
 prope
 propter
 secundum
@@ -555,8 +391,6 @@ supra
 tenus
 trans
 ultra
-
-# ADVERBS
 adeo
 adhuc
 aliquando
@@ -693,10 +527,6 @@ velut
 vero
 videlicet
 vix
-
-# PRONOUNS
-
-## ego
 ego
 egon
 egone
@@ -725,8 +555,6 @@ mihist
 min
 mine
 mist
-
-## meus
 mea
 meae
 meaeque
@@ -743,9 +571,6 @@ meas
 measque
 meast
 mee
-mei
-mein
-meique
 meis
 meisque
 meo
@@ -760,12 +585,6 @@ meumve
 meus
 meusque
 meust
-mi
-min
-mine
-mist
-
-## tu
 te
 tecum
 tecumque
@@ -793,8 +612,6 @@ tune
 tuque
 tute
 tutemet
-
-## tuus
 tua
 tuae
 tuaen
@@ -818,10 +635,6 @@ tuast
 tuasue
 tue
 tuest
-tui
-tuin
-tuine
-tuique
 tuis
 tuisne
 tuisque
@@ -844,8 +657,6 @@ tuumque
 tuus
 tuusque
 tuusue
-
-## hic
 hac
 hacne
 hae
@@ -911,8 +722,6 @@ hujusve
 hum
 hunc
 huncne
-
-## ille
 illa
 illae
 illaeque
@@ -967,8 +776,6 @@ ollius
 ollo
 ollos
 ollosque
-
-## iste
 ista
 istae
 istaec
@@ -998,8 +805,6 @@ istud
 istum
 istumne
 istunc
-
-## ipse
 ipsa
 ipsae
 ipsaeque
@@ -1043,8 +848,6 @@ ipsus
 ipsusne
 ipsusque
 ipsust
-
-## is
 ea
 eae
 eaeque
@@ -1110,7 +913,6 @@ idne
 idnest
 idque
 idue
-ii
 iidem
 iidemque
 iique
@@ -1121,9 +923,6 @@ iisue
 is
 isne
 isque
-
-## idem
-eadem
 eademne
 eademque
 eademst
@@ -1162,8 +961,6 @@ iisdemque
 isdem
 isdemne
 isdemque
-
-## suus
 sua
 suae
 suaeque
@@ -1198,8 +995,6 @@ suum
 suumque
 suus
 suusque
-
-## sui
 se
 secum
 secumque
@@ -1213,12 +1008,7 @@ sibi
 sibimet
 sibine
 sibique
-sui
 suimet
-suique
-suist
-
-## nos
 nobis
 nobiscum
 nobiscumque
@@ -1236,8 +1026,6 @@ nostrive
 nostrum
 nostrumne
 nostrumque
-
-## noster
 noster
 nosterque
 nostra
@@ -1255,12 +1043,9 @@ nostras
 nostrasne
 nostrasque
 nostrast
-nostri
-nostrique
 nostris
 nostrisque
 nostrisve
-nostrive
 nostro
 nostrone
 nostroque
@@ -1270,11 +1055,6 @@ nostrorumst
 nostros
 nostrosque
 nostrost
-nostrum
-nostrumne
-nostrumque
-
-## vos
 uestri
 uestrique
 uobis
@@ -1305,8 +1085,6 @@ vosque
 vostrum
 vostrumque
 vostrumst
-
-## vester
 uester
 uesterque
 uestra
@@ -1321,8 +1099,6 @@ uestraque
 uestrarum
 uestras
 uestrasque
-uestri
-uestrique
 uestris
 uestrisne
 uestrisque
@@ -1354,9 +1130,6 @@ uostrorum
 uostros
 uostrosque
 uostrost
-uostrum
-uostrumque
-uostrumst
 vester
 vesterque
 vestra
@@ -1371,8 +1144,6 @@ vestraque
 vestrarum
 vestras
 vestrasque
-vestri
-vestrique
 vestris
 vestrisne
 vestrisque
@@ -1404,11 +1175,6 @@ vostrorum
 vostros
 vostrosque
 vostrost
-vostrum
-vostrumque
-vostrumst
-
-## qui
 cui
 cuilibet
 cuine
@@ -1435,12 +1201,10 @@ quaen
 quaene
 quaepiam
 quaepiamst
-quaest
 quaestuis
 quaestuist
 quaeue
 quaeve
-quam
 quamne
 quampiam
 quamue
@@ -1501,8 +1265,6 @@ quost
 quosue
 quosve
 quum
-
-## quis
 quid
 quidlibet
 quidne
@@ -1515,18 +1277,13 @@ quiscumque
 quisue
 quisve
 quo
-quon
 quone
-quost
 quoue
 quove
-
-## quisquam
 cuiquam
 cuiquamst
 cuiusquam
 cujusquam
-quamquam
 quamquamst
 quaquam
 quaquamst
@@ -1542,8 +1299,6 @@ quisquam
 quisquamne
 quisquamst
 quoquam
-
-## quisnam
 cuinam
 cuiusnam
 cujusnam
@@ -1561,8 +1316,6 @@ quinam
 quisnam
 quodnam
 quosnam
-
-## quisquis
 quaqua
 quemquem
 quicquid
@@ -1571,8 +1324,6 @@ quiqui
 quiquidem
 quisquis
 quoquo
-
-## quisque
 cuique
 cuiquest
 cuiusque
@@ -1591,8 +1342,6 @@ quisque
 quodque
 quorumque
 quosque
-
-## quicumque
 cuicumque
 cuicunque
 cuiuscumque
@@ -1621,8 +1370,6 @@ quodcunque
 quorumcumque
 quoscumque
 quoscunque
-
-## quivis
 cuiuis
 cuiusuis
 cuiusvis
@@ -1651,8 +1398,6 @@ quoduis
 quodvis
 quosuis
 quosvis
-
-## quidam
 cuidam
 cuiusdam
 cujusdam
@@ -1679,8 +1424,6 @@ quorumdam
 quosdam
 quosdamque
 quosdamve
-
-## aliqui
 alicui
 alicuius
 alicujus
@@ -1707,19 +1450,10 @@ aliquod
 aliquodue
 aliquorum
 aliquos
-
-## aliquis
 aliquid
 aliquidque
 aliquidue
-aliquis
-aliquisne
-aliquisque
 aliquo
-
-# NOUNS
-
-## res
 re
 rebus
 rebusque
@@ -1739,19 +1473,13 @@ resne
 resque
 rest
 resve
-
-## nihil
 nihil
 nihilne
 nihilque
 nil
 nilne
 nilque
-
-## causa (ablative in prepositional turn)
 causa
-
-## nemo
 nemine
 neminem
 neminemne
@@ -1763,10 +1491,6 @@ nemon
 nemone
 nemoque
 nemost
-
-# ADJECTIVES
-
-## omnis
 omne
 omnem
 omnemque
@@ -1795,8 +1519,6 @@ omnist
 omnium
 omniumque
 omniumst
-
-## nullus
 nulla
 nullae
 nullaene
@@ -1839,8 +1561,6 @@ nullusne
 nullusnest
 nullusque
 nullust
-
-## ullus
 ulla
 ullae
 ullam
@@ -1862,8 +1582,6 @@ ullumve
 ullus
 ullusne
 ullust
-
-## multus
 multa
 multae
 multaeque
@@ -1895,8 +1613,6 @@ multumque
 multumst
 multus
 multusque
-
-## plus/plures
 plura
 pluraque
 pluraue
@@ -1942,12 +1658,6 @@ plurisue
 plurium
 pluriumue
 pluriumve
-plus
-plusne
-plusque
-plusve
-
-## alius
 alia
 aliae
 aliaeque
@@ -2003,8 +1713,6 @@ aliusne
 aliusque
 aliusue
 aliusve
-
-## alter
 alter
 altera
 alterae
@@ -2035,8 +1743,6 @@ alterumque
 alterumue
 alterumve
 alterve
-
-## ceter/ceterus
 caetera
 caeterae
 caeteram
@@ -2070,10 +1776,7 @@ ceterorumque
 ceterorumue
 ceteros
 ceterosque
-ceterum
 ceterus
-
-## qualis
 quale
 qualecumque
 qualecunque
@@ -2108,8 +1811,6 @@ qualitercunque
 qualiterque
 qualium
 qualiumcumque
-
-## talis
 tale
 talem
 talemque
@@ -2133,8 +1834,6 @@ talisve
 taliter
 talium
 taliumque
-
-## quantus
 quanta
 quantacumque
 quantacunque
@@ -2195,8 +1894,6 @@ quantus
 quantuscumque
 quantusne
 quantusque
-
-## tantus
 tanta
 tantadem
 tantae
@@ -2232,7 +1929,6 @@ tantorumque
 tantos
 tantosque
 tantove
-tantum
 tantumdem
 tantumdemst
 tantumne
@@ -2243,10 +1939,6 @@ tantundemque
 tantundemst
 tantus
 tantusque
-
-# VERBS
-
-## sum
 eram
 eramque
 eramus
@@ -2410,7 +2102,6 @@ siem
 sient
 sies
 siet
-sim
 simne
 simque
 simus
@@ -2438,8 +2129,6 @@ suntne
 sunto
 suntoque
 suntque
-
-## possum
 posse
 possem
 possemne
@@ -2559,8 +2248,6 @@ potuit
 potuitne
 potuitque
 potuitue
-
-## do
 da
 dabam
 dabamus
@@ -2770,8 +2457,6 @@ duint
 duis
 duisque
 duit
-
-## video
 uide
 uideam
 uideamini
@@ -3206,8 +2891,6 @@ visus
 visusque
 visust
 visuve
-
-## facio
 fac
 face
 facere
@@ -3422,8 +3105,6 @@ fecistis
 fecit
 fecitne
 fecitque
-
-## dico
 dic
 dicam
 dicamini
@@ -3643,8 +3324,6 @@ dixistis
 dixit
 dixitne
 dixitque
-
-## habeo
 habe
 habeam
 habeamini
@@ -3838,8 +3517,6 @@ habuistis
 habuit
 habuitne
 habuitque
-
-## fero
 fer
 feram
 feramque
@@ -4067,8 +3744,6 @@ tulisti
 tulistis
 tulit
 tulitque
-
-## fio
 fi
 fiam
 fiamque
@@ -4098,7 +3773,6 @@ fies
 fiet
 fietque
 fimus
-fin
 fio
 fis
 fit
@@ -4106,8 +3780,6 @@ fite
 fitque
 fiunt
 fiuntque
-
-## inquam
 inquam
 inquamst
 inque
@@ -4122,8 +3794,6 @@ inquisti
 inquit
 inquito
 inquiunt
-
-## aio
 aiant
 aias
 aiat
