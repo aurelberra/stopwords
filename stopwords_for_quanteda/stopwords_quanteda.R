@@ -10,6 +10,8 @@ p_load("stopwords")
 
 stopwords::stopwords("grc", source = "ancient")
 stopwords::stopwords("latin", source = "ancient")
+stopwords::stopwords("grc", source = "perseus")
+stopwords::stopwords("latin", source = "perseus")
 stopwords::stopwords("latin", source = "stopwords-iso")
 
 # Frequency plots with stopwords ----
