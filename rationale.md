@@ -162,13 +162,13 @@ I added stopwords for the *Iliad* and the *Odyssey* based on the 1000 MFW of eac
 
 I removed νῷ as a form of νώ, because it is much more common as a form of νοῦς. I added an abbreviated form for the sake of consistency (ἅσσ for ἅσσα).
 
-A version of this list without typographical symbols or Arabic numerals was integrated into the [*Quanteda Stopwords*](https://github.com/quanteda/stopwords/) R package in November 2020. It comprises 6489 word forms.
-
 ### Latin version 2.6: Fixing details
 
 I removed 10 duplicates accidentally introduced in the critical abbreviations.
 
-A version of this list without typographical symbols or Arabic numerals was integrated into the [*Quanteda Stopwords*](https://github.com/quanteda/stopwords/) R package in November 2020. It comprises 3816 word forms.
+### *Quanteda Stopwords* versions based on Greek version 2.8 and Latin version 2.6
+
+Versions of these lists without typographical symbols or Arabic numerals were integrated into the [*Quanteda Stopwords*](https://github.com/quanteda/stopwords/) R package in November 2020 (see the relevant GitHub issue: [Update ancient Greek and Latin stopwords](https://github.com/quanteda/stopwords/issues/19)). There are 6489 word forms in `stopwords_greek_v2_8_quanteda.txt` and 3816 word forms in `stopwords_latin_v2_6_quanteda.txt`.
 
 ## Feedback?
 
