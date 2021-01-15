@@ -73,7 +73,7 @@ The Unicode (UTF-8) encoding of the Greek list has been normalised to Normalizat
 
 Details can be found in the [revision notes](revision_notes.md).
 
-The lists are implemented in Voyant Tools as the "Ancient Greek" and "Latin" stoplists.
+The lists are implemented in [Voyant Tools](https://voyant-tools.org/) as the "Ancient Greek" and "Latin" stoplists, and in the [*Quanteda Stopwords*](https://github.com/quanteda/stopwords/) R package as the "ancient" stoplist (with "grc" and "latin" languages available).
 
 ## Original motivation
 
@@ -162,9 +162,13 @@ I added stopwords for the *Iliad* and the *Odyssey* based on the 1000 MFW of eac
 
 I removed νῷ as a form of νώ, because it is much more common as a form of νοῦς. I added an abbreviated form for the sake of consistency (ἅσσ for ἅσσα).
 
+A version of this list without typographical symbols or Arabic numerals was integrated into the [*Quanteda Stopwords*](https://github.com/quanteda/stopwords/) R package in November 2020. It comprises 6489 word forms.
+
 ### Latin version 2.6: Fixing details
 
 I removed 10 duplicates accidentally introduced in the critical abbreviations.
+
+A version of this list without typographical symbols or Arabic numerals was integrated into the [*Quanteda Stopwords*](https://github.com/quanteda/stopwords/) R package in November 2020. It comprises 3816 word forms.
 
 ## Feedback?
 
