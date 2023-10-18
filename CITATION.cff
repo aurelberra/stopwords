@@ -1,0 +1,41 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: Ancient Greek and Latin Stopwords
+message: >-
+  If you use this dataset, please cite it using the metadata
+  from this file.
+type: dataset
+authors:
+  - given-names: Aurélien
+    family-names: Berra
+    email: aurelien.berra@parisnanterre.fr
+    affiliation: Université Paris-Nanterre
+    orcid: 'https://orcid.org/0000-0002-1695-8497'
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.1165206
+repository-code: 'https://github.com/aurelberra/stopwords'
+url: >-
+  https://github.com/aurelberra/stopwords/blob/master/rationale.md
+abstract: >-
+  These Ancient Greek and Latin stoplists are static,
+  “general-use” lists, which users can adapt to their
+  purposes. After an initial comparison of existing lists of
+  stopwords, the lists were designed through statistical
+  corpus analysis, i.e. most frequent words in TLG E and PHI
+  5. They were tested on various corpora, and include
+  variant forms, several full paradigms and other elements
+  common in stoplists like typographical symbols, single
+  letters, numerals, critical abbreviations, as well as —
+  for the Greek — words specific to the Homeric poems. For
+  more information, see
+  <https://github.com/aurelberra/stopwords/blob/master/rationale.md>.
+keywords:
+  - stopwords
+  - ancient greek
+  - latin
+  - textual analysis
+  - philology
+license: CC-BY-NC-SA-4.0
