@@ -15,3 +15,8 @@ The creation of these data sets is documented in the [project rationale and hist
 * Ancient Greek stopwords: [TXT](stopwords_greek.txt) | [JSON](stopwords_greek.json)
 
 Questions, comments and advice are most welcome.
+
+[![CC BY-NC-SA 4.0][cc-by-nc-sa-image]][cc-by-nc-sa]
+
+[cc-by-nc-sa]: http://creativecommons.org/licenses/by-nc-sa/4.0/
+[cc-by-nc-sa-image]: https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png
